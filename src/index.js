@@ -5,7 +5,6 @@ import './index.css';
 import { Router, Route, browserHistory } from 'react-router';
 
 import Index from './pages/index/index';
-import About from './pages/about/about';
 import Work from './pages/work/work';
 import Bslide from './pages/work/bslide/bslide';
 import Underlined from './pages/work/underlined/underlined';
@@ -21,7 +20,6 @@ function scrollTop () {
 ReactDOM.render(
   <Router history={browserHistory} onUpdate={scrollTop}>
     <Route path="/" component={Index} />
-    <Route path="/about" component={About}/>
     <Route path="/work" component={Work}/>
     <Route path="/work/bslide" component={Bslide}/>
     <Route path="/work/underlined" component={Underlined}/>
