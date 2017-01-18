@@ -1,0 +1,39 @@
+.bunnyButton {
+    text-align: center;
+    padding: 1.3em 0 0.5em 0;
+}
+.button {
+    margin: 0px auto 45px auto;
+    padding: 15px 30px 15px 30px;
+    color: #FE6C61;
+    border: 2px solid #FE6C61;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+    display: inline-block;
+}
+.button:focus {
+    outline: none;
+}
+.button:hover {
+    cursor: pointer;
+}
+.button:after {
+    position: absolute;
+    -webkit-transition: .3s;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #FE6C61;
+}
+.button:hover:after {
+    width: 100%;
+    left: 0;
+}

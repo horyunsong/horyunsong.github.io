@@ -1,0 +1,19 @@
+.paper {
+    width: 300px;
+    float: right;
+    font-size: 0.8em;
+}
+.bslide .problem {
+    padding-top: 1em;
+    clear: both;
+}
+.acorn-wrapper {
+    padding: 7px;
+}
+.acorn {
+    width: 30%;
+    margin: 0 auto;
+}
+.primary-bio p {
+    padding: 0 20px;
+}
