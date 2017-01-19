@@ -13,13 +13,13 @@ body {
     position: absolute;
 }
 .hi {
-    width: 38%;
+    width: 34%;
     min-width: 250px;
-    padding: 1em 0 0 0.5em;
+    padding: 1em 0 0.7em 0.5em;
     -webkit-flex-grow: 1;
 }
 .hi .message{
-    left: 62%;
+    left: 66%;
     top: 18%;
 }
 .im {
@@ -42,11 +42,9 @@ body {
 
 .box {
     border: 2px solid black;
-    margin: 0.5em;
+    margin: 1em 0.5em;
     text-align: center;
-}
-.box h4 {
-    padding: 1.5em 0.8em 0.5em 0.8em;
+    padding: 0;
 }
 .box-wrapper {
     padding-bottom: 3em;

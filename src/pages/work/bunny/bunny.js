@@ -5,6 +5,7 @@ import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
 
 import Title from '../../../components/work/mini/title';
+import Heading from '../../../components/work/mini/heading';
 
 import ppt from '../../../img/work/bunny/ppt.png';
 import set from '../../../img/work/bunny/set.jpg';
@@ -57,9 +58,14 @@ class Bunny extends Component {
               <img  src={mintTip}/>
               <p className="caption">Silicon scooper and regular brush</p>
             </div>
-
           </div>
-          <div id="">
+          <div id="" className="section">
+            <Heading
+              title="How it came to be"
+            />
+            <p>The idea started out as a nail polish bottle that had two openings—instead of traditional one— for interchangeable applicators like brush and dotting tool. <b>After winning the first prize in the new cosmetics product idea competition, I collaborated with company product managers and engineers</b> to develop the product to be more plausible and marketable. In the development process, due to the limitation of glass bottle manufacturing, we decided to divide the bottle to two. <b>After 6 months of development, we launched the product</b>.</p>
+          </div>
+          <div id=""  className="section">
             <div className="flex justify-between">
               <div className="third">
                 <img  src={set}/>

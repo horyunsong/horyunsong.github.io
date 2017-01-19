@@ -27,7 +27,9 @@ import wireframe5 from '../../../img/work/urack/alert.png';
 import wireframe6 from '../../../img/work/urack/remove.png';
 import pilot from '../../../img/work/urack/pilot.png';
 import med from '../../../img/work/urack/med.png';
-import spark from '../../../img/home/small/spark.png';
+import spark from '../../../img/home/spark.png';
+import locking from '../../../img/work/urack/locking-explained.png';
+import modeling from '../../../img/work/urack/modeling.gif';
 
 
 class Urack extends Component {
@@ -47,13 +49,16 @@ class Urack extends Component {
             <p className="title">Problem</p>
             <p>Even though there are designated bike parking racks, it is hard to find empty rack near busy places. Locking bikes to undesignated area can impede walkways and make it easier for bike thieves to take the bikes. And stolen bikes are scarcely recovered.</p>
             <p  className="title">Solution</p>
-            <p>U-Rack is modular bike storage system that consists of three parts: the rack, the U-lock, and the app. Just push the U shaped steel bar of lock through the handle, prop up the smart bike rack, mount the lock to rack and off you go! The mobile app will take care of the rest: lock and unlock easily with proximity, give real-time information about the available storage, your bike location and security.</p>
+            <p>U-Rack is modular bike storage system that consists of three parts: <b>the rack, the U-lock, and the app</b>. Just prop up the smart bike rack, <b>push the U shaped steel bar of lock through the handle, mount the lock to the rack</b> and off you go! The mobile app will take care of the rest: <b>lock and unlock easily with proximity, give real-time information about the available storage, your bike location and security</b>.</p>
+            <div className="eighty center">
+              <img src={storyboard} />
+            </div>
             <div className="flex align-center">
-              <div className="third">
-                <img className="" src={thumb}/>
+              <div className="half">
+                <img className="" src={modeling}/>
               </div>
               <div className="half">
-                <img src={storyboard} />
+                <img className="" src={med}/>
               </div>
             </div>
           </div>
@@ -67,7 +72,7 @@ class Urack extends Component {
             processes={["Defining Problem Space",
               "Affinity Diagram", "Design Concepts", "Expert Interview", "Low-fid Prototype", "High-fid Prototype", "User Testing"]}
           />
-          <div id="Defining">
+          <div id="Defining" className="section">
             <Heading
               title="Defining Problem Space"
               content=""
@@ -96,7 +101,7 @@ class Urack extends Component {
               </div>
             </div>
           </div>
-          <div id="Affinity">
+          <div id="Affinity" className="section">
             <Heading
               title="Affinity Diagram"
               content="Excerpts from our various data collections were coded on sticky notes then placed on a wall where they were able to be rearranged based on similarity and power of other related excerpts. The clusters were "
@@ -121,11 +126,11 @@ class Urack extends Component {
               </div>
             </div>
           </div>
-          <div id="Design">
+          <div id="Design" className="section">
             <Heading
               title="Design Concepts"
             />
-            <div className="sixty center">
+            <div className="eighty center">
               <img src={concepts} />
             </div>
             <p>We placed our ideas onto a whiteboard to create a diagram based on <b>Feasibility vs. Usability</b>. The purpose of this diagram was to help us define which ideas were not only the most useful to our user group, but also the most practical to implement. We designed <b>two ideas based on the clusters: modular storage and sensor for pedestrian</b>. </p>
@@ -133,6 +138,7 @@ class Urack extends Component {
               <div className="half modular center">
                 <img src={modular} />
                 <p className="caption">Modular storage storyboard</p>
+                <p className="text-center"><b>Bike rack is flushed to the ground when not in use.</b></p>
               </div>
               <div className="half center sensor">
                 <img  src={sensor} />
@@ -140,7 +146,7 @@ class Urack extends Component {
               </div>
             </div>
           </div>
-          <div id="Expert">
+          <div id="Expert" className="section">
             <Heading
               title="Expert Interview"
             />
@@ -167,7 +173,7 @@ class Urack extends Component {
               </ul>
             </div>
           </div>
-          <div id="low-fid">
+          <div id="Low-fid" className="section">
             <Heading
               title="Low-fid Prototype"
               content="Based on storyboard and feedback, we sketched detailed designs and specification of operation. "
@@ -236,27 +242,31 @@ class Urack extends Component {
               </div>
             </div>
           </div>
-          <div id="High-fid">
+          <div id="High-fid" className="section">
             <Heading
               title="High-fid Prototype"
             />
-            <p>We built a medium fidelity prototype of the rack using plywood, metal poles, and a 3D printed smart lock. The lock used small round magnets (magnet concept courtesy of our classmate, Noah Posner) <b>to simulate an actual locking function</b>. We also revised our app and locking process based on the pilot testing findings.</p>
+            <p>We built a medium fidelity prototype of the rack using plywood, metal poles, and a 3D printed smart lock. The lock used small round magnets (magnet concept courtesy of our classmate, Noah Posner) <b>to simulate locking function</b>. We also revised our app and locking process based on the pilot testing findings.</p>
+            <div className="eighty center">
+              <img src={locking} />
+              <p className="caption">Lock & Rack: 3D model</p>
+            </div>
             <div className="flex">
               <div className="half">
                 <img src={med} />
-                <p className="caption">Med-fid Prototype</p>
+                <p className="caption">Lock & Rack: Locked state</p>
               </div>
               <div className="quarter">
                 <img src={wireframe5} />
-                <p className="caption">Med-fid Prototype</p>
+                <p className="caption">App: Safety alert</p>
               </div>
               <div className="quarter">
                 <img src={wireframe6} />
-                <p className="caption">Med-fid Prototype</p>
+                <p className="caption">App: GTPD notification</p>
               </div>
             </div>
           </div>
-          <div id="User">
+          <div id="User" className="section">
             <Heading
               title="User Testing"
             />

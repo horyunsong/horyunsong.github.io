@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./credit.css";
 
-import bye from "../../img/home/small/bye.png";
+import bye from "../../img/home/bye.png";
 
 
 

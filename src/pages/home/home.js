@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import "./home.css";
 
-import hi from "../../img/home/small/hi.png";
-import im from "../../img/home/small/im.png";
-import ruff from "../../img/home/small/ruff.png";
-import sniff from "../../img/home/small/sniff.png";
-import mouse from "../../img/home/small/mouse.png";
-import pencil from "../../img/home/small/pencil.png";
+import hi from "../../img/home/hi.png";
+import im from "../../img/home/im.png";
+import ruff from "../../img/home/ruff.png";
+import sniff from "../../img/home/sniff.png";
+import mouse from "../../img/home/mouse.png";
+import pencil from "../../img/home/pencil.png";
 
 class Home extends Component {
 
@@ -14,21 +14,20 @@ class Home extends Component {
     return(
       <div id="home">
         <div className="container small">
-          <div className="flex">
-            <div className="hi">
-              <img src={hi} />
-            </div>
+          <div className="flex align-bottom">
+
             <div className="im">
               <img src={im} />
+            </div>
+            <div className="hi">
+              <img src={hi} />
             </div>
           </div>
           <div className="flex justify-between box-wrapper">
             <div className="forty box research">
-              <h4>I research, design and build.</h4>
               <img src={ruff} />
             </div>
             <div className="forty box sniff">
-              <h4>I believe in teamwork and fun.</h4>
               <img src={sniff} />
             </div>
           </div>

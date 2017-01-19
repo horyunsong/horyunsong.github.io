@@ -4,8 +4,6 @@ import './work.css';
 import Nav from "../../components/nav/nav";
 import Credit from "../../components/credit/credit";
 
-import Slider from 'react-slick';
-import Collapse from 'react-collapse';
 import Piece from '../../components/work/piece/piece';
 import {Link} from "react-router";
 import Process from '../../components/work/mini/process';
@@ -44,50 +42,52 @@ class Work extends Component {/*
             <div className="flex justify-center">
               <div>
               </div>
-              <Link to="/work/bslide">
+              <Link to="/bslide">
                 <Piece
                   title="B-SLIDE"
-                  description="B-slide is a bookmark curation application that organizes bookmarks from various services and facilitates user's return for bookmarked contents by prompting on lock-screen."
+                  description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
                   image={bslide}
                 />
               </Link>
-              <Link to="/work/logue">
+              <Link to="/logue">
                 <Piece
                   title="LOGUE"
                   type="Research, Design & Prototype"
-                  description="Logue is a unit of stories contained in a standardized card. Logue breaks the linearity of story to view a story differently using three factors: category, perspective, and route."
+                  description="Logue is a unit of stories contained in a standardized card. Logue breaks the linearity of story to view it differently using three factors: category, perspective, and route."
                   image={logue}
                 />
               </Link>
-              <Link to="/work/underlined">
+              <Link to="/underlined">
                 <Piece
                   title="UNDERLINED"
                   category="UX"
                   type="Design"
-                  description="Underlined is a vocabulary aid application that allows children to learn new words in context they have interest in."
+                  description="Underlined is a context-based vocabulary aid application that allows children to learn new vocabulary naturally by reading stories of their interest."
                   image={underlined}
                 />
               </Link>
-              <Link to="/work/recaffeine">
+              <Link to="/recaffeine">
                 <Piece
                   title="RE-CAFFEINE"
-                  description="Re-Caffeine is gamification of the recycling system. By recycling, user can get water point to grow virtual trees. As community, users can even cultivate mountain."
+                  category="UX"
+                  type="Research, Design & Prototype"
+                  description="Re-Caffeine is gamification of the recycling system. By recycling, user is rewarded with water points to grow virtual trees. As community, users can cultivate virtual mountain."
                   image={recaffeine}
                 />
               </Link>
-              <Link to="/work/urack">
+              <Link to="/urack">
                 <Piece
                   title="U-RACK"
-                  description="U-rack is the easiest way to safely lock your bike. Mount this awesome U-lock to the bike rack, and off you go."
+                  description="U-rack is the easiest way to safely lock your bike. Mount this special U-lock to the smart bike rack, and off you go. U-rack will look after it. "
                   image={urack}
                 />
               </Link>
-              <Link to="/work/bunny">
+              <Link to="/bunny">
                 <Piece
                   title="BUNNY NAIL"
                   category="Product"
                   type="Design"
-                  description="Really, glitter nail polish should not with brush, but scooper. Bunny Nail has just right applicator for each bottle. "
+                  description="Really, glitter nail polish should not come with brush, but scooper. Bunny Nail has just right applicator for each nail polish. "
                   image={bunnynail}
                 />
               </Link>

@@ -70,6 +70,9 @@ img {
         width: 80vw;
     }
 }
+.section {
+    padding-top: 52px;
+}
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +94,9 @@ img {
 }
 .align-start {
     align-items: flex-start;
+}
+.align-bottom {
+    align-items: flex-end;
 }
 .child-bottom {
     align-self: flex-end;
@@ -157,7 +163,6 @@ img {
 }
 .heading {
     padding: 10px 0;
-    margin-top: 25px;
     border-top: 1px solid #C9C9CE;
 }
 .padding10 {

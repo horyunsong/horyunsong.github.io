@@ -3,6 +3,7 @@ import "./underlined.css";
 
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
+import Next from "../../../components/credit/next";
 
 import Title from '../../../components/work/mini/title';
 import Heading from '../../../components/work/mini/heading';
@@ -27,15 +28,15 @@ class Underlined extends Component {
           />
           <div className="problem">
             <p className="title">Target User</p>
-            <p>Children who are learning new words and their parents </p>
+            <p>Children who are learning new words (<b>Customer</b>: Their parents!) </p>
             <p className="title">Problem</p>
-            <p>Memorizing new words manually is not exactly fun. Children need to be motivated enough to learn without adults educating them with force, such as quizzing them on daily vocabulary list. However, it is not possible to be motivated with <b>sterile single line vocabulary examples</b> out of context.</p>
+            <p>Memorizing new words manually is not exactly fun. Children need to be motivated enough to learn without adults educating them with force, such as quizzing them on daily vocabulary list. However, it is not possible to be motivated with <b>sterile, single line vocabulary examples</b>.</p>
             <p  className="title">Solution</p>
-            <p>Underlined is a context-based vocabulary aid application that allows children to learn new vocabulary naturally by <b>reading stories of their interest</b>. Sentences with same underlined words from various books accumulate in Word List, for parents and children to repeat those sentences and <b>recall the word and meaning from the context.</b></p>
+            <p>Underlined is a <b>context-based vocabulary aid application</b> that allows children to learn new vocabulary naturally by <b>reading stories of their interest</b>. Sentences with same underlined words from various books accumulate in Word List, for children and parents to <b>repeat those sentences and recall the word and meaning from the context.</b></p>
             <img className="eighty center" src={intro}/>
             <br/>
           </div>
-          <div id="">
+          <div id="" >
             <div className="flex justify-between">
               <div className="third">
                 <p className="title">Filter Books</p>
@@ -54,7 +55,7 @@ class Underlined extends Component {
               </div>
             </div>
           </div>
-          <div id="">
+          <div id="" className="section">
             <Heading
               title="How vocabulary is memorized"
               content="Underlined changes 'from word to sentence' pattern to 'from context to word'"
@@ -68,11 +69,11 @@ class Underlined extends Component {
               <div className="half">
                 <img src={newform} />
                 <p className="title">Underlined: From context to word</p>
-                <p>A child will read <b>new words from stories that she is actually interested in</b>. By reading them, she will at least get the gist, or possibly exact meaning. If not, it’s okay because <b>she will see those words from other fun stories too.</b></p>
+                <p>A child will read <b>new words from stories that she is actually interested in</b>. By reading them, she will at least get the gist, or possibly exact meaning. If not, it’s okay because <b>she will see those words from other fun stories again.</b></p>
               </div>
             </div>
           </div>
-          <div id="">
+          <div id="" className="section">
             <Heading
               title="Menu Relations"
             />

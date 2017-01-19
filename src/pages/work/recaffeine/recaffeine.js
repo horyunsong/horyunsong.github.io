@@ -30,70 +30,82 @@ class Recaffeine extends Component {
           <Title
             title="Re-caffeine"
             role="In class project"
+            category="UX"
+            type="Research, Design & Prototype"
           />
           <div className="problem">
             <p className="title">Target User</p>
             <p>Coffee shop clients who use disposable cups</p>
             <p className="title">Problem</p>
-            <p>Disposable cups are wasted in alarming numbers. Incentives are given to those who bring own mugs and tumblers, but it has limits. People will continue to use disposable cups. Then, how can we motivate people to recycle?</p>
+            <p>Disposable cups are wasted in alarming numbers. Incentives are given to those who bring own mugs and tumblers, but it has its limits. People will continue to use disposable cups. Then, how can we <b>motivate people to recycle</b>?</p>
             <p  className="title">Solution</p>
-            <p>Re-Caffeine is <b>gamification of the recycling system</b>. When a user approaches, her nickname appears on the screen and the recycle bin asks if she wants to recycle. She gets a point for recycling and the point is used to grow their virtual farm. The growth is immediately shown on the recycle screen. She can also use the mobile application to check her personal farm and forest as groups.</p>
+            <p>Re-Caffeine is <b>gamification of the recycling system</b>. When a user approaches, her nickname appears on the screen of recycle bin and it asks if she wants to recycle. She is <b>rewarded a Water Point</b> for recycling and the point is used to <b>grow her virtual tree</b>. The growth is immediately shown on the recycle screen. She can also <b>cultivate mountain as community</b>.</p>
             <div className="video-wrapper">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/DLvaFa6lycU" frameborder="0" allowfullscreen></iframe>
             </div>
             <br/>
           </div>
-          <div id="">
+          <div id="" className="section">
             <Heading
               title="How to change the world"
             />
             <p>Re-caffeine focuses on <b>individuals’ behavior of disposing cups in cafe context in order to impact the community behavior as whole</b>. All it takes is one user, one coffee cup, and one cheerful recycling bin. Social change does not need big, organized movement, but small actions.</p>
 
           </div>
-          <div id="scenario">
+          <div id="scenario" className="section">
             <Heading
               title="Scenario"
             />
             <div className="flex justify-between">
-              <div className="third">
+              <div className="half">
                 <img src={scenario1}/>
                 <p className="">User “Hottie” drinks her coffee in a cafe.</p>
               </div>
-              <div className="third">
+              <div className="half">
                 <img src={scenario2}/>
                 <p className="">When she approaches the Re-Caffeine recycle bin, it asks if she wants to recycle.</p>
               </div>
-              <div className="third">
+              <div className="half">
                 <img src={scenario3}/>
                 <p className="">“Sure!” Hottie recycles the plastic cup.</p>
               </div>
-              <div className="third">
+              <div className="half">
                 <img src={scenario4}/>
                 <p className="">Re-Caffeine recycle bin gives Hottie +1 Water Point.</p>
               </div>
-              <div className="third">
+              <div className="half">
                 <img src={scenario5}/>
                 <p className="">Hottie checks her points and her team’s Water Points.</p>
               </div>
-              <div className="third">
+              <div className="half">
                 <img src={scenario6}/>
                 <p className="">The water point drops on her choice of tree in her farm.</p>
               </div>
-              <div className="third">
+              <div className="half">
                 <img src={scenario7}/>
                 <p className="">Ta-da! Her little orange tree grows.</p>
               </div>
-              <div className="third">
+              <div className="half">
                 <img src={scenario8}/>
                 <p className="">Hottie has fun recycling and brags to her friends about her orange tree.</p>
               </div>
             </div>
           </div>
 
-          <div id="">
+          <div id="" className="section">
             <Heading
               title="Prototype"
+              content="Technical help, Juwan Yoo"
             />
+            <ol>
+              <li>User "Hottie" approaches the recycling bin</li>
+              <li>Computer gets Bluetooth Light Energy signal from Hottie's phone (application)</li>
+              <li>Hottie pushes cup into the recycling bin (light source)</li>
+              <li>Camera (computer) detects the light threshold</li>
+              <li>Computer sends +1 water point to recycling bin interactive surface (iPad) and Hottie's app</li>
+              <li>Hottie chooses which tree to water</li>
+              <li>The tree grows!</li>
+            </ol>
             <div className="sixty center">
               <img src={system} />
               <p className="caption">Prototype system design</p>
@@ -123,7 +135,7 @@ class Recaffeine extends Component {
               </div>
             </div>
           </div>
-          <div id="">
+          <div id="" className="section">
             <Heading
               title="User Testing Post-Interview"
             />

@@ -39,7 +39,7 @@ import taskFlowRecommend from '../../../img/work/bslide/task-flow-recommend.png'
 import uiScenario1 from '../../../img/work/bslide/ui-scenario.png';
 import uiScenario2 from '../../../img/work/bslide/ui-scenario2.png';
 import uiMap from '../../../img/work/bslide/ui-map.png';
-import spark from '../../../img/home/small/spark.png';
+import spark from '../../../img/home/spark.png';
 
 
 class Bslide extends Component {
@@ -64,7 +64,7 @@ class Bslide extends Component {
             <p className="title">Problem</p>
             <p>Students <b>bookmark useful contents</b> on a daily basis, thinking that they will organize and <b>read it later</b>. But, that later never comes.</p>
             <p  className="title">Solution</p>
-            <p>B-slide draws such forgotten bookmarked information from various services such as Facebook save, Twitter like, etc. When it is a good time to read, B-slide prompts by showing <b>bookmarked contents on the lock-screen as compact cards</b>. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, he can get new contents based on current content.</p>
+            <p>B-slide draws such forgotten bookmarked information from various services such as Facebook save, Twitter like, etc. When it is a good time to read, B-slide prompts by showing <b>bookmarked contents on the lock-screen</b> as compact cards. <b>By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content</b>.</p>
             <img className="eighty center" src={read}/>
             <img className="eighty center" src={curate}/>
             <br/>
@@ -80,7 +80,7 @@ class Bslide extends Component {
               "Journey Map", "Use Cases", "Information Architecture", "Wireframe"]}
             names={["Interview", "Creating", "Defining", "Journey", "Use", "Information", "Wireframe"]}
           />
-          <div id="Interview">
+          <div id="Interview" className="section">
             <Heading
               title="Interview & Modeling"
             />
@@ -100,19 +100,19 @@ class Bslide extends Component {
               <div className="half center padding10">
                 <p className="title">SUMMARY NOTES</p>
                 <p>
-                  <i>Bookmarking filtered information</i><br/>
-                  He prefers to bookmark filtered information, usually curated by experts via Facebook. He saves them before fully reading them for two reasons: to read when he has time and to store and use them as an archive when needed.
+                  <i>Bookmarking expert filtered information</i><br/>
+                  He prefers to bookmark filtered information, usually curated by experts via Facebook. <b>He saves them before fully reading them for two reasons: to read when he has time and to store and use them as an archive when needed.</b>
                   <br/><br/>
                   <i>Simple approach</i><br/>
-                  Even though he experimented with many bookmarking aid services, it was still the simple FB “Save” function that he prefers. He said that aside from it providing filtered information, “saving” on FB is very simple to do and approach later.
+                  Even though he experimented with many bookmarking aid services, it was still the simple Facebook “Save” function that he prefers. He said that aside from it providing filtered information, “saving” on Facebook is very simple to do and to approach later.
                   <br/><br/>
                   <i>Part voluntary, part involuntary</i><br/>
-                  He tries to revisit the bookmarked information, but is not successful because he bookmarks more than he voluntarily reads. He finds there is a need for involuntary measures to push his will a little to read, given they are not too forceful. Still, in the end, it has to be him who decides to read.
+                  He tries to revisit the bookmarked information, but is not successful because he bookmarks more than he voluntarily reads. He finds there is a need for involuntary measures <b>to push him a little to read</b>, given they are not too forceful. Still, <b>in the end, it has to be him who decides to read.</b>
                 </p>
               </div>
             </div>
           </div>
-          <div id="Creating">
+          <div id="Creating" className="section">
             <Heading
               title="Creating Persona"
             />
@@ -133,33 +133,39 @@ class Bslide extends Component {
                     <img src={acorn}/>
                   </div>
                   <p className="caption">Let’s collect’em first: Squirrels</p>
-                  <p>Bookmarks contents like a collection.
-                    Bookmarks from diverse sources.
-                    Bookmarks more than the sites they often visit.
-                    Bookmarks so they can return later.
-                    Just lets the bookmarks pile up and tends to not organize.</p>
+                  <ul>
+                    <li>Bookmarks contents like a collection.</li>
+                    <li>Bookmarks from diverse sources.</li>
+                    <li>Bookmarks more than the sites they often visit.</li>
+                    <li>Bookmarks so they can return later.</li>
+                    <li>Just lets the bookmarks pile up and tends to not organize.</li>
+                  </ul>
                 </div>
                 <div className="third acorn-wrapper">
                   <div className="acorn">
                     <img src={birds}/>
                   </div>
                   <p className="caption">Depending on the season: <br/>Migratory Birds</p>
-                  <p>Bookmarks the contents they need at the moment.
-                    Uses varied browsers and services, but not too much.
-                    Creates bookmark folders named after subject/need to organize.
-                    Bookmarks when there is a need, so tends to not look when there isn’t a need.
-                    Deletes the folders when there isn’t a need for them anymore.</p>
+                  <ul>
+                    <li>Bookmarks the contents they need at the moment.</li>
+                    <li>Uses varied browsers and services, but not too much.</li>
+                    <li>Creates bookmark folders named after subject/need to organize.</li>
+                    <li>Bookmarks when there is a need, so tends to not look when there isn’t a need.</li>
+                    <li>Deletes the folders when there isn’t a need for them anymore.</li>
+                  </ul>
                 </div>
                 <div className="third acorn-wrapper">
                   <div className="acorn">
                     <img src={shortcut}/>
                   </div>
                   <p className="caption">Shortcut for certain websites: Sprinter</p>
-                  <p>Rarely bookmarks.
-                    Bookmarks only using their primary web browser.
-                    Bookmarks in order to go to designated websites fast.
-                    Does not care about the contents for later use.
-                    Deletes bookmarks in order to keep the number small.</p>
+                  <ul>
+                    <li>Rarely bookmarks.</li>
+                    <li>Bookmarks only using their primary web browser.</li>
+                    <li>Bookmarks in order to go to designated websites fast.</li>
+                    <li>Does not care about the contents for later use.</li>
+                    <li>Deletes bookmarks in order to keep the number small.</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -178,8 +184,8 @@ class Bslide extends Component {
                 </div>
                 <p>
                   <i>Narrative</i><br/>
-                  … However, she, after <b>meeting the block of the IT news wall</b>, she questioned the effectiveness of search engines. So, on she went, asking her friends where they found useful reading materials on the web. They told her about a myriad of blogs, Facebook personnels and pages, and popular Twitterians to follow.
-                  About six months have passed since she set foot in the collecting of IT news. Unlike in the beginning, the amount of useful contents, and thus <b>bookmarks of them have accumulated too much.</b> At some point, the bookmarks have gotten out of hand. She bookmarked more than she read and organized. It was not that she could not digest all of it, but it took great will power to conjure up the bookmarks, organize them and revisit the contents in order to read. <b>She knows that just bookmarking them do not help her much, but she still cannot bring herself to check through all of them.</b>
+                  …She asked her friends where they found useful reading materials on the web. They told her about a myriad of blogs, Facebook personnels and pages, and popular Twitterians to follow.
+                  About six months have passed since she set foot in the collecting of IT news. Unlike in the beginning, the amount of useful contents, and thus <b>bookmarks have accumulated too much.</b> At some point, the bookmarks have gotten out of hand. She bookmarked more than she read and organized. It was not that she could not digest all of it, but it took great will power to conjure up the bookmarks, organize them and revisit the contents in order to read. <b>She knows that just bookmarking them does not help her much, but she still cannot bring herself to check through them all.</b>
                 </p>
                 <p>
                   <i>Goals</i></p>
@@ -191,7 +197,7 @@ class Bslide extends Component {
               </div>
             </div>
           </div>
-          <div id="Defining">
+          <div id="Defining" className="section">
             <Heading
               title="Defining Requirements"
             />
@@ -211,22 +217,22 @@ class Bslide extends Component {
                 <div className="quarter">
                   <img src={primary1} />
                   <p className="caption">In Bus</p>
-                  <p>Hyunjung opens the B-slide application to add her Facebook account into the sync list. After adding the account, she notices that it is properly synced and all her Saved posts are archived in the application.</p>
+                  <p>Hyunjung opens the B-slide application to <b>add her Facebook account</b> into the sync list. After adding the account, she notices that it is properly synced and all her Saved posts are archived in the application.</p>
                 </div>
                 <div className="quarter">
                   <img src={primary2} />
                   <p className="caption">In Bus</p>
-                  <p>She decides that it would be good to be prompted of this material in the evening so she will know that worth-reading content is waiting for her to read. She sets her time for notification 7 PM to 11PM.</p>
+                  <p>She decides that it would be good to be prompted of this material in the evening so she will know that worth-reading content is waiting for her to read. She <b>sets push notification time</b> between 7 PM to 11PM.</p>
                 </div>
                 <div className="quarter">
                   <img src={primary3} />
                   <p className="caption">At Home</p>
-                  <p>At 7 PM, her phone vibrates and the lock-screen shows a single card of the bookmarked contents. The card contains the title Virtual Reality with Youtube, with a brief summary of the contents and one image.</p>
+                  <p>At 7 PM, her phone vibrates and the <b>lock-screen shows a single card of the bookmarked contents</b>. The card contains the title Virtual Reality with Youtube, with a brief summary of the contents and one image.</p>
                 </div>
                 <div className="quarter">
                   <img src={primary4} />
                   <p className="caption">At Home</p>
-                  <p>She recalls adding this to FB save. Since it is after dinner and she has time to read until she goes to bed, she decides to read it. After 11PM, the notification disappears.</p>
+                  <p>She <b>recalls</b> adding this contents to FB save. Since it is after dinner and she has <b>time to read</b> until she goes to bed, she decides to read it. After 11PM, the <b>notification disappears</b>.</p>
                 </div>
               </div>
             </div>
@@ -239,14 +245,14 @@ class Bslide extends Component {
                 </div>
                 <div className="half">
                   <img src={secondaryRequirements} />
-                  <p className="caption">Primary scenario requirements</p>
+                  <p className="caption">Secondary scenario requirements</p>
                 </div>
               </div>
             </div>
             <div className="experience">
               <p className="title">EXPERIENCE ATTRIBUTES</p>
               <p>Gather and categorize bookmarks that are all over the places, across the services.
-                Simple and easy approach are everywhere. The user should not be told what to do. Stay friendly and efficient.
+                Simple and easy approaches are everywhere. The user should not be told what to do. Stay friendly and efficient.
                 Information should be readily delivered in a clear, concise fashion.
                 Be useful by being providing just a little more than the user’s anticipation. Give appropriate recommendations. Be accommodating.</p>
               <div className="flex justify-between">
@@ -261,13 +267,13 @@ class Bslide extends Component {
               </div>
             </div>
           </div>
-          <div id="Journey">
+          <div id="Journey" className="section">
             <Heading
               title="Journey Map"
             />
             <img className="full" src={journeyMap} />
           </div>
-          <div id="Use">
+          <div id="Use" className="section">
             <Heading
               title="Use Cases"
             />
@@ -286,7 +292,7 @@ class Bslide extends Component {
               </div>
             </div>
           </div>
-          <div id="Information">
+          <div id="Information" className="section">
             <Heading
               title="Information Architecture"
             />
@@ -306,7 +312,7 @@ class Bslide extends Component {
               </div>
             </div>
           </div>
-          <div id="Wireframe">
+          <div id="Wireframe" className="section">
             <Heading
               title="Wireframe"
             />
@@ -320,6 +326,7 @@ class Bslide extends Component {
             </div>
           </div>
         </div>
+
         <Credit/>
       </div>
     )

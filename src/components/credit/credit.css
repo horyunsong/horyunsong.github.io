@@ -2,3 +2,21 @@
     width: 250px;
     padding: 2em 0 3em 0;
 }
+.next {
+}
+.left {
+    padding-left: 1em;
+}
+.right {
+    padding-right: 1em;
+}
+.next img {
+    vertical-align: middle;
+}
+.next p {
+    display: block;
+}
+.left img {
+}
+.right img {
+}
