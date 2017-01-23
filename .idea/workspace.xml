@@ -1,61 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68650267-ee64-4966-a3e6-dad9fc1bee34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/work/misc/misc.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/work/misc/misc.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/work/bslide/mood-board.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/work/bslide/word-cloud.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/work/urack/Urack.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/work/urack/affinity.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/work/urack/alert.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/work/urack/modeling.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/work/urack/remove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/work/urack/requirements.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/work/urack/wireframe.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storyboard.psd" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Horyun_Song_Resume.pdf" afterPath="$PROJECT_DIR$/public/Horyun_Song_Resume.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/bslide/requirement-matrix.png" afterPath="$PROJECT_DIR$/src/img/work/bslide/requirement-matrix.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/bunny/mintTip.png" afterPath="$PROJECT_DIR$/src/img/work/bunny/mintTip.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/bunny/redTip.png" afterPath="$PROJECT_DIR$/src/img/work/bunny/redTip.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/logue/imageMapping1.png" afterPath="$PROJECT_DIR$/src/img/work/logue/imageMapping1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/recaffeine/scenario1.png" afterPath="$PROJECT_DIR$/src/img/work/recaffeine/scenario1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/recaffeine/scenario2.png" afterPath="$PROJECT_DIR$/src/img/work/recaffeine/scenario2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/recaffeine/scenario3.png" afterPath="$PROJECT_DIR$/src/img/work/recaffeine/scenario3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/recaffeine/scenario4.png" afterPath="$PROJECT_DIR$/src/img/work/recaffeine/scenario4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/recaffeine/scenario5.png" afterPath="$PROJECT_DIR$/src/img/work/recaffeine/scenario5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/recaffeine/scenario6.png" afterPath="$PROJECT_DIR$/src/img/work/recaffeine/scenario6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/recaffeine/scenario7.png" afterPath="$PROJECT_DIR$/src/img/work/recaffeine/scenario7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/recaffeine/scenario8.png" afterPath="$PROJECT_DIR$/src/img/work/recaffeine/scenario8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/recaffeine/system.png" afterPath="$PROJECT_DIR$/src/img/work/recaffeine/system.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/thumb/re-caffeine.png" afterPath="$PROJECT_DIR$/src/img/work/thumb/re-caffeine.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/concepts.jpg" afterPath="$PROJECT_DIR$/src/img/work/urack/concepts.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/gopro.png" afterPath="$PROJECT_DIR$/src/img/work/urack/gopro.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/locking-explained.png" afterPath="$PROJECT_DIR$/src/img/work/urack/locking-explained.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/med.png" afterPath="$PROJECT_DIR$/src/img/work/urack/med.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/modular.png" afterPath="$PROJECT_DIR$/src/img/work/urack/modular.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/pilot.png" afterPath="$PROJECT_DIR$/src/img/work/urack/pilot.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/prototype1.jpg" afterPath="$PROJECT_DIR$/src/img/work/urack/prototype1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/sensor.png" afterPath="$PROJECT_DIR$/src/img/work/urack/sensor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/sketch1.jpg" afterPath="$PROJECT_DIR$/src/img/work/urack/sketch1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/urack/storyboard.jpg" afterPath="$PROJECT_DIR$/src/img/work/urack/storyboard.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/credit/credit.css" afterPath="$PROJECT_DIR$/src/components/credit/credit.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/credit/next.js" afterPath="$PROJECT_DIR$/src/components/credit/next.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/index/index.css" afterPath="$PROJECT_DIR$/src/pages/index/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/bslide/bslide.js" afterPath="$PROJECT_DIR$/src/pages/work/bslide/bslide.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/bunny/bunny.js" afterPath="$PROJECT_DIR$/src/pages/work/bunny/bunny.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/logue/logue.css" afterPath="$PROJECT_DIR$/src/pages/work/logue/logue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/logue/logue.js" afterPath="$PROJECT_DIR$/src/pages/work/logue/logue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/recaffeine/recaffeine.js" afterPath="$PROJECT_DIR$/src/pages/work/recaffeine/recaffeine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/underlined/underlined.js" afterPath="$PROJECT_DIR$/src/pages/work/underlined/underlined.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/urack/urack.js" afterPath="$PROJECT_DIR$/src/pages/work/urack/urack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/work.js" afterPath="$PROJECT_DIR$/src/pages/work/work.js" />
-    </list>
+    <list default="true" id="68650267-ee64-4966-a3e6-dad9fc1bee34" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -71,12 +17,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="urack.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/work/urack/urack.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="62" lean-forward="true" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+              <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
               <folding>
                 <element signature="n#!!block;n#iaClick#0;n#Urack#0" expanded="false" />
                 <element signature="n#!!block;n#wireClick#0;n#Urack#0" expanded="false" />
@@ -88,7 +34,7 @@
       <file leaf-file-name="underlined.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/work/underlined/underlined.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
+            <state relative-caret-position="1080">
               <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -102,9 +48,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-              <folding>
-                <marker date="1485158394000" expanded="true" signature="609:1051" ph="&lt;Router/&gt;" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,7 +56,7 @@
       <file leaf-file-name="misc.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/work/misc/misc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
+            <state relative-caret-position="1095">
               <caret line="96" column="30" lean-forward="false" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -124,7 +68,7 @@
       <file leaf-file-name="work.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/work/work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
+            <state relative-caret-position="1275">
               <caret line="101" column="57" lean-forward="false" selection-start-line="101" selection-start-column="57" selection-end-line="101" selection-end-column="57" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -146,7 +90,7 @@
       <file leaf-file-name="recaffeine.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/work/recaffeine/recaffeine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="2490">
               <caret line="188" column="17" lean-forward="false" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="17" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -168,7 +112,7 @@
       <file leaf-file-name="bslide.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/work/bslide/bslide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="465">
               <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
               <folding>
                 <element signature="n#!!block;n#requireClick#0;n#Bslide#0" expanded="false" />
@@ -182,7 +126,7 @@
       <file leaf-file-name="credit.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/credit/credit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
+            <state relative-caret-position="465">
               <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding />
             </state>
@@ -682,8 +626,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -792,33 +736,34 @@
       <workItem from="1484823492246" duration="198000" />
       <workItem from="1485026652146" duration="379000" />
       <workItem from="1485028866557" duration="35567000" />
+      <workItem from="1485162702362" duration="168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141239000" />
+    <option name="totallyTimeSpent" value="141407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17474186" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17394757" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2599432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -836,7 +781,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/work/urack/urack.js</url>
-          <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -1035,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,7 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-225">
           <caret line="11" column="83" lean-forward="false" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,27 +1012,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/toggle/toggle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/toggle/toggle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="57" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/toggle/toggle.css" />
+    <entry file="file://$PROJECT_DIR$/src/components/toggle/toggle.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/index/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="246" column="21" lean-forward="false" selection-start-line="246" selection-start-column="21" selection-end-line="246" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1099,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,7 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1141,15 +1063,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <marker date="1485158394000" expanded="true" signature="609:1051" ph="&lt;Router/&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/work/underlined/underlined.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
+        <state relative-caret-position="1080">
           <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1159,7 +1079,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/work/work.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
+        <state relative-caret-position="1275">
           <caret line="101" column="57" lean-forward="false" selection-start-line="101" selection-start-column="57" selection-end-line="101" selection-end-column="57" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1169,7 +1089,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/credit/credit.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
+        <state relative-caret-position="465">
           <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding />
         </state>
@@ -1185,7 +1105,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/work/recaffeine/recaffeine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="2490">
           <caret line="188" column="17" lean-forward="false" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="17" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1195,7 +1115,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/work/misc/misc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
+        <state relative-caret-position="1095">
           <caret line="96" column="30" lean-forward="false" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1213,7 +1133,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/work/bslide/bslide.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="465">
           <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
           <folding>
             <element signature="n#!!block;n#requireClick#0;n#Bslide#0" expanded="false" />
@@ -1226,7 +1146,7 @@
     <entry file="file://$PROJECT_DIR$/src/pages/work/urack/urack.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="62" lean-forward="true" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
           <folding>
             <element signature="n#!!block;n#iaClick#0;n#Urack#0" expanded="false" />
             <element signature="n#!!block;n#wireClick#0;n#Urack#0" expanded="false" />
