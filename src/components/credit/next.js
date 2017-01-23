@@ -26,23 +26,20 @@ class Next extends Component {
 
     return(
       <div id="credit" className="">
+        <br/>
         <div className="container small flex justify-between">
           <Link to={this.props.leftLink}>
-          <div className="next left flex">
-            <div className="">
-              <img src={left} />
+            <div className="next left flex align-center">
+                <img src={left} />
+                <p>{this.props.leftItem}</p>
             </div>
-            <div className="">
-              <p className="title">{this.props.leftItem}</p>
-            </div>
-          </div>
           </Link>
-          <div className="next right">
-            <Link to={this.props.rightLink}>
+          <Link to={this.props.rightLink}>
+            <div className="next right flex align-center">
+              <p>{this.props.rightItem}</p>
               <img src={right} />
-              <p className="title">{this.props.rightItem}</p>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     )

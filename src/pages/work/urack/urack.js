@@ -1,38 +1,77 @@
 import React, { Component } from 'react';
 import "./urack.css";
 
+import Collapse from 'react-collapse';
+
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
-
+import Next from "../../../components/credit/next";
 import Title from '../../../components/work/mini/title';
 import Process from '../../../components/work/mini/process';
 import Heading from '../../../components/work/mini/heading';
 
-import thumb from '../../../img/work/thumb/urack-sprite.jpg';
 import storyboard from '../../../img/work/urack/storyboard.jpg';
 import gopro from '../../../img/work/urack/gopro.png';
-import affinity from '../../../img/work/urack/affinity.jpg';
 import concepts from '../../../img/work/urack/concepts.jpg';
 import sensor from '../../../img/work/urack/sensor.png';
 import modular from '../../../img/work/urack/modular.png';
 import sketch1 from '../../../img/work/urack/sketch1.jpg';
 import prototype1 from '../../../img/work/urack/prototype1.jpg';
-import requirements from '../../../img/work/urack/requirements.png';
-import wireframe from '../../../img/work/urack/wireframe.jpg';
 import wireframe1 from '../../../img/work/urack/Map_TSRB.png';
 import wireframe2 from '../../../img/work/urack/Map_select_from_list.png';
 import wireframe3 from '../../../img/work/urack/Bike_lock_now_1.png';
 import wireframe4 from '../../../img/work/urack/Bike_map_view.png';
-import wireframe5 from '../../../img/work/urack/alert.png';
-import wireframe6 from '../../../img/work/urack/remove.png';
 import pilot from '../../../img/work/urack/pilot.png';
 import med from '../../../img/work/urack/med.png';
 import spark from '../../../img/home/spark.png';
 import locking from '../../../img/work/urack/locking-explained.png';
-import modeling from '../../../img/work/urack/modeling.gif';
-
 
 class Urack extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      interview: false,
+      design: false,
+      prototype: false,
+      ia: false,
+      wire: false
+    };
+
+    this.interviewClick = this.interviewClick.bind(this);
+    this.designClick = this.designClick.bind(this);
+    this.prototypeClick = this.prototypeClick.bind(this);
+    this.iaClick = this.iaClick.bind(this);
+    this.wireClick = this.wireClick.bind(this);
+
+  }
+
+  designClick() {
+    this.setState(prevState => ({
+      design: !prevState.design
+    }));
+  }
+  interviewClick() {
+    this.setState(prevState => ({
+      interview: !prevState.interview
+    }));
+  }
+  prototypeClick() {
+    this.setState(prevState => ({
+      prototype: !prevState.prototype
+    }));
+  }
+  iaClick() {
+    this.setState(prevState => ({
+      ia: !prevState.ia
+    }));
+  }
+  wireClick() {
+    this.setState(prevState => ({
+      wire: !prevState.wire
+    }));
+  }
+
+
   render() {
     return (
       <div>
@@ -41,27 +80,51 @@ class Urack extends Component {
           <Title
             title="U-rack"
             subtitle="UX research and prototype iteration"
-            role="Team project as UX researcher and designer"
+            role="In class team project"
           />
-          <div className="problem">
-            <p className="title">User Group</p>
-            <p>Student cyclists on Georgia Tech (GT) campus</p>
-            <p className="title">Problem</p>
-            <p>Even though there are designated bike parking racks, it is hard to find empty rack near busy places. Locking bikes to undesignated area can impede walkways and make it easier for bike thieves to take the bikes. And stolen bikes are scarcely recovered.</p>
-            <p  className="title">Solution</p>
-            <p>U-Rack is modular bike storage system that consists of three parts: <b>the rack, the U-lock, and the app</b>. Just prop up the smart bike rack, <b>push the U shaped steel bar of lock through the handle, mount the lock to the rack</b> and off you go! The mobile app will take care of the rest: <b>lock and unlock easily with proximity, give real-time information about the available storage, your bike location and security</b>.</p>
-            <div className="eighty center">
+          <div className="flex justify-between align-bottom">
+            <div className="half">
+              <p className="title">User Group</p>
+              <p>Student cyclists on Georgia Tech (GT) campus</p>
+              <p className="title">Problem</p>
+              <p>Not enough bike rack pushes cyclists to lock bikes to unassigned area can impede walkways and make it easier for bike thieves to take the bikes.</p>
+              <p  className="title">Solution</p>
+              <p>U-Rack is modular bike storage system that consists of three parts: <b>the rack, the U-lock, and the app</b>. Just prop up the smart bike rack, <b>push the U shaped steel bar of lock through the handle, mount the lock to the rack</b> and off you go! The mobile app will take care of the rest: <b>lock and unlock easily with proximity, give real-time information about the available storage, your bike location and security</b>.</p>
+            </div>
+            <div className="half">
               <img src={storyboard} />
             </div>
-            <div className="flex align-center">
-              <div className="half">
-                <img className="" src={modeling}/>
+          </div>
+          <div className="problem">
+            <div className="flex justify-between">
+              <div className="quarter">
+                <img src={wireframe1} />
+                <p className="caption">Map view: default</p>
               </div>
-              <div className="half">
-                <img className="" src={med}/>
+              <div className="quarter">
+                <img src={wireframe2} />
+                <p className="caption">Map view: choose from list</p>
+              </div>
+              <div className="quarter">
+                <img src={wireframe3} />
+                <p className="caption">My bike view: lock now</p>
+              </div>
+              <div className="quarter">
+                <img src={wireframe4} />
+                <p className="caption">My bike view: locked and standby</p>
               </div>
             </div>
           </div>
+          <p className="title">My Role</p>
+          <ul>
+            <li>Preparing and conducting user research including survey and interview</li>
+            <li>Recruiting student cyclists to participate for interview and contextual interview</li>
+            <li>Analyzing information using affinity diagram and data coding</li>
+            <li>Generating and sketching ideas</li>
+            <li>Storyboarding for three design concepts</li>
+            <li>Prototyping mobile application wireframe</li>
+          </ul>
+          <br/>
           <div className="spark-wrapper">
             <h3 className="heading" >Process</h3>
             <div className="spark">
@@ -77,29 +140,55 @@ class Urack extends Component {
               title="Defining Problem Space"
               content=""
             />
-            <div>
-              <p className="title">Stakeholder Interview</p>
-              <p>We conducted <b>semi-structured interview</b> with two police officers and one crime analyst from Georgia Tech Police Department(GTPD) because GTPD has the most accurate perspective of the actual breadth of student and bicycle safety. We Learned about the prevalence of bicycle theft on Georgia Tech’s campus, including reasons for theft, locations of frequent theft, bike registration, crime prevention implementations, and ways to locate stolen bicycles.</p>
-            </div>
-            <div>
-              <p className="title">Users: In-person survey at bike racks</p>
-              <p>Rather than distributing online survey or conducting formal interviews, we conducted quick and dirty <b>in-person surveys that led to mini interview sessions</b> when students wanted to elaborate their answer or we wanted to know more.<br/>
-                We found out that only few students surveyed thought that bike theft was an issue on campus, which was the biggest issue GTPD addressed. Among them were students who had or knew of someone who had a bike stolen in the past year. But they answered that traffic (both cars and pedestrian) safety and storage were big issue on campus.</p>
-            </div>
-            <div>
-              <p className="title">Users: Semi-structured interview</p>
-              <p>We asked same questions across all interviewees and prepared number of special questions for those who had experienced personal bike theft. The interviews ran around 30 minutes. The outcome confirmed what we found out from surveys.</p>
-            </div>
             <div className="flex justify-between">
-              <div className="forty center gopro">
-                <img src={gopro} />
+              <div className="third">
+                <p className="title">How</p>
+                <ul>
+                  <li><b>Semi-structured interview with stakeholder</b> (Georgia Tech Police Department)</li>
+                  <li><b>In-person survey with users at bike racks</b></li>
+                  <li>Semi-structured interview with users</li>
+                  <li>Think aloud videos</li>
+                </ul>
               </div>
-              <div className="sixty">
-                <p className="title">Users: “Think-aloud” with GoPro</p>
-                <p>To get <b>contextual data</b>, we asked student cyclists to wear a GoPro attached to a helmet as they rode their bike on campus during a normal day while using the “think-aloud” technique. <br/>
-                They were very alert when they were driving near pedestrians and cars. And they let out exasperated sighs when they could not find empty rack near by their buildings. Also, <b>though no one has mentioned it in survey and interviews, they found it very frustrating when they had to unlock the bike from crowded and tangled bike racks.</b></p>
+              <div className="third">
+                <p className="title">Why</p>
+                <p>To define problem space from different angles: stakeholder, users and observers. We conducted <b>in-person survey to use the session as impromptu interview</b> when users were willing to talk more about question.</p>
+              </div>
+              <div className="third">
+                <p className="title">Finding</p>
+                <p>Stakeholder considered <b>bike theft</b> as the biggest issue. However, users, cyclists did not agree. They felt relatviely safe, but concerned with <b>bike storage and traffic safety</b>. From think-aloud videos, we discovered that not only finding the bike storage, but <b>maneuvering at bike rack</b> was also problem.</p>
               </div>
             </div>
+            <div className="button-wrapper">
+              <button onClick={this.interviewClick} className="button expand center">
+                {this.state.interview ? 'Close' : 'Show'} Interview Details
+              </button>
+            </div>
+            <Collapse isOpened={this.state.interview}>
+              <div>
+                <p className="title">Stakeholder Interview</p>
+                <p>We conducted <b>semi-structured interview</b> with two police officers and one crime analyst from Georgia Tech Police Department(GTPD) because GTPD has the most accurate perspective of the actual breadth of student and bicycle safety. We Learned about the prevalence of bicycle theft on Georgia Tech’s campus, including reasons for theft, locations of frequent theft, bike registration, crime prevention implementations, and ways to locate stolen bicycles.</p>
+              </div>
+              <div>
+                <p className="title">Users: In-person survey at bike racks</p>
+                <p>Rather than distributing online survey or conducting formal interviews, we conducted quick and dirty <b>in-person surveys that led to mini interview sessions</b> when students wanted to elaborate their answer or we wanted to know more.<br/>
+                  We found out that only few students surveyed thought that bike theft was an issue on campus, which was the biggest issue GTPD addressed. Among them were students who had or knew of someone who had a bike stolen in the past year. But they answered that traffic (both cars and pedestrian) safety and storage were big issue on campus.</p>
+              </div>
+              <div>
+                <p className="title">Users: Semi-structured interview</p>
+                <p>We asked same questions across all interviewees and prepared number of special questions for those who had experienced personal bike theft. The interviews ran around 30 minutes. The outcome confirmed what we found out from surveys.</p>
+              </div>
+              <div className="flex justify-between">
+                <div className="forty center gopro">
+                  <img src={gopro} />
+                </div>
+                <div className="sixty">
+                  <p className="title">Users: “Think-aloud” with GoPro</p>
+                  <p>To get <b>contextual data</b>, we asked student cyclists to wear a GoPro attached to a helmet as they rode their bike on campus during a normal day while using the “think-aloud” technique. <br/>
+                  They were very alert when they were driving near pedestrians and cars. And they let out exasperated sighs when they could not find empty rack near by their buildings. Also, <b>though no one has mentioned it in survey and interviews, they found it very frustrating when they had to unlock the bike from crowded and tangled bike racks.</b></p>
+                </div>
+              </div>
+            </Collapse>
           </div>
           <div id="Affinity" className="section">
             <Heading
@@ -121,102 +210,101 @@ class Urack extends Component {
                   <li>Lack of faith in GTPD process</li>
                 </ul>
               </div>
-              <div className="full">
-                <img src={affinity} />
-              </div>
             </div>
           </div>
           <div id="Design" className="section">
             <Heading
               title="Design Concepts"
             />
-            <div className="eighty center">
-              <img src={concepts} />
-            </div>
-            <p>We placed our ideas onto a whiteboard to create a diagram based on <b>Feasibility vs. Usability</b>. The purpose of this diagram was to help us define which ideas were not only the most useful to our user group, but also the most practical to implement. We designed <b>two ideas based on the clusters: modular storage and sensor for pedestrian</b>. </p>
-            <div className="flex">
-              <div className="half modular center">
-                <img src={modular} />
-                <p className="caption">Modular storage storyboard</p>
-                <p className="text-center"><b>Bike rack is flushed to the ground when not in use.</b></p>
+            <div className="flex justify-between">
+              <div className="third">
+                <p  className="title">How</p>
+                <p>Placed our design ideas onto a whiteboard to create a diagram based on <b>Feasibility vs. Usability</b></p>
               </div>
-              <div className="half center sensor">
-                <img  src={sensor} />
-                <p className="caption">Traffic sensor storyboard</p>
+              <div className="third">
+                <p className="title">Why</p>
+                <p>to help us define which ideas were not only the most useful to our user group, but also the most practical to implement</p>
+              </div>
+              <div className="third">
+                <p className="title">Finding</p>
+                <p>Two ideas based on the clusters: <b>modular storage</b> and <b>sensor for pedestrian</b></p>
               </div>
             </div>
+            <div className="button-wrapper">
+              <button onClick={this.designClick} className="button expand center">
+                {this.state.design ? 'Close' : 'Show'} Design Concept Details
+              </button>
+            </div>
+            <Collapse isOpened={this.state.design}>
+              <br/>
+              <div className="sixty center">
+                <img src={concepts} />
+              </div>
+              <div className="flex">
+                <div className="half modular center">
+                  <img src={modular} />
+                  <p className="caption">Modular storage storyboard</p>
+                  <p className="text-center"><b>Bike rack is flushed to the ground when not in use.</b></p>
+                </div>
+                <div className="half center sensor">
+                  <img  src={sensor} />
+                  <p className="caption">Traffic sensor storyboard</p>
+                </div>
+              </div>
+            </Collapse>
           </div>
           <div id="Expert" className="section">
             <Heading
               title="Expert Interview"
             />
-            <p><b>To get an insight on how to implement the design on bike and infrastructure</b>, We interviewed four experts with our preliminary design storyboards. We learned what is possible and impossible, as well as the modular storage implementation issues.</p>
-            <ul>
-              <li>Researcher on cyclists in Atlanta</li>
-              <li>Landscape architect at GT Space Management Department</li>
-              <li>Staff member at GT Starter Bike (student club)</li>
-              <li>Staff member at Performance Bike in Atlanta (off-campus shop)</li>
-            </ul>
-            <div>
-              <p className="title">Design decision</p>
-              <p>Based on expert interview and quick informal user interviews, we decide to narrow down our concept to modular bike storage instead of traffic sensor for following reasons:</p>
-              <ul>
-                <li>Answer to users and stakeholders’ needs more closely</li>
-                <li>Impracticality of traffic sensor due to visual/auditory impairment</li>
-                <li>Expandable to off-campus</li>
-              </ul>
-              <p>Changes to make based on feedback:</p>
-              <ul>
-                <li>There is no universal part of bike except for frame</li>
-                <li>Kickstand area is easily removable</li>
-                <li>Strong magnets could be dangerous to people with certain medical condition</li>
-              </ul>
+            <div className="flex justify-between">
+              <div className="half">
+                <p  className="title">How</p>
+                <p>Interviewed <b>four experts</b> with our preliminary design storyboards</p>
+                <ul>
+                  <li>Researcher on cyclists in Atlanta</li>
+                  <li>Landscape architect at GT Space Management Department</li>
+                  <li>Staff member at GT Starter Bike (student club)</li>
+                  <li>Staff member at Performance Bike in Atlanta (off-campus shop)</li>
+                </ul>
+              </div>
+              <div className="half">
+                <p className="title">Why</p>
+                <p><b>To get an insight on how to implement the design on bike and infrastructure</b></p>
+                <p className="title">Finding</p>
+                <ul>
+                  <li>There is no universal part of bike except for frame</li>
+                  <li>Kickstand area is easily removable</li>
+                  <li>Strong magnets could be dangerous to people with certain medical condition</li>
+                  <li>Impracticality of traffic sensor due to visual/auditory impairment</li>
+                  <li>Expandable to off-campus</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div id="Low-fid" className="section">
             <Heading
               title="Low-fid Prototype"
-              content="Based on storyboard and feedback, we sketched detailed designs and specification of operation. "
             />
-            <div className="flex justify-between">
-              <div className="half">
-                <p className="title">Lock: Sketches</p>
-                <img src={sketch1} />
-              </div>
-              <div className="half">
-                <p className="title">Lock: low-fid prototype</p>
-                <img src={prototype1} />
-              </div>
+            <p>Based on storyboard and feedback, we sketched detailed designs and extracted requirements. We built <b>physical prototype and designed wireframes</b>.</p>
+            <div className="button-wrapper">
+              <button onClick={this.prototypeClick} className="button expand center">
+                {this.state.prototype ? 'Close' : 'Show'} Prototype Details
+              </button>
             </div>
-            <div className="flex justify-between">
-              <div className="half">
-                <p className="title">Application: Requirements</p>
-                <img src={requirements} />
+            <Collapse isOpened={this.state.prototype}>
+              <div className="flex justify-between">
+                <div className="half">
+                  <p className="title">Lock: Sketches</p>
+                  <img src={sketch1} />
+                </div>
+                <div className="half">
+                  <p className="title">Lock: low-fid prototype</p>
+                  <img src={prototype1} />
+                  <p className="caption">Used pink foam, dowels, and paper</p>
+                </div>
               </div>
-              <div className="half">
-                <p className="title">Application: Sketches </p>
-                <img src={wireframe} />
-              </div>
-            </div>
-            <p className="title">Application: Wireframe</p>
-            <div className="flex justify-between">
-              <div className="quarter">
-                <img src={wireframe1} />
-                <p className="caption">Map view: default</p>
-              </div>
-              <div className="quarter">
-                <img src={wireframe2} />
-                <p className="caption">Map view: choose from list</p>
-              </div>
-              <div className="quarter">
-                <img src={wireframe3} />
-                <p className="caption">My bike view: lock now</p>
-              </div>
-              <div className="quarter">
-                <img src={wireframe4} />
-                <p className="caption">My bike view: locked and standby</p>
-              </div>
-            </div>
+            </Collapse>
             <div>
               <p className="title">Pilot Testing</p>
               <div className="flex align-start">
@@ -225,13 +313,18 @@ class Urack extends Component {
                   <p className="caption">User locking bike to the rack</p>
                 </div>
                 <div className="sixty">
-                  <p>Tasks:</p>
+                  <p>How:<br/>
+                    Two users were given below tasks. <b>Structured interviews</b> were asked before and after testing.
+                  </p>
                   <ol>
                     <li>Register your bike and smart lock</li>
                     <li>Find an available space and lock your bike</li>
                     <li>Unlock your bike</li>
                   </ol>
-                  <p>Findings:</p>
+                  <p>Why:<br/>
+                    To find low-hanging issues with interaction and <b>quickly iterate</b>
+                  </p>
+                  <p>Finding:</p>
                   <ul className="pilot">
                     <li><b>+</b> Fluidity of locking bicycle</li>
                     <li><b>+</b> Constant monitor of bike creates a feeling of security</li>
@@ -251,37 +344,31 @@ class Urack extends Component {
               <img src={locking} />
               <p className="caption">Lock & Rack: 3D model</p>
             </div>
-            <div className="flex">
-              <div className="half">
-                <img src={med} />
-                <p className="caption">Lock & Rack: Locked state</p>
-              </div>
-              <div className="quarter">
-                <img src={wireframe5} />
-                <p className="caption">App: Safety alert</p>
-              </div>
-              <div className="quarter">
-                <img src={wireframe6} />
-                <p className="caption">App: GTPD notification</p>
-              </div>
-            </div>
           </div>
           <div id="User" className="section">
             <Heading
               title="User Testing"
             />
-            <p>We tested our high fidelity prototype of the U-lock, the rack and the app on users. App was <a className="link" href="https://invis.io/NQ9J06CZE"> clickable (InVision)</a> and the rest of system was done using <b>wizard-of-oz method.</b></p>
-            <p className="title">How</p>
-            <p>Two participant brought his/her own bike and was given the same four tasks near Tech Square Research Building (TSRB). Task was run with two moderators with participant doing Think-aloud. Pre-task and post-task interviews were given.</p>
             <div className="">
-              <p className="title">Tasks</p>
+              <div className="half center">
+                <img src={med} />
+                <p className="caption">Lock & Rack: Locked state</p>
+              </div>
+              <div className="full">
+                <p>We tested our high fidelity prototype of the U-lock, the rack and the app on users. App was <a className="link" href="https://invis.io/NQ9J06CZE"> clickable (InVision)</a> and the rest of system was done using <b>wizard-of-oz method.</b></p>
+
+              </div>
+            </div>
+            <div className="">
+              <p className="title">How</p>
+              <p>Two participant brought his/her own bike and was given the same four tasks near Tech Square Research Building (TSRB). Task was run with two moderators with participant doing Think-aloud. Pre-task and post-task interviews were given.</p>
               <ol>
                 <li><b>Registration</b>: You are a first time user of this application. Please register your bike.</li>
                 <li><b>Find</b>: You are about to head to TSRB. Please look for an available spot.</li>
                 <li><b>Lock</b>: You are now at TSRB. Please lock your bike.</li>
                 <li><b>Unlock</b>: Please unlock your bike.</li>
               </ol>
-              <p className="title">Findings</p>
+              <p className="title">Finding</p>
               <ul className="pilot">
                 <li><b>+</b> All: The system is easy to learn and to get started on.</li>
                 <li><b>+</b> Unlock: Do not need keys to unlock the bike from the smart rack.</li>
@@ -293,6 +380,12 @@ class Urack extends Component {
             </div>
           </div>
         </div>
+        <Next
+          leftItem="Logue"
+          leftLink="/logue"
+          rightItem="Underlined"
+          rightLink="/underlined"
+        />
         <Credit/>
       </div>
     )

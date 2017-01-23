@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import './index.css';
 import { Router, Route, browserHistory } from 'react-router';
 
@@ -11,6 +10,7 @@ import Logue from './pages/work/logue/logue';
 import Urack from './pages/work/urack/urack';
 import Recaffeine from './pages/work/recaffeine/recaffeine';
 import Bunny from './pages/work/bunny/bunny';
+import Misc from './pages/work/misc/misc';
 
 function scrollTop () {
   window.scrollTo(0,0)
@@ -25,6 +25,7 @@ ReactDOM.render(
     <Route path="/urack" component={Urack}/>
     <Route path="/recaffeine" component={Recaffeine}/>
     <Route path="/bunny" component={Bunny}/>
+    <Route path="/misc" component={Misc}/>
   </Router>,
   document.getElementById('root')
 );

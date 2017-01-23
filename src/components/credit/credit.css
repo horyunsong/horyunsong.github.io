@@ -2,7 +2,14 @@
     width: 250px;
     padding: 2em 0 3em 0;
 }
-.next {
+.next img{
+    width: 2em;
+    height: 2em;
+}
+.next p {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 1em;
 }
 .left {
     padding-left: 1em;
@@ -10,13 +17,18 @@
 .right {
     padding-right: 1em;
 }
+.right p {
+    text-align: right;
+}
 .next img {
     vertical-align: middle;
 }
 .next p {
     display: block;
 }
-.left img {
+.left img, .left p {
+    float: left;
 }
-.right img {
+.right img, .right p {
+    float: right;
 }

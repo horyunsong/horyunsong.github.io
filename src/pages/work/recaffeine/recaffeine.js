@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import "./recaffeine.css";
 
+import Collapse from 'react-collapse';
+
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
-
+import Next from "../../../components/credit/next";
 import Title from '../../../components/work/mini/title';
 import Heading from '../../../components/work/mini/heading';
 
@@ -22,6 +24,29 @@ import system from '../../../img/work/recaffeine/system.png';
 
 
 class Recaffeine extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scenario: false,
+      prototype: false
+    };
+
+    this.scenarioClick = this.scenarioClick.bind(this);
+    this.prototypeClick = this.prototypeClick.bind(this);
+  }
+
+  scenarioClick() {
+    this.setState(prevState => ({
+      scenario: !prevState.scenario
+    }));
+  }
+
+  prototypeClick() {
+    this.setState(prevState => ({
+      prototype: !prevState.prototype
+    }));
+  }
+
   render() {
     return (
       <div>
@@ -31,7 +56,7 @@ class Recaffeine extends Component {
             title="Re-caffeine"
             role="In class project"
             category="UX"
-            type="Research, Design & Prototype"
+            type="Design & Prototype"
           />
           <div className="problem">
             <p className="title">Target User</p>
@@ -55,95 +80,121 @@ class Recaffeine extends Component {
           <div id="scenario" className="section">
             <Heading
               title="Scenario"
+              content="User nickname Hottie's interaction with Re-caffeine. Because I wanted to be called Hottie for once."
             />
-            <div className="flex justify-between">
-              <div className="half">
-                <img src={scenario1}/>
-                <p className="">User “Hottie” drinks her coffee in a cafe.</p>
-              </div>
-              <div className="half">
-                <img src={scenario2}/>
-                <p className="">When she approaches the Re-Caffeine recycle bin, it asks if she wants to recycle.</p>
-              </div>
-              <div className="half">
-                <img src={scenario3}/>
-                <p className="">“Sure!” Hottie recycles the plastic cup.</p>
-              </div>
-              <div className="half">
-                <img src={scenario4}/>
-                <p className="">Re-Caffeine recycle bin gives Hottie +1 Water Point.</p>
-              </div>
-              <div className="half">
-                <img src={scenario5}/>
-                <p className="">Hottie checks her points and her team’s Water Points.</p>
-              </div>
-              <div className="half">
-                <img src={scenario6}/>
-                <p className="">The water point drops on her choice of tree in her farm.</p>
-              </div>
-              <div className="half">
-                <img src={scenario7}/>
-                <p className="">Ta-da! Her little orange tree grows.</p>
-              </div>
-              <div className="half">
-                <img src={scenario8}/>
-                <p className="">Hottie has fun recycling and brags to her friends about her orange tree.</p>
-              </div>
+            <div className="button-wrapper">
+              <button onClick={this.scenarioClick} className="button expand center">
+                {this.state.scenario ? 'Close' : 'Show'} Scenario
+              </button>
             </div>
+            <Collapse isOpened={this.state.scenario}>
+              <div className="flex justify-between">
+                <div className="half">
+                  <img src={scenario1}/>
+                  <p className="">User “Hottie” drinks her coffee in a cafe.</p>
+                </div>
+                <div className="half">
+                  <img src={scenario2}/>
+                  <p className="">When she approaches the Re-Caffeine recycle bin, it asks if she wants to recycle.</p>
+                </div>
+                <div className="half">
+                  <img src={scenario3}/>
+                  <p className="">“Sure!” Hottie recycles the plastic cup.</p>
+                </div>
+                <div className="half">
+                  <img src={scenario4}/>
+                  <p className="">Re-Caffeine recycle bin gives Hottie +1 Water Point.</p>
+                </div>
+                <div className="half">
+                  <img src={scenario5}/>
+                  <p className="">Hottie checks her points and her team’s Water Points.</p>
+                </div>
+                <div className="half">
+                  <img src={scenario6}/>
+                  <p className="">The water point drops on her choice of tree in her farm.</p>
+                </div>
+                <div className="half">
+                  <img src={scenario7}/>
+                  <p className="">Ta-da! Her little orange tree grows.</p>
+                </div>
+                <div className="half">
+                  <img src={scenario8}/>
+                  <p className="">Hottie has fun recycling and brags to her friends about her orange tree.</p>
+                </div>
+              </div>
+            </Collapse>
           </div>
 
           <div id="" className="section">
             <Heading
               title="Prototype"
-              content="Technical help, Juwan Yoo"
             />
-            <ol>
-              <li>User "Hottie" approaches the recycling bin</li>
-              <li>Computer gets Bluetooth Light Energy signal from Hottie's phone (application)</li>
-              <li>Hottie pushes cup into the recycling bin (light source)</li>
-              <li>Camera (computer) detects the light threshold</li>
-              <li>Computer sends +1 water point to recycling bin interactive surface (iPad) and Hottie's app</li>
-              <li>Hottie chooses which tree to water</li>
-              <li>The tree grows!</li>
-            </ol>
-            <div className="sixty center">
-              <img src={system} />
-              <p className="caption">Prototype system design</p>
-            </div>
             <div className="flex justify-between">
-              <div className="third">
-                <img src={mac}/>
-                <ul>
-                  <li>Bluetooth Light Energy: Closeness of the iPhone</li>
-                  <li>Camera Detect: Light source threshold</li>
-                  <li>Wi-fi: Send interactive information to iPad and iPhone</li>
-                </ul>
+              <div className="half center">
+                <img src={system} />
+                <p className="caption">Prototype system design</p>
               </div>
-              <div className="third">
-                <img src={ipad}/>
-                <ul>
-                  <li>Interface: User interaction</li>
-                  <li>Wi-fi: Receive interactive information from MacBook</li>
-                </ul>
-              </div>
-              <div className="third">
-                <img src={iphone}/>
-                <ul>
-                  <li>Bluetooth Light Energy: Activate the system by closeness</li>
-                  <li>Wi-fi: Receive interactive information</li>
-                </ul>
+              <div className="half">
+                <p><i>Technical help, Juwan Yoo</i></p>
+                <ol>
+                  <li>User "Hottie" approaches the recycling bin</li>
+                  <li>Computer gets Bluetooth Light Energy signal from Hottie's phone (application)</li>
+                  <li>Hottie pushes cup into the recycling bin (light source)</li>
+                  <li>Camera (computer) detects the light threshold</li>
+                  <li>Computer sends +1 water point to recycling bin interactive surface (iPad) and Hottie's app</li>
+                  <li>Hottie chooses which tree to water</li>
+                  <li>The tree grows!</li>
+                </ol>
               </div>
             </div>
+            <div className="button-wrapper">
+              <button onClick={this.prototypeClick} className="button expand center">
+                {this.state.prototype ? 'Close' : 'Show'} Prototype Details
+              </button>
+            </div>
+            <Collapse isOpened={this.state.prototype}>
+              <div className="flex justify-between">
+                <div className="third">
+                  <img src={mac}/>
+                  <ul>
+                    <li>Bluetooth Light Energy: Closeness of the iPhone</li>
+                    <li>Camera Detect: Light source threshold</li>
+                    <li>Wi-fi: Send interactive information to iPad and iPhone</li>
+                  </ul>
+                </div>
+                <div className="third">
+                  <img src={ipad}/>
+                  <ul>
+                    <li>Interface: User interaction</li>
+                    <li>Wi-fi: Receive interactive information from MacBook</li>
+                  </ul>
+                </div>
+                <div className="third">
+                  <img src={iphone}/>
+                  <ul>
+                    <li>Bluetooth Light Energy: Activate the system by closeness</li>
+                    <li>Wi-fi: Receive interactive information</li>
+                  </ul>
+                </div>
+              </div>
+            </Collapse>
           </div>
           <div id="" className="section">
             <Heading
-              title="User Testing Post-Interview"
+              title="User Testing Interview"
             />
             <div className="video-wrapper">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/1zgZH9E32HY" frameborder="0" allowfullscreen></iframe>
             </div>
+            <br/>
           </div>
         </div>
+        <Next
+          leftItem="underlined"
+          leftLink="/underlined"
+          rightItem="Bunny Nail"
+          rightLink="/bunny"
+        />
         <Credit/>
       </div>
     )

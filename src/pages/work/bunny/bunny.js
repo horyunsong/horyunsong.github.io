@@ -3,6 +3,7 @@ import "./bunny.css";
 
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
+import Next from "../../../components/credit/next";
 
 import Title from '../../../components/work/mini/title';
 import Heading from '../../../components/work/mini/heading';
@@ -28,7 +29,7 @@ class Bunny extends Component {
             title="Bunny Nail"
             category="Product"
             type="Design"
-            role="Industry collaboration"
+            role="Industry collaboration with Etude House (Amore Pacific)"
           />
           <div className="problem">
             <p className="title">Target User</p>
@@ -68,26 +69,32 @@ class Bunny extends Component {
           <div id=""  className="section">
             <div className="flex justify-between">
               <div className="third">
-                <img  src={set}/>
+                <img  src={set} alt="bunny nail set"/>
               </div>
               <div className="third">
-                <img src={black}/>
+                <img src={black} alt="bunny nail black"/>
               </div>
               <div className="third">
-                <img src={white}/>
+                <img src={white} alt="bunny nail white"/>
               </div>
               <div className="third">
-                <img src={red}/>
+                <img src={red} alt="bunny nail red"/>
               </div>
               <div className="third">
-                <img src={pink}/>
+                <img src={pink} alt="bunny nail pink"/>
               </div>
               <div className="third">
-                <img src={mint}/>
+                <img src={mint} alt="bunny nail mint"/>
               </div>
             </div>
           </div>
         </div>
+        <Next
+          leftItem="Re-Caffeine"
+          leftLink="/recaffeine"
+          rightItem="Miscellaneous"
+          rightLink="/misc"
+        />
         <Credit/>
       </div>
     )

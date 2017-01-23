@@ -82,6 +82,12 @@ class Underlined extends Component {
             </div>
           </div>
         </div>
+        <Next
+          leftItem="u-rack"
+          leftLink="/urack"
+          rightItem="Re-caffeine"
+          rightLink="/recaffeine"
+        />
         <Credit/>
       </div>
     )
