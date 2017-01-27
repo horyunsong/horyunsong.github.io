@@ -11,6 +11,7 @@ import Urack from './pages/work/urack/urack';
 import Recaffeine from './pages/work/recaffeine/recaffeine';
 import Bunny from './pages/work/bunny/bunny';
 import Misc from './pages/work/misc/misc';
+import Not from './pages/notfound/notfound';
 
 function scrollTop () {
   window.scrollTo(0,0)
@@ -26,6 +27,7 @@ ReactDOM.render(
     <Route path="/recaffeine" component={Recaffeine}/>
     <Route path="/bunny" component={Bunny}/>
     <Route path="/misc" component={Misc}/>
+    <Route path="/*" component={Not}/>
   </Router>,
   document.getElementById('root')
 );
