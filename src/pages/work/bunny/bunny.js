@@ -47,16 +47,16 @@ class Bunny extends Component {
             </a>
           </div>
           <div className="half center">
-            <img  src={ppt}/>
+            <img  src={ppt} alt="original idea presentation"/>
             <p className="caption">Original idea</p>
           </div>
           <div className="flex">
             <div className="half">
-              <img  src={redTip}/>
+              <img  src={redTip} alt="actual product example 1"/>
               <p className="caption">Regular and small brush</p>
             </div>
             <div className="half">
-              <img  src={mintTip}/>
+              <img  src={mintTip} alt="actual product example 2"/>
               <p className="caption">Silicon scooper and regular brush</p>
             </div>
           </div>

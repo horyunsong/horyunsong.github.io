@@ -17,23 +17,23 @@ class Home extends Component {
           <div className="flex align-bottom">
 
             <div className="im">
-              <img src={im} />
+              <img src={im} alt="My name is Horyun Song, I'm a UX Researcher and Designer"/>
             </div>
             <div className="hi">
-              <img src={hi} />
+              <img src={hi} alt="And an artist!"/>
             </div>
           </div>
           <div className="flex justify-between box-wrapper">
             <div className="forty box research">
-              <img src={ruff} />
+              <img src={ruff} alt="I research, design and build."/>
             </div>
             <div className="forty box sniff">
-              <img src={sniff} />
+              <img src={sniff} alt="I believe in teamwork and fun."/>
             </div>
           </div>
           <div className="flex justify-center align-center">
             <div className="mouse">
-              <img src={mouse} />
+              <img src={mouse} role="presentation"/>
             </div>
             <div className="find">
               <h3>You can find more about me
@@ -41,7 +41,7 @@ class Home extends Component {
                 <br/>or even better, from</h3>
             </div>
             <div className="pencil">
-              <img src={pencil} />
+              <img src={pencil} role="presentation"/>
             </div>
           </div>
         </div>

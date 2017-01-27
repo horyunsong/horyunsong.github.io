@@ -33,24 +33,24 @@ class Underlined extends Component {
             <p>Memorizing new words manually is not exactly fun. Children need to be motivated enough to learn without adults educating them with force, such as quizzing them on daily vocabulary list. However, it is not possible to be motivated with <b>sterile, single line vocabulary examples</b>.</p>
             <p  className="title">Solution</p>
             <p>Underlined is a <b>context-based vocabulary aid application</b> that allows children to learn new vocabulary naturally by <b>reading stories of their interest</b>. Sentences with same underlined words from various books accumulate in Word List, for children and parents to <b>repeat those sentences and recall the word and meaning from the context.</b></p>
-            <img className="eighty center" src={intro}/>
+            <img className="eighty center" src={intro} alt="one unit of underlined system"/>
             <br/>
           </div>
           <div id="" >
             <div className="flex justify-between">
               <div className="third">
                 <p className="title">Filter Books</p>
-                <img src={filter}/>
+                <img src={filter} role="presentation"/>
                 <p className="">The book list is filtered by difficulty (age) and genre according to children’s interest.</p>
               </div>
               <div className="third">
                 <p className="title">Underlined Words</p>
-                <img src={words}/>
+                <img src={words} role="presentation"/>
                 <p className="">Words that children of recommended ages need to know are underlined in stories.</p>
               </div>
               <div className="third">
                 <p className="title">My Word List</p>
-                <img src={myList}/>
+                <img src={myList} role="presentation"/>
                 <p className="">Word, meaning, and example sentences from various books make one unit of list.</p>
               </div>
             </div>
@@ -62,12 +62,12 @@ class Underlined extends Component {
             />
             <div className="flex justify-between">
               <div className="half">
-                <img src={old} />
+                <img src={old} role="presentation"/>
                 <p className="title">Old Fashioned: From word to sentence</p>
                 <p>A list of words. And each word gets a unique example sentence that are <b>too general</b> to be called context or not memorable at all because it <b>cannot answer to each child’s interest.</b></p>
               </div>
               <div className="half">
-                <img src={newform} />
+                <img src={newform} role="presentation"/>
                 <p className="title">Underlined: From context to word</p>
                 <p>A child will read <b>new words from stories that she is actually interested in</b>. By reading them, she will at least get the gist, or possibly exact meaning. If not, it’s okay because <b>she will see those words from other fun stories again.</b></p>
               </div>
@@ -78,7 +78,7 @@ class Underlined extends Component {
               title="Menu Relations"
             />
             <div className="full">
-              <img src={menu} />
+              <img src={menu} alt="menu items and relation diagram"/>
             </div>
           </div>
         </div>

@@ -30,14 +30,14 @@ class Next extends Component {
         <div className="container small flex justify-between">
           <Link to={this.props.leftLink}>
             <div className="next left flex align-center">
-                <img src={left} />
+                <img src={left} alt="left"/>
                 <p>{this.props.leftItem}</p>
             </div>
           </Link>
           <Link to={this.props.rightLink}>
             <div className="next right flex align-center">
               <p>{this.props.rightItem}</p>
-              <img src={right} />
+              <img src={right} alt="right"/>
             </div>
           </Link>
         </div>

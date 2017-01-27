@@ -38,25 +38,19 @@ a.link {
 .bold {
     font-weight: 900;
 }
-.red {
-    color: #B54D7E;
-}
-.purple {
-    color: #9615E7;
-}
 .container.small b {
     color: #FE6C61;
 }
-/* Reset */
+/*** Reset ***/
 body {
     margin: 0;
     padding: 0;
 }
-
-/* Shared */
 img {
     width: 100%;
 }
+
+/*** Body Size ***/
 .container {
     width: 80vw;
     min-width: 310px;
@@ -73,6 +67,11 @@ img {
 .section {
     padding-top: 52px;
 }
+
+/*** Grid Layout ***/
+
+/* Flex */
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +100,8 @@ img {
 .child-bottom {
     align-self: flex-end;
 }
+
+/* Size */
 .full {
     width: 100%;
     min-width: 310px;
@@ -139,6 +140,8 @@ img {
     width: 80%;
     min-width: 310px;
 }
+
+/* Align */
 .center {
     display: block;
     margin: 0 auto;
@@ -149,6 +152,8 @@ img {
 .text-right {
     text-align: right;
 }
+
+/* Text decoration */
 .caption {
     font-style: italic;
     font-size: 0.8em;
@@ -169,6 +174,7 @@ img {
     padding: 0 10px;
 }
 
+/* Video setting*/
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -183,62 +189,7 @@ img {
     height: 100%;
 }
 
-/* Sky bg: */
-svg {
-    position: absolute;;
-    z-index: 0;
-}
-.fixed-side-navbar {
-    position: fixed;
-    top: 10px;
-    right: 0;
-    z-index: 99999;
-
-    text-align: right;
-    padding: 30px 0;
-    -webkit-transition: all .3s;
-    transition: all .3s
-}
-.nested-overlay {
-    position: absolute;;
-    top: 0;
-}
-.nav-list {
-    margin: 0 70px 0 0;
-}
-.nav-list a{
-    position: relative;
-    display: block;
-    float: right;
-    clear: right;
-    margin: 0 5px 8px 0;
-    color: #6074B3;
-}
-.nav-list a.active {
-    color: #FE6C61;
-}
-.nav-list a:after {
-    content: "";
-    position: absolute;
-    top: 1px;
-    right: -30px;
-    width: 17px;
-    height: 17px;
-    border-radius: 12px;
-    border: 3px solid #6074B3;
-}
-.nav-list span:after {
-    content: "";
-    position: absolute;
-    right: 52px;
-    width: 3px;
-    height: 14px;
-    margin-top: 17px;
-    background: #6074B3;
-}
-.nav-list span:first-of-type:after {
-    margin-top: 43px;
-}
+/* Button Setting */
 .button-wrapper {
     text-align: center;
 }

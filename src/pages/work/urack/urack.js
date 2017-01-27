@@ -92,25 +92,25 @@ class Urack extends Component {
               <p>U-Rack is modular bike storage system that consists of three parts: <b>the rack, the U-lock, and the app</b>. Just prop up the smart bike rack, <b>push the U shaped steel bar of lock through the handle, mount the lock to the rack</b> and off you go! The mobile app will take care of the rest: <b>lock and unlock easily with proximity, give real-time information about the available storage, your bike location and security</b>.</p>
             </div>
             <div className="half">
-              <img src={storyboard} />
+              <img src={storyboard} alt="storyboard"/>
             </div>
           </div>
           <div className="problem">
             <div className="flex justify-between">
               <div className="quarter">
-                <img src={wireframe1} />
+                <img src={wireframe1} alt="wireframe 1"/>
                 <p className="caption">Map view: default</p>
               </div>
               <div className="quarter">
-                <img src={wireframe2} />
+                <img src={wireframe2} alt="wireframe 2"/>
                 <p className="caption">Map view: choose from list</p>
               </div>
               <div className="quarter">
-                <img src={wireframe3} />
+                <img src={wireframe3} alt="wireframe 3"/>
                 <p className="caption">My bike view: lock now</p>
               </div>
               <div className="quarter">
-                <img src={wireframe4} />
+                <img src={wireframe4} alt="wireframe 4"/>
                 <p className="caption">My bike view: locked and standby</p>
               </div>
             </div>
@@ -128,7 +128,7 @@ class Urack extends Component {
           <div className="spark-wrapper">
             <h3 className="heading" >Process</h3>
             <div className="spark">
-              <img src={spark} />
+              <img src={spark} role="presentation"/>
             </div>
           </div>
           <Process
@@ -180,7 +180,7 @@ class Urack extends Component {
               </div>
               <div className="flex justify-between">
                 <div className="forty center gopro">
-                  <img src={gopro} />
+                  <img src={gopro} alt="screenshot of user's view"/>
                 </div>
                 <div className="sixty">
                   <p className="title">Users: “Think-aloud” with GoPro</p>
@@ -238,16 +238,16 @@ class Urack extends Component {
             <Collapse isOpened={this.state.design}>
               <br/>
               <div className="sixty center">
-                <img src={concepts} />
+                <img src={concepts} alt="concept diagram"/>
               </div>
               <div className="flex">
                 <div className="half modular center">
-                  <img src={modular} />
+                  <img src={modular} role="presentation"/>
                   <p className="caption">Modular storage storyboard</p>
                   <p className="text-center"><b>Bike rack is flushed to the ground when not in use.</b></p>
                 </div>
                 <div className="half center sensor">
-                  <img  src={sensor} />
+                  <img  src={sensor} role="presentation"/>
                   <p className="caption">Traffic sensor storyboard</p>
                 </div>
               </div>
@@ -296,11 +296,11 @@ class Urack extends Component {
               <div className="flex justify-between">
                 <div className="half">
                   <p className="title">Lock: Sketches</p>
-                  <img src={sketch1} />
+                  <img src={sketch1} role="presentation"/>
                 </div>
                 <div className="half">
                   <p className="title">Lock: low-fid prototype</p>
-                  <img src={prototype1} />
+                  <img src={prototype1} role="presentation"/>
                   <p className="caption">Used pink foam, dowels, and paper</p>
                 </div>
               </div>
@@ -309,7 +309,7 @@ class Urack extends Component {
               <p className="title">Pilot Testing</p>
               <div className="flex align-start">
                 <div className="forty">
-                  <img src={pilot}/>
+                  <img src={pilot} role="presentation"/>
                   <p className="caption">User locking bike to the rack</p>
                 </div>
                 <div className="sixty">
@@ -341,7 +341,7 @@ class Urack extends Component {
             />
             <p>We built a medium fidelity prototype of the rack using plywood, metal poles, and a 3D printed smart lock. The lock used small round magnets (magnet concept courtesy of our classmate, Noah Posner) <b>to simulate locking function</b>. We also revised our app and locking process based on the pilot testing findings.</p>
             <div className="eighty center">
-              <img src={locking} />
+              <img src={locking} role="presentation"/>
               <p className="caption">Lock & Rack: 3D model</p>
             </div>
           </div>
@@ -351,7 +351,7 @@ class Urack extends Component {
             />
             <div className="">
               <div className="half center">
-                <img src={med} />
+                <img src={med} role="presentation"/>
                 <p className="caption">Lock & Rack: Locked state</p>
               </div>
               <div className="full">

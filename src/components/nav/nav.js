@@ -20,29 +20,29 @@ class Nav extends Component {
           <div className="nav-left flex">
             <Link to="/"  className="icon">
               <div>
-                  <img src={home}/>
+                  <img src={home} alt="home"/>
               </div>
             </Link>
             <a href={window.location.pathname === "/" ? "#work" : "/#work"} className="icon">
               <div>
-                  <img src={portfolio}/>
+                  <img src={portfolio} alt="portfolio"/>
               </div>
             </a>
           </div>
           <div className="nav-right flex">
             <a href={process.env.PUBLIC_URL+"/Horyun_Song_Resume.pdf"} className="icon">
               <div>
-                  <img src={resume}/>
+                  <img src={resume} alt="resume"/>
               </div>
             </a>
             <a href="http://linkedin.com/in/horyunsong" className="icon">
               <div>
-                  <img src={linkedin}/>
+                  <img src={linkedin} alt="linkedin"/>
               </div>
             </a>
             <a href="mailto:horyunsong@gatech.edu" className="icon">
               <div>
-                  <img src={email}/>
+                  <img src={email} alt="email"/>
               </div>
             </a>
           </div>

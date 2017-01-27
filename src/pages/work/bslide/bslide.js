@@ -9,7 +9,6 @@ import Next from "../../../components/credit/next";
 import Title from '../../../components/work/mini/title';
 import Process from '../../../components/work/mini/process';
 import Heading from '../../../components/work/mini/heading';
-import ImgCaption from '../../../components/work/mini/imgCaption';
 
 import read from '../../../img/work/bslide/read.png';
 import curate from '../../../img/work/bslide/curate.png';
@@ -126,13 +125,13 @@ class Bslide extends Component {
                 </p>
             </div>
           </div>
-          <img className="eighty center" src={read}/>
-          <img className="eighty center" src={curate}/>
+          <img className="eighty center" src={read} alt="Read the stuff that you always plan to but never do. We will notify you lock-screen hen it's good time to read."/>
+          <img className="eighty center" src={curate} alt="Curate what you'll read. No haphazard recommendation. Get what you want."/>
           <br/>
           <div className="spark-wrapper">
             <h3 className="heading" >Process</h3>
             <div className="spark">
-              <img src={spark} />
+              <img src={spark} role="presentation"/>
             </div>
           </div>
           <Process
@@ -155,14 +154,14 @@ class Bslide extends Component {
               </div>
               <div className="third">
                 <p className="title">Finding</p>
-                <p>Similar categories emerged: <b>the purpose of bookmarking</b>, how to organize, how to share and what device to use. There were varying degrees of purpose, but boookmarks were in general <b>for near future usage</b>.</p>
+                <p>Similar categories emerged: <b>the purpose of bookmarking</b>, how to organize, how to share and what device to use. There were varying degrees of purpose, but boookmarks were in general <b>for near future usage</b>. Limitation: Gender and age skewed interviewee demographic.</p>
               </div>
             </div>
             <div className="sixty center">
-              <ImgCaption
-                img={interviewees}
-                caption="Interviewees"
-              />
+              <img src={interviewees} alt="7 interviewees.
+                A 23 year old female, B 24 year old female, C 23 year old female, D 23 year old female
+                E 27 year old male, F 21 year old female, G 25 year old female."/>
+              <p className="caption">Interviewees</p>
             </div>
             <div className="button-wrapper">
               <button onClick={this.interviewClick} className="button expand center">
@@ -218,10 +217,10 @@ class Bslide extends Component {
               <p className="title">spotting interviewee patterns</p>
               <div className="flex justify-between">
                 <div className="half center">
-                  <img src={interviewOrganizing} />
+                  <img src={interviewOrganizing} alt="bookmark organizing pattern" />
                 </div>
                 <div className="half center">
-                  <img src={interviewPurpose} />
+                  <img src={interviewPurpose} alt="purpose of bookmarking pattern" />
                 </div>
               </div>
               <div className="interviewee-pattern">
@@ -229,7 +228,7 @@ class Bslide extends Component {
                 <div className="flex justify-center">
                   <div className="third acorn-wrapper">
                     <div className="acorn">
-                      <img src={acorn}/>
+                      <img src={acorn} role="presentation"/>
                     </div>
                     <p className="caption">Let’s collect’em first: Squirrels</p>
                     <ul>
@@ -242,7 +241,7 @@ class Bslide extends Component {
                   </div>
                   <div className="third acorn-wrapper">
                     <div className="acorn">
-                      <img src={birds}/>
+                      <img src={birds} role="presentation"/>
                     </div>
                     <p className="caption">Depending on the season: <br/>Migratory Birds</p>
                     <ul>
@@ -255,7 +254,7 @@ class Bslide extends Component {
                   </div>
                   <div className="third acorn-wrapper">
                     <div className="acorn">
-                      <img src={shortcut}/>
+                      <img src={shortcut} role="presentation"/>
                     </div>
                     <p className="caption">Shortcut for certain websites: Sprinter</p>
                     <ul>
@@ -273,7 +272,7 @@ class Bslide extends Component {
                   <p className="title">PRIMARY PERSONA</p>
                   <div className="flex justify-start">
                     <div className="half">
-                      <img src={primary} />
+                      <img src={primary} alt="A girl on the grass, looking at her phone."/>
                     </div>
                     <div className="half child-bottom primary-bio">
                       <p>Hyunjung Lee (23 years old, female)<br/>
@@ -327,11 +326,11 @@ class Bslide extends Component {
             <Collapse isOpened={this.state.require}>
               <div className="flex justify-between">
                 <div className="half">
-                  <img src={matrix} />
+                  <img src={matrix} alt="Requirements matrix"/>
                   <p className="caption">Requirements matrix</p>
                 </div>
                 <div className="half">
-                  <img src={scenario} />
+                  <img src={scenario} alt="Identifying context scenario"/>
                   <p className="caption">Identifying context scenario</p>
                 </div>
               </div>
@@ -339,22 +338,22 @@ class Bslide extends Component {
                 <p className="title">PRIMARY CONTEXT SCENARIO</p>
                 <div className="flex justify-between">
                   <div className="quarter">
-                    <img src={primary1} />
+                    <img src={primary1} role="presentation"/>
                     <p className="caption">In Bus</p>
                     <p>Hyunjung opens the B-slide application to <b>add her Facebook account</b> into the sync list. After adding the account, she notices that it is properly synced and all her Saved posts are archived in the application.</p>
                   </div>
                   <div className="quarter">
-                    <img src={primary2} />
+                    <img src={primary2} role="presentation"/>
                     <p className="caption">In Bus</p>
                     <p>She decides that it would be good to be prompted of this material in the evening so she will know that worth-reading content is waiting for her to read. She <b>sets push notification time</b> between 7 PM to 11PM.</p>
                   </div>
                   <div className="quarter">
-                    <img src={primary3} />
+                    <img src={primary3} role="presentation"/>
                     <p className="caption">At Home</p>
                     <p>At 7 PM, her phone vibrates and the <b>lock-screen shows a single card of the bookmarked contents</b>. The card contains the title Virtual Reality with Youtube, with a brief summary of the contents and one image.</p>
                   </div>
                   <div className="quarter">
-                    <img src={primary4} />
+                    <img src={primary4} role="presentation"/>
                     <p className="caption">At Home</p>
                     <p>She <b>recalls</b> adding this contents to FB save. Since it is after dinner and she has <b>time to read</b> until she goes to bed, she decides to read it. After 11PM, the <b>notification disappears</b>.</p>
                   </div>
@@ -364,11 +363,11 @@ class Bslide extends Component {
                 <p className="title">EXTRACTING REQUIREMENTS FROM SCENARIOS</p>
                 <div className="flex justify-between">
                   <div className="half">
-                    <img src={primaryRequirements} />
+                    <img src={primaryRequirements} alt="Primary scenario requirements"/>
                     <p className="caption">Primary scenario requirements</p>
                   </div>
                   <div className="half">
-                    <img src={secondaryRequirements} />
+                    <img src={secondaryRequirements} alt="Secondary scenario requirements"/>
                     <p className="caption">Secondary scenario requirements</p>
                   </div>
                 </div>
@@ -380,7 +379,7 @@ class Bslide extends Component {
               title="Journey Map"
             />
             <p>We considered primary user journey first and what alternative choices user would make based on needs. Thus, this journey map <b>branches out when such choice is made</b>.</p>
-            <img className="full" src={journeyMap} />
+            <img className="full" src={journeyMap} alt="journey map"/>
           </div>
           <div id="Use" className="section">
             <Heading
@@ -389,15 +388,15 @@ class Bslide extends Component {
             <p>We defined use cases based on user goals. Because B-slide draws bookmarked information from <b>other bookmarking services</b> and user interacts both directly and indirectly with them, we included them as the <b>third actor</b>. </p>
             <div className="flex justify-between">
               <div className="third">
-                <img src={useRead} />
+                <img src={useRead} alt="use case diagram 1"/>
                 <p className="caption">User Goal : Read bookmarked contents</p>
               </div>
               <div className="third">
-                <img src={useRecommend} />
+                <img src={useRecommend} alt="use case diagram 2"/>
                 <p className="caption">User Goal: Get recommendation</p>
               </div>
               <div className="third">
-                <img src={useOrganize} />
+                <img src={useOrganize} alt="use case diagram 3"/>
                 <p className="caption">User Goal : Organize bookmarks</p>
               </div>
             </div>
@@ -415,16 +414,16 @@ class Bslide extends Component {
               <Collapse isOpened={this.state.ia}>
                 <div className="site-map">
                   <p className="title">Site Map</p>
-                  <img className="full" src={siteMap} />
+                  <img className="full" src={siteMap} alt="site map"/>
                 </div>
                 <div>
                   <p className="title">Task Flow</p>
                   <div className="flex justify-between">
                     <div className="half">
-                      <img src={taskFlowRead} />
+                      <img src={taskFlowRead} alt="task flow 1 about selecting bookmark to read"/>
                     </div>
                     <div className="half">
-                      <img src={taskFlowRecommend} />
+                      <img src={taskFlowRecommend} alt="task flow 2 about getting recommendation"/>
                     </div>
                   </div>
                 </div>
@@ -442,12 +441,12 @@ class Bslide extends Component {
               </div>
               <Collapse isOpened={this.state.wire}>
                 <div className="full">
-                  <img src={uiScenario1} />
-                  <img src={uiScenario2} />
+                  <img src={uiScenario1} alt="ui scenario 1"/>
+                  <img src={uiScenario2} alt="ui scenario 2"/>
                 </div>
                 <div className="ui-map">
                   <p className="title">Ui Map</p>
-                  <img src={uiMap} />
+                  <img src={uiMap} alt="ui map"/>
                 </div>
               </Collapse>
               <br/>

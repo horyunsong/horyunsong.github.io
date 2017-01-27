@@ -71,7 +71,7 @@ class Logue extends Component {
           <div className="spark-wrapper">
             <h3 className="heading" >Process</h3>
             <div className="spark">
-              <img src={spark} />
+              <img src={spark} role="presentation"/>
             </div>
           </div>
           <Process

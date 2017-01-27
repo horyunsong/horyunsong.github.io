@@ -6,7 +6,6 @@ import Credit from "../../../components/credit/credit";
 import Next from "../../../components/credit/next";
 
 import Title from '../../../components/work/mini/title';
-import Heading from '../../../components/work/mini/heading';
 
 import kkori from '../../../img/work/misc/kkori.jpg';
 import boo from '../../../img/work/misc/boo.png';
@@ -31,14 +30,14 @@ class Misc extends Component {
         <div className="underlined container small">
           <Title
             title="Design and Art"
-            category="Misc"
-            type="ellaneous"
+            category="Industrial"
+            type="Design"
           />
-          <p className="title">Kkori (Tail)</p>
+          <p className="title">Tail</p>
           <p><i>Cable organizer</i></p>
-          <p>Kkori is <b>always attached to the cable</b>, clinging like ivy. The small metal strip inside the rubber coating holds it tightly but is malleable enough that <b>simple grabbing</b> can change the shape. Unwinding it is even simpler, just open it to bring it back to its original shape.</p>
+          <p>Tail is <b>always attached to the cable</b>, clinging like ivy. The small metal strip inside the rubber coating holds it tightly but is malleable enough that <b>simple grabbing</b> can change the shape. Unwinding it is even simpler, just open it to bring it back to its original shape.</p>
           <div className=" center">
-            <img src={kkori} alt="Kkori (Tail)"/>
+            <img src={kkori} alt="Tail"/>
           </div>
           <br/><br/><br/>
 
@@ -50,45 +49,45 @@ class Misc extends Component {
               <p>Cereal boxes are not regular cardboard boxes. Brilliant characters, excitement, sweetness, and joy all combine, to make a cereal box. Each of the twelve months are represented by these cereal boxes.</p>
             </div>
             <div className="forty">
-              <img src={cover} />
+              <img src={cover} alt="cover of calendar"/>
             </div>
           </div>
           <div className="flex justify-between">
             <div className="quarter">
-              <img src={tony} />
+              <img src={tony} alt="January Frosted Flakes"/>
             </div>
             <div className="quarter">
-              <img src={trix} />
+              <img src={trix} alt="February Trix" />
             </div>
             <div className="quarter">
-              <img src={rice} />
+              <img src={rice} alt="March Rice Krispies"/>
             </div>
             <div className="quarter">
-              <img src={corn} />
+              <img src={corn} alt="April Corn Flakes"/>
             </div>
             <div className="quarter">
-              <img src={franken} />
+              <img src={franken} alt="May Frankenberry"/>
             </div>
             <div className="quarter">
-              <img src={froot} />
+              <img src={froot} alt="June Froot Loops"/>
             </div>
             <div className="quarter">
-              <img src={capn} />
+              <img src={capn} alt="July Capn Crunch"/>
             </div>
             <div className="quarter">
-              <img src={oreo} />
+              <img src={oreo} alt="August Oreo Oz"/>
             </div>
             <div className="quarter">
-              <img src={cocoa} />
+              <img src={cocoa} alt="September Cocoa puffs"/>
             </div>
             <div className="quarter">
-              <img src={count} />
+              <img src={count} alt="October Count Chocula"/>
             </div>
             <div className="quarter">
-              <img src={boo} />
+              <img src={boo} alt="November Booberry"/>
             </div>
             <div className="quarter">
-              <img src={lucky} />
+              <img src={lucky}  alt="December Lucky Charms"/>
             </div>
           </div>
 

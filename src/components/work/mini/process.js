@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Scrollspy} from "react-scrollspy";
 
 import './mini.css';
 

@@ -90,35 +90,35 @@ class Recaffeine extends Component {
             <Collapse isOpened={this.state.scenario}>
               <div className="flex justify-between">
                 <div className="half">
-                  <img src={scenario1}/>
+                  <img src={scenario1} role="presentation"/>
                   <p className="">User “Hottie” drinks her coffee in a cafe.</p>
                 </div>
                 <div className="half">
-                  <img src={scenario2}/>
+                  <img src={scenario2} role="presentation"/>
                   <p className="">When she approaches the Re-Caffeine recycle bin, it asks if she wants to recycle.</p>
                 </div>
                 <div className="half">
-                  <img src={scenario3}/>
+                  <img src={scenario3} role="presentation"/>
                   <p className="">“Sure!” Hottie recycles the plastic cup.</p>
                 </div>
                 <div className="half">
-                  <img src={scenario4}/>
+                  <img src={scenario4} role="presentation"/>
                   <p className="">Re-Caffeine recycle bin gives Hottie +1 Water Point.</p>
                 </div>
                 <div className="half">
-                  <img src={scenario5}/>
+                  <img src={scenario5} role="presentation"/>
                   <p className="">Hottie checks her points and her team’s Water Points.</p>
                 </div>
                 <div className="half">
-                  <img src={scenario6}/>
+                  <img src={scenario6} role="presentation"/>
                   <p className="">The water point drops on her choice of tree in her farm.</p>
                 </div>
                 <div className="half">
-                  <img src={scenario7}/>
+                  <img src={scenario7} role="presentation"/>
                   <p className="">Ta-da! Her little orange tree grows.</p>
                 </div>
                 <div className="half">
-                  <img src={scenario8}/>
+                  <img src={scenario8} role="presentation"/>
                   <p className="">Hottie has fun recycling and brags to her friends about her orange tree.</p>
                 </div>
               </div>
@@ -131,7 +131,7 @@ class Recaffeine extends Component {
             />
             <div className="flex justify-between">
               <div className="half center">
-                <img src={system} />
+                <img src={system} role="presentation"/>
                 <p className="caption">Prototype system design</p>
               </div>
               <div className="half">
@@ -155,7 +155,7 @@ class Recaffeine extends Component {
             <Collapse isOpened={this.state.prototype}>
               <div className="flex justify-between">
                 <div className="third">
-                  <img src={mac}/>
+                  <img src={mac} alt="macbook"/>
                   <ul>
                     <li>Bluetooth Light Energy: Closeness of the iPhone</li>
                     <li>Camera Detect: Light source threshold</li>
@@ -163,14 +163,14 @@ class Recaffeine extends Component {
                   </ul>
                 </div>
                 <div className="third">
-                  <img src={ipad}/>
+                  <img src={ipad} alt="ipad"/>
                   <ul>
                     <li>Interface: User interaction</li>
                     <li>Wi-fi: Receive interactive information from MacBook</li>
                   </ul>
                 </div>
                 <div className="third">
-                  <img src={iphone}/>
+                  <img src={iphone} alt="iphone"/>
                   <ul>
                     <li>Bluetooth Light Energy: Activate the system by closeness</li>
                     <li>Wi-fi: Receive interactive information</li>
