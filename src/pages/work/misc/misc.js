@@ -29,8 +29,8 @@ class Misc extends Component {
         <Nav/>
         <div className="underlined container small">
           <Title
-            title="Design and Art"
-            category="Industrial"
+            title="Miscellaneous"
+            category="Msic."
             type="Design"
           />
           <p className="title">Tail</p>

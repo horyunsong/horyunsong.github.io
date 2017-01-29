@@ -40,7 +40,7 @@
 .process ul li {
     display: block;
     position: relative;
-    width: 63px;
+    width: 76px; /*53*/
     margin: 15px 2px;
     text-align: center;
     font-size: 0.7em;
@@ -51,7 +51,7 @@
 .process ul li:before {
     position: absolute;
     top: -15px;
-    left: 27px;
+    left: 33px; /*27*/
     content: " ";
     width: 2px;
     height: 2px;
@@ -70,7 +70,7 @@
     background-color: #9B9B9B;
 }
 .process ul li:first-child:after {
-    left: 28px;
+    left: 34px;/*28*/
 }
 .process ul li:nth-child(4):after {
     left: -30px;

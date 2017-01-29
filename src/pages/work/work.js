@@ -13,7 +13,7 @@ import urack from "../../img/work/thumb/urack-sprite.jpg";
 import recaffeine from "../../img/work/thumb/re-caffeine.png";
 import bunnynail from "../../img/work/thumb/bunnynail.jpg";
 import underlined from "../../img/work/thumb/underlined.png";
-import misc from "../../img/work/thumb/misc.png";
+import misc from "../../img/work/thumb/misc.jpg";
 
 
 class Work extends Component {
@@ -100,10 +100,11 @@ class Work extends Component {
               <Link to="/bslide">
                 <Piece
                   title="B-SLIDE"
+                  type="Research, Design & Prototype"
                   description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
                   image={bslide}
                   filters={
-                    ["Research", "Design", (this.state.research || this.state.design ? "active" : "") ]
+                    ["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]
                   }
                 />
               </Link>
@@ -143,7 +144,7 @@ class Work extends Component {
                   type="Design & Prototype"
                   description="Re-Caffeine is gamification of the recycling system. By recycling, user is rewarded with water points to grow virtual trees. As community, users can cultivate virtual mountain."
                   image={recaffeine}
-                  filters={["Design", "Prototype", (this.state.research || this.state.design ? "active" : "")]}
+                  filters={["Design", "Prototype", (this.state.prototype || this.state.design ? "active" : "")]}
                 />
               </Link>
               <Link to="/bunny">
@@ -159,7 +160,7 @@ class Work extends Component {
               <Link to="/misc">
                 <Piece
                   title="MISCELLANEOUS"
-                  category="Industrial"
+                  category="Misc."
                   type="Design"
                   description="Tail (cable organizer) and Adventurous Cereal (concept calendar)"
                   image={misc}

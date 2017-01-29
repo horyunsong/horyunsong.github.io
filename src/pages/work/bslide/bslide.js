@@ -28,10 +28,9 @@ import primary3 from '../../../img/work/bslide/primary3.jpg';
 import primary4 from '../../../img/work/bslide/primary4.jpg';
 import primaryRequirements from '../../../img/work/bslide/primary-requirements.png';
 import secondaryRequirements from '../../../img/work/bslide/secondary-requirements.png';
+import imageMap from '../../../img/work/bslide/imageMapping.png';
+import whyLockscreen from '../../../img/work/bslide/why-lockscreen.png';
 import journeyMap from '../../../img/work/bslide/journey-map.png';
-import useOrganize from '../../../img/work/bslide/use-case-organize-double.png';
-import useRead from '../../../img/work/bslide/use-case-read.png';
-import useRecommend from '../../../img/work/bslide/use-case-recommendation.png';
 import siteMap from '../../../img/work/bslide/site-map.png';
 import taskFlowRead from '../../../img/work/bslide/task-flow-read.png';
 import taskFlowRecommend from '../../../img/work/bslide/task-flow-recommend.png';
@@ -39,6 +38,11 @@ import uiScenario1 from '../../../img/work/bslide/ui-scenario.png';
 import uiScenario2 from '../../../img/work/bslide/ui-scenario2.png';
 import uiMap from '../../../img/work/bslide/ui-map.png';
 import spark from '../../../img/home/spark.png';
+import wireframeUp from '../../../img/work/bslide/wireframe-up.png';
+import wireframeLeft from '../../../img/work/bslide/wireframe-left.png';
+import wireframeStar from '../../../img/work/bslide/wireframe-star.png';
+import wireframeRead from '../../../img/work/bslide/wireframe-read.png';
+import wireframeHome from '../../../img/work/bslide/wireframe-home.png';
 
 
 class Bslide extends Component {
@@ -95,6 +99,7 @@ class Bslide extends Component {
         <div className="bslide container small">
           <Title
             title="B-slide"
+            type="Research, Design & Prototype"
             role="In class team project"
           />
 
@@ -135,9 +140,9 @@ class Bslide extends Component {
             </div>
           </div>
           <Process
-            processes={["Interview", "Creating Persona", "Requirements to Scenario",
-              "Journey Map", "Use Cases", "Information Architecture", "Wireframe"]}
-            names={["Interview", "Creating", "Requirements", "Journey", "Use", "Information", "Wireframe"]}
+            processes={["Interview", "Creating Persona", "Requirements to Lock-screen",
+              "Interaction Design", "Information Architecture", "Wireframe", "Prototype"]}
+            names={["Interview", "Creating", "Requirements", "Interaction Design", "Information", "Wireframe", "Prototype"]}
           />
           <div id="Interview" className="section">
             <Heading
@@ -194,7 +199,9 @@ class Bslide extends Component {
             <Heading
               title="Creating Persona"
             />
+            {/* Flex is like row in bootstrap.*/}
             <div className="flex justify-between">
+              {/* One row/flex as 100%, this div is taking 60% of row. */}
               <div className="sixty">
                 <p className="title">How</p>
                 <ul>
@@ -203,6 +210,7 @@ class Bslide extends Component {
                   <li>Created primary and secondary <b>personas were created based on two different behavioral pattern</b></li>
                 </ul>
               </div>
+              {/* One row/flex as 100%, this div is taking 40% of row. */}
               <div className="forty">
                 <p className="title">Why</p>
                 <p>We wanted to create personas that reflected our users based on behaviors. Later in design stage, we could <b>reason each other</b> by saying "oh no, she is <b>NOT THE TYPE to do that</b>."</p>
@@ -213,6 +221,7 @@ class Bslide extends Component {
                 {this.state.persona ? 'Close' : 'Show'} Pattern and Persona
               </button>
             </div>
+            {/* Content is hidden with Collapse component. */}
             <Collapse isOpened={this.state.persona}>
               <p className="title">spotting interviewee patterns</p>
               <div className="flex justify-between">
@@ -226,6 +235,7 @@ class Bslide extends Component {
               <div className="interviewee-pattern">
                 <p className="title">INTERVIEWEE PATTERNS</p>
                 <div className="flex justify-center">
+                  {/* One row/flex as 100%, this div is taking third of row. */}
                   <div className="third acorn-wrapper">
                     <div className="acorn">
                       <img src={acorn} role="presentation"/>
@@ -298,33 +308,38 @@ class Bslide extends Component {
           </div>
           <div id="Requirements" className="section">
             <Heading
-              title="Requirements to Scenarios"
-              content="... and scenarios to requirements, again."
+              title="Requirements to Lock-screen"
             />
             <div className="flex justify-between">
-              <div className="sixty">
+              <div className="third">
                 <p className="title">How</p>
                 <ul>
-                  <li><b>Extracted data needs, functional needs, product qualities and constraints</b> from primary and secondary personas’ scenario, mental model, goals, environment, skills and abilities. At this point, we did not specify scenario in order yet.
+                  <li><b>Extracted data needs, functional needs, product qualities and constraints</b> from primary and secondary personas’ scenario, mental model, goals, environment, skills and abilities.
                   </li>
-                  <li>Expanded persona pool and came up with diverse but less detailed personas to help <b>identify context scenario</b> and drew two persona’s context scenario.
-                  </li>
-                  <li><b>Extracted more user-focused requirements</b> from context scenarios.
+                  <li><b>Image mapped bookmarking related services</b> on plane with focus of service (x-axis) and type of media (y-axis)
                   </li>
                 </ul>
               </div>
-              <div className="forty">
+              <div className="third">
                 <p className="title">Why</p>
-                <p>We <b>iterated requirement and scenario to not end up requirements only from system and needs or only from scenario</b>. Also, by expanding persona pool, we tried to catch missing requirements in case we are blinded by primary and secondary personas.</p>
+                <ul>
+                  <li>To identify what basis the design should be built on.</li>
+                  <li>To get an idea how other services are approaching bookmark collection or user return to contents.</li>
+                </ul>
+              </div>
+              <div className="third">
+                <p className="title">Finding</p>
+                <p>The design needs to inform and intrigue users in <b>unobtrusive way</b> and let them have <b>prompt access to the original contents</b>. To provide such interaction, we utilized <b>lock-screen</b> display. </p>
               </div>
             </div>
             <div className="button-wrapper">
               <button onClick={this.requireClick} className="button expand">
-                {this.state.require ? 'Close' : 'Show'} Requirement and Scenario
+                {this.state.require ? 'Close' : 'Show'} Requirements and Image Mapping
               </button>
             </div>
             <Collapse isOpened={this.state.require}>
               <div className="flex justify-between">
+                <p className="title">Requirements</p>
                 <div className="half">
                   <img src={matrix} alt="Requirements matrix"/>
                   <p className="caption">Requirements matrix</p>
@@ -334,71 +349,72 @@ class Bslide extends Component {
                   <p className="caption">Identifying context scenario</p>
                 </div>
               </div>
-              <div className="primary-scenario">
-                <p className="title">PRIMARY CONTEXT SCENARIO</p>
-                <div className="flex justify-between">
-                  <div className="quarter">
-                    <img src={primary1} role="presentation"/>
-                    <p className="caption">In Bus</p>
-                    <p>Hyunjung opens the B-slide application to <b>add her Facebook account</b> into the sync list. After adding the account, she notices that it is properly synced and all her Saved posts are archived in the application.</p>
-                  </div>
-                  <div className="quarter">
-                    <img src={primary2} role="presentation"/>
-                    <p className="caption">In Bus</p>
-                    <p>She decides that it would be good to be prompted of this material in the evening so she will know that worth-reading content is waiting for her to read. She <b>sets push notification time</b> between 7 PM to 11PM.</p>
-                  </div>
-                  <div className="quarter">
-                    <img src={primary3} role="presentation"/>
-                    <p className="caption">At Home</p>
-                    <p>At 7 PM, her phone vibrates and the <b>lock-screen shows a single card of the bookmarked contents</b>. The card contains the title Virtual Reality with Youtube, with a brief summary of the contents and one image.</p>
-                  </div>
-                  <div className="quarter">
-                    <img src={primary4} role="presentation"/>
-                    <p className="caption">At Home</p>
-                    <p>She <b>recalls</b> adding this contents to FB save. Since it is after dinner and she has <b>time to read</b> until she goes to bed, she decides to read it. After 11PM, the <b>notification disappears</b>.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="extracting">
-                <p className="title">EXTRACTING REQUIREMENTS FROM SCENARIOS</p>
-                <div className="flex justify-between">
-                  <div className="half">
-                    <img src={primaryRequirements} alt="Primary scenario requirements"/>
-                    <p className="caption">Primary scenario requirements</p>
-                  </div>
-                  <div className="half">
-                    <img src={secondaryRequirements} alt="Secondary scenario requirements"/>
-                    <p className="caption">Secondary scenario requirements</p>
-                  </div>
-                </div>
+              <div>
+                <p className="title">Image Mapping</p>
+                <p>By image mapping, we concluded that the more focused on return, the service tends to focus on single content type and has <i>special</i> features for return such as ‘Speed Reading’ and optimal reading environment. However, such features work <b>on the premise that the user has already returned</b>. Return to bookmarked contents implies that the user was conscious of the existence of bookmarked contents, had will to return and executed the will. In other words, the services are answering to the last part of behavior. Then, how can we let the users know the existence of contents in unobtrusive way, just enough to push them?</p>
+
+                  <img src={imageMap} />
               </div>
             </Collapse>
+            <br/>
+            <div>
+              <p className="title">Why Lock-screen</p>
+
+              <p>Getting notification, opening bookmark service, then going to third party application for original contents have too many depths. By then, user would feel the process cumbersome and grow uninterested. <b>To reduce depths</b>, we replaced notification and browsing by adopting <b>lock-screen display of contents</b> and combined opening application and going to full contents to <b>unlocking</b>. </p>
+              <br/>
+              <img src={whyLockscreen} alt="why lockscreen?"/>
+            </div>
           </div>
-          <div id="Journey" className="section">
+          <div id="Interaction" className="section">
             <Heading
-              title="Journey Map"
+              title="Interaction Design"
+              content="Imagining how user would interact with the service throughout the day"
             />
-            <p>We considered primary user journey first and what alternative choices user would make based on needs. Thus, this journey map <b>branches out when such choice is made</b>.</p>
-            <img className="full" src={journeyMap} alt="journey map"/>
-          </div>
-          <div id="Use" className="section">
-            <Heading
-              title="Use Cases"
-            />
-            <p>We defined use cases based on user goals. Because B-slide draws bookmarked information from <b>other bookmarking services</b> and user interacts both directly and indirectly with them, we included them as the <b>third actor</b>. </p>
-            <div className="flex justify-between">
-              <div className="third">
-                <img src={useRead} alt="use case diagram 1"/>
-                <p className="caption">User Goal : Read bookmarked contents</p>
+            <br/>
+            <div className="primary-scenario">
+              <p className="title">PRIMARY CONTEXT SCENARIO</p>
+              <div className="flex justify-between">
+                <div className="quarter">
+                  <img src={primary1} role="presentation"/>
+                  <p className="caption">In Bus</p>
+                  <p>Hyunjung opens the B-slide application to add her Facebook account into <b>the synced account list</b>, where she already has Chrome and Twitter accounts.</p>
+                </div>
+                <div className="quarter">
+                  <img src={primary2} role="presentation"/>
+                  <p className="caption">In Bus</p>
+                  <p>She decides that it would be good to read some materials in the evening. She <b>sets B-slide lock-screen time</b> to 7 PM to 11PM.</p>
+                </div>
+                <div className="quarter">
+                  <img src={primary3} role="presentation"/>
+                  <p className="caption">At Home</p>
+                  <p>At 7 PM, <b>the lock-screen displays bookmarked contents</b>. The first card contains the title Virtual Reality with Youtube, with a brief summary of the contents and one image.</p>
+                </div>
+                <div className="quarter">
+                  <img src={primary4} role="presentation"/>
+                  <p className="caption">At Home</p>
+                  <p>She <b>recalls</b> adding this contents to FB save. Since she has <b>time to read</b> until she goes to bed, she decides to read it. After 11PM, the <b>lock-screen returns to default state</b>.</p>
+                </div>
               </div>
-              <div className="third">
-                <img src={useRecommend} alt="use case diagram 2"/>
-                <p className="caption">User Goal: Get recommendation</p>
+            </div>
+            {/*
+            <div className="extracting">
+              <p className="title">EXTRACTING REQUIREMENTS FROM SCENARIOS</p>
+              <div className="flex justify-between">
+                <div className="half">
+                  <img src={primaryRequirements} alt="Primary scenario requirements"/>
+                  <p className="caption">Primary scenario requirements</p>
+                </div>
+                <div className="half">
+                  <img src={secondaryRequirements} alt="Secondary scenario requirements"/>
+                  <p className="caption">Secondary scenario requirements</p>
+                </div>
               </div>
-              <div className="third">
-                <img src={useOrganize} alt="use case diagram 3"/>
-                <p className="caption">User Goal : Organize bookmarks</p>
-              </div>
+            </div>
+            */}
+            <div>
+              <p className="title">Journey Map</p>
+              <p>We considered primary user journey first and what alternative choices user would make based on needs. Thus, this journey map <b>branches out when such choice is made</b>.</p>
+              <img className="full" src={journeyMap} alt="journey map"/>
             </div>
           </div>
           <div id="Information" className="section">
@@ -449,6 +465,35 @@ class Bslide extends Component {
                   <img src={uiMap} alt="ui map"/>
                 </div>
               </Collapse>
+            </div>
+            <div id="Prototype" className="section">
+              <Heading
+                title="Prototype"
+              />
+              <div className="half center">
+                <p className="title">Default lock-screen UI</p>
+                <img src={wireframeHome} alt="Wireframe default"/>
+              </div>
+              <div className="flex justify-between">
+                <div className="half">
+                  <p className="title">Swipe up to explore</p>
+                  <img src={wireframeUp} alt="Wireframe up"/>
+                </div>
+                <div className="half">
+                  <p className="title">Double tap to read</p>
+                  <img src={wireframeRead} alt="Wireframe read"/>
+                </div>
+              </div>
+              <div className="flex justify-between">
+                <div className="half">
+                  <p className="title">Swipe left to get recommendation</p>
+                  <img src={wireframeLeft} alt="Wireframe left"/>
+                </div>
+                <div className="half">
+                  <p className="title">Favorite recommendation</p>
+                  <img src={wireframeStar} alt="Wireframe star"/>
+                </div>
+              </div>
               <br/>
             </div>
         </div>
