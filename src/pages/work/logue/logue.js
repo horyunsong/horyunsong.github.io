@@ -75,10 +75,39 @@ class Logue extends Component {
             </div>
           </div>
           <Process
-            processes={["1st Prototype: Flow", "2nd Prototype: Story Deck", "Image Mapping",
+            processes={["Image Mapping", "1st Prototype: Flow", "2nd Prototype: Story Deck",
               "Focus Group", "3rd Prototype:  Logue", "User Testing", "4th Prototype: Timeline"]}
-            names={["Interview", "Creating", "Defining", "Journey", "Use", "Information", "Wireframe"]}
+            names={["Image", "Flow", "Story", "Focus", "Logue", "User", "Timeline"]}
           />
+          <div id="Image" className="section">
+            <Heading
+              title="Image Mapping"
+            />
+            <div className="flex justify-between">
+              <div className="third">
+                <p className="title">How</p>
+                <p><b>Mapped 19 creative writing and storytelling applications, online platforms and tools</b> on a coordinate system with an x-axis ranging from the narrative (author’s dictation) to the interactive (reader as part of co-creation) and a y-axis ranging from the simple to the sophisticated</p>
+              </div>
+              <div className="third">
+                <p className="title">Why</p>
+                <p>To understand how each artifact functions as a story creation or delivery machine and what their key UX/UI component is</p>
+              </div>
+              <div className="third">
+                <p className="title">Finding</p>
+                <p>The more sophisticated the system is, it adopted the <b>simpler unit</b> (e.g. card, tweet) for base and used diverse <b>categories and handles</b> (e.g. timeline, Twitter handle) to nagivate.</p>
+              </div>
+            </div>
+            <div className="flex justify-between">
+              <div className="half center">
+                <img src={image1} alt="Initial image mapping"/>
+                <p className="caption">Initial image mapping</p>
+              </div>
+              <div className="half center">
+                <img src={image2} alt="Simplified image mapping"/>
+                <p className="caption">Simplified image mapping</p>
+              </div>
+            </div>
+          </div>
           <div id="1st" className="section">
             <Heading
               title="1st Prototype: Flow"
@@ -86,7 +115,7 @@ class Logue extends Component {
             <div className="flex justify-between">
               <div className="third">
                 <p className="title">How</p>
-                <p><b>Wireframed flow of the story with episodes</b> from cartoon (Adventure Time) and chapters from classic (Pride & Prejudice)</p>
+                <p><b>Wireframed flow of the story with episode cards</b> from cartoon (Adventure Time) and chapters from classic (Pride & Prejudice)</p>
               </div>
               <div className="third">
                 <p className="title">WHy</p>
@@ -125,35 +154,7 @@ class Logue extends Component {
               <p className="caption">Contents adapted from Elliot Holt’s Twitter Fiction “Evidence”</p>
             </div>
           </div>
-          <div id="Image" className="section">
-            <Heading
-              title="Image Mapping"
-            />
-            <div className="flex justify-between">
-              <div className="third">
-                <p className="title">How</p>
-                <p><b>Mapped 19 creative writing and storytelling applications, online platforms and tools</b> on a coordinate system with an x-axis ranging from the narrative (author’s dictation) to the interactive (reader as part of co-creation) and a y-axis ranging from the simple to the sophisticated</p>
-              </div>
-              <div className="third">
-                <p className="title">Why</p>
-                <p>To understand how each artifact functions as a story creation or delivery machine and what their key UX/UI component is</p>
-              </div>
-              <div className="third">
-                <p className="title">Finding</p>
-                <p>The more sophisticated the system is, it adopted the <b>simpler unit</b> (e.g. card, tweet) for base and used diverse <b>categories and handles</b> (e.g. timeline, Twitter handle) to nagivate.</p>
-              </div>
-            </div>
-            <div className="flex justify-between">
-              <div className="half center">
-                <img src={image1} alt="Initial image mapping"/>
-                <p className="caption">Initial image mapping</p>
-              </div>
-              <div className="half center">
-                <img src={image2} alt="Simplified image mapping"/>
-                <p className="caption">Simplified image mapping</p>
-              </div>
-            </div>
-          </div>
+
           <div id="Focus" className="section">
             <Heading
               title="Focus Group"
@@ -283,7 +284,7 @@ class Logue extends Component {
             </Collapse>
             <div>
               <p className="title">Finding</p>
-              <p>After two weeks of testing, <b>semi-structured interviews</b> were conducted. Evaluation focused on the holistic system of Logue. As the last part of interview, <b>each team was asked to draw Story Maps based on their knowledge of Logue</b> and explain the structure to determine whether the co-creators’ understanding of Logue was congruent with Logue system. </p>
+              <p>After two weeks of testing, <b>semi-structured interviews and participatory design session</b> were conducted. Evaluation focused on the holistic system of Logue. As the last part of interview, <b>each team was asked to draw Story Maps based on their knowledge of Logue</b> and explain the structure to determine whether the co-creators’ understanding of Logue was congruent with Logue system. </p>
               <div className="flex justify-between">
                 <div className="half">
                   <p>1. Notable changes recruits experienced from unstructured co-creation to practicing Logue system:</p>
@@ -303,7 +304,8 @@ class Logue extends Component {
                 </div>
               </div>
 
-              <p>3. Both teams could <b>draw story map without hesitation</b>, even though they did not expect the request. As they explained their own story map, they said that <b>thinking in terms of Logue helps them to approach the structure from holistic view</b>. Team B was especially surprised at how simple their story map was using Logue.</p>
+              <p>3. Participatory Design: <br/>
+                Both teams could <b>draw story map without hesitation</b>n. As they explained their own story map, they said that thinking in terms of Logue helps them to approach the structure from holistic view. By drawing and explaining, they came up with <b>ideas that would help novice guide through this new system and also advanced features they want</b>.</p>
               <div className="flex justify-around team">
                 <div className="third center">
                   <img src={teamA} alt="team A story map"/>
