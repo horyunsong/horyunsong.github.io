@@ -338,8 +338,8 @@ class Bslide extends Component {
               </button>
             </div>
             <Collapse isOpened={this.state.require}>
+              <p className="title">Requirements</p>
               <div className="flex justify-between">
-                <p className="title">Requirements</p>
                 <div className="half">
                   <img src={matrix} alt="Requirements matrix"/>
                   <p className="caption">Requirements matrix</p>
