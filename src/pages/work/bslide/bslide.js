@@ -12,6 +12,7 @@ import Heading from '../../../components/work/mini/heading';
 
 import read from '../../../img/work/bslide/read.png';
 import curate from '../../../img/work/bslide/curate.png';
+import bGif from '../../../img/work/bslide/bslideGif.gif';
 import interviewees from '../../../img/work/bslide/interviewees.png';
 import interviewECoding from '../../../img/work/bslide/interview-E-coding.png';
 import interviewOrganizing from '../../../img/work/bslide/interview-organizing.png';
@@ -26,8 +27,6 @@ import primary1 from '../../../img/work/bslide/primary1.png';
 import primary2 from '../../../img/work/bslide/primary2.jpg';
 import primary3 from '../../../img/work/bslide/primary3.jpg';
 import primary4 from '../../../img/work/bslide/primary4.jpg';
-import primaryRequirements from '../../../img/work/bslide/primary-requirements.png';
-import secondaryRequirements from '../../../img/work/bslide/secondary-requirements.png';
 import imageMap from '../../../img/work/bslide/imageMapping.png';
 import whyLockscreen from '../../../img/work/bslide/why-lockscreen.png';
 import journeyMap from '../../../img/work/bslide/journey-map.png';
@@ -105,7 +104,7 @@ class Bslide extends Component {
 
 
           <div className="flex justify-between">
-            <div className="problem half">
+            <div className="problem sixty">
               <p  className="title">Target User Group</p>
               <p>University students in Korea, who bookmark in social media</p>
               <p className="title">Problem</p>
@@ -113,12 +112,12 @@ class Bslide extends Component {
               <p  className="title">Solution</p>
               <p>B-slide prompts user by showing <b>bookmarked contents on the lock-screen</b> as compact cards. <b>By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content</b>.</p>
             </div>
-            <div className="half">
+            <div className="forty">
               <p className="title">My role</p>
               <ul>
                 <li>Team leader</li>
-                <li>Prepared and conducting user interview</li>
-                <li>Analyzed information through coding</li>
+                <li>Prepared and conducting interview</li>
+                <li>Coded and analyzed data</li>
                 <li>Lead persona development process</li>
                 <li>Extracted requirements and applied them to use cases and UI map</li>
                 <li>Planned journey map branches</li>
@@ -130,8 +129,16 @@ class Bslide extends Component {
                 </p>
             </div>
           </div>
-          <img className="eighty center" src={read} alt="Read the stuff that you always plan to but never do. We will notify you lock-screen hen it's good time to read."/>
-          <img className="eighty center" src={curate} alt="Curate what you'll read. No haphazard recommendation. Get what you want."/>
+          <div className="flex justify-between">
+            <div className="sixty">
+              <img className="center" src={read} alt="Read the stuff that you always plan to but never do. We will notify you lock-screen hen it's good time to read."/>
+              <img className="center" src={curate} alt="Curate what you'll read. No haphazard recommendation. Get what you want."/>
+            </div>
+            <div className="forty">
+              <img className="gif center" src={bGif} alt="gif image of prototype"/>
+            </div>
+          </div>
+
           <br/>
           <div className="spark-wrapper">
             <h3 className="heading" >Process</h3>
