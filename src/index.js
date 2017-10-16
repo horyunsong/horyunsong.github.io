@@ -4,6 +4,7 @@ import './index.css';
 import { Router, Route, browserHistory } from 'react-router';
 
 import Index from './pages/index/index';
+import Docs from './pages/work/docs/docs';
 import Bslide from './pages/work/bslide/bslide';
 import Underlined from './pages/work/underlined/underlined';
 import Logue from './pages/work/logue/logue';
@@ -20,6 +21,7 @@ function scrollTop () {
 ReactDOM.render(
   <Router history={browserHistory} onUpdate={scrollTop}>
     <Route path="/" component={Index} />
+      <Route path="/docs" component={Docs}/>
     <Route path="/bslide" component={Bslide}/>
     <Route path="/underlined" component={Underlined}/>
     <Route path="/logue" component={Logue}/>

@@ -222,14 +222,6 @@ class Bslide extends Component {
                 <p className="title">Why</p>
                 <p>We wanted to create personas that reflected our users based on behaviors. Later in design stage, we could <b>reason each other</b> by saying "oh no, she is <b>NOT THE TYPE to do that</b>."</p>
               </div>
-            </div>
-            <div className="button-wrapper">
-              <button onClick={this.personaClick} className="button expand">
-                {this.state.persona ? 'Close' : 'Show'} Pattern and Persona
-              </button>
-            </div>
-            {/* Content is hidden with Collapse component. */}
-            <Collapse isOpened={this.state.persona}>
               <p className="title">spotting interviewee patterns</p>
               <div className="flex justify-between">
                 <div className="half center">
@@ -239,6 +231,15 @@ class Bslide extends Component {
                   <img src={interviewPurpose} alt="purpose of bookmarking pattern" />
                 </div>
               </div>
+            </div>
+            <div className="button-wrapper">
+              <button onClick={this.personaClick} className="button expand">
+                {this.state.persona ? 'Close' : 'Show'} Pattern and Persona
+              </button>
+            </div>
+            {/* Content is hidden with Collapse component. */}
+            <Collapse isOpened={this.state.persona}>
+
               <div className="interviewee-pattern">
                 <p className="title">INTERVIEWEE PATTERNS</p>
                 <div className="flex justify-center">

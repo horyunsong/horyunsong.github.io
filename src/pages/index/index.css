@@ -17,6 +17,9 @@ p, li {
     color: #4A4A4A;
     font-size: 0.85em;
 }
+.bigP {
+    font-size: 1.0em;
+}
 h1 {
     letter-spacing: 0.1em;
 }
@@ -33,7 +36,10 @@ a {
     text-decoration: none;
 }
 a.link {
-    background-color: #e2e2e2;
+    border-bottom: solid 3px #e2e2e2;
+}
+a.link:hover {
+    border-bottom: solid 3px #FE6C61;
 }
 .bold {
     font-weight: 900;
@@ -129,7 +135,7 @@ img {
 .forty {
     width: 35%;
     min-width: 200px;
-    padding: 0.7em;
+    padding: 0 0.7em;
 }
 .sixty {
     width: 57%;
@@ -139,6 +145,12 @@ img {
 .eighty {
     width: 80%;
     min-width: 310px;
+}
+.bare-right {
+    padding: 0 0.7em 0 0;
+}
+.space-up {
+    padding-top: 1em;
 }
 
 /* Align */
@@ -196,4 +208,21 @@ img {
 .button.expand {
     margin: 3em auto 0 auto;
     padding: 1em 3em;
+}
+
+/* Space decoration */
+.left-bar {
+    border-left: solid 1px grey;
+}
+.bg-grey {
+    background-color: #e2e2e2;
+}
+.inner { /* smaller contents area within chapters */
+    margin: 0 0.7em;
+}
+.upper  {
+    padding-top: 1em;
+}
+.underline {
+    border-top: solid 1px grey;
 }

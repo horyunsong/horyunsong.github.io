@@ -97,14 +97,14 @@ class Work extends Component {
             <div className="flex justify-center">
               <div>
               </div>
-              <Link to="/bslide">
+              <Link to="/docs">
                 <Piece
-                  title="B-SLIDE"
-                  type="Research, Design & Prototype"
-                  description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
+                  title="Documentation"
+                  type="Research"
+                  description="Conducted research"
                   image={bslide}
                   filters={
-                    ["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]
+                    ["Research", (this.state.research  ? "active" : "") ]
                   }
                 />
               </Link>
@@ -115,6 +115,17 @@ class Work extends Component {
                   description="Logue is a unit of stories contained in a standardized card. Logue breaks the linearity of story to view it differently using three factors: category, perspective, and route."
                   image={logue}
                   filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]}
+                />
+              </Link>
+              <Link to="/bslide">
+                <Piece
+                  title="B-SLIDE"
+                  type="Research, Design & Prototype"
+                  description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
+                  image={bslide}
+                  filters={
+                    ["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]
+                  }
                 />
               </Link>
               <Link to="/urack">
