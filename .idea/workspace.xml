@@ -21,8 +21,8 @@
       <file leaf-file-name="work.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/work/work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="103" column="19" lean-forward="false" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+            <state relative-caret-position="150">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -43,8 +43,8 @@
       <file leaf-file-name="docs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/work/docs/docs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="168" column="136" lean-forward="false" selection-start-line="168" selection-start-column="130" selection-end-line="168" selection-end-column="136" />
+            <state relative-caret-position="210">
+              <caret line="99" column="148" lean-forward="false" selection-start-line="99" selection-start-column="148" selection-end-line="99" selection-end-column="148" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -84,8 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hover</find>
-      <find>button</find>
       <find>bg</find>
       <find>heading</find>
       <find>id=</find>
@@ -114,6 +112,8 @@
       <find>friday</find>
       <find>paradigm</find>
       <find>week 12</find>
+      <find>monda</find>
+      <find>define</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,10 +168,10 @@
         <option value="$PROJECT_DIR$/src/pages/work/stack/stack.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/pages/work/docs/stack.js" />
-        <option value="$PROJECT_DIR$/src/pages/work/work.js" />
         <option value="$PROJECT_DIR$/src/pages/index/index.css" />
         <option value="$PROJECT_DIR$/src/pages/work/docs/docs.css" />
         <option value="$PROJECT_DIR$/../../GRA/web/visualculturedesign1016.html" />
+        <option value="$PROJECT_DIR$/src/pages/work/work.js" />
         <option value="$PROJECT_DIR$/src/pages/work/docs/docs.js" />
       </list>
     </option>
@@ -205,6 +205,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -413,7 +414,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -546,11 +546,13 @@
       <workItem from="1487670844329" duration="181000" />
       <workItem from="1507676732394" duration="12316000" />
       <workItem from="1508019251026" duration="16854000" />
+      <workItem from="1508194884028" duration="893000" />
+      <workItem from="1508468219599" duration="3366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200831000" />
+    <option name="totallyTimeSpent" value="205090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -560,19 +562,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21022727" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -818,9 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-627">
           <caret line="307" column="74" lean-forward="false" selection-start-line="307" selection-start-column="74" selection-end-line="307" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -835,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,16 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/work/work.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="103" column="19" lean-forward="false" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -905,15 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="152" column="20" lean-forward="false" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,6 +900,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../GRA/web/visualculturedesign1016.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="1168" column="29" lean-forward="true" selection-start-line="1168" selection-start-column="29" selection-end-line="1168" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -933,18 +919,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../GRA/web/visualculturedesign1016.html">
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="1145" column="62" lean-forward="false" selection-start-line="1145" selection-start-column="62" selection-end-line="1145" selection-end-column="62" />
+        <state relative-caret-position="2280">
+          <caret line="152" column="20" lean-forward="false" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/work/work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/work/docs/docs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="168" column="136" lean-forward="false" selection-start-line="168" selection-start-column="130" selection-end-line="168" selection-end-column="136" />
+        <state relative-caret-position="210">
+          <caret line="99" column="148" lean-forward="false" selection-start-line="99" selection-start-column="148" selection-end-line="99" selection-end-column="148" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

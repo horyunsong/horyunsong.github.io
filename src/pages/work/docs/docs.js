@@ -30,7 +30,7 @@ import expand from '../../../img/work/docs/expand.jpg';
 import motivation from '../../../img/work/docs/motivation.jpg';
 import challenge from '../../../img/work/docs/challenge.jpg';
 import nudge from '../../../img/work/docs/nudge.jpg';
-import sunset from '../../../img/work/docs/sunset.jpg';
+import sunset from '../../../img/work/docs/sunset2.jpg';
 
 import spark from '../../../img/home/spark.png';
 
@@ -97,19 +97,19 @@ class Docs extends Component {
           <div className="flex justify-between">
             <div className="problem sixty">
               <p className="title">Problem</p>
-              <p>Stack Overflow has launched a product called the <a className="link" href="https://stackoverflow.blog/2016/07/21/introducing-stack-overflow-documentation-beta/">Documentation</a>. The product provided a space for <b>developers to collaboratively write technical documentations</b> with focus on examples. However, users have raised issues and questioned if the product itself was <b>failing to achieve the goal</b>.</p>
+              <p><b>Stack Overflow had a product called Documentation, which was a collaborative writing space for technical reference material.</b> Nine months after the beta launch, the company has identified some key problems and decided to <a className="link" href="https://meta.stackoverflow.com/questions/349410/tearing-down-the-structure-of-documentation">redesign the product.</a></p>
               <p  className="title">Solution</p>
-              <p>Stack Overflow has decided to <a className="link" href="https://meta.stackoverflow.com/questions/349410/tearing-down-the-structure-of-documentation">redesign the product</a>, this time through more informed design process. To design a product where strangers could write collaboratively, we had to learn how the professionals wrote individually and/or collaboratively. <b>I took lead on gathering insights from technical writers</b> and delivered six design recommendations based on the findings from semi-structured interviews</p>
+              <p>In order to design a tool that enabled everyone to write online documentation together, we had to learn how technical writers—the professionals—wrote both individually and collaboratively. <b>I took the lead on gathering insights from technical writers and delivered six design recommendations based on the findings from semi-structured interviews.</b></p>
             </div>
             <div className="forty">
               <p className="title">My role</p>
               <ul>
-                <li>Define the research questions</li>
+                <li>Define research questions</li>
                 <li>Plan the research</li>
-                <li>Recruit the interviewees</li>
-                <li>Conduct the interviews</li>
-                <li>Analyze the interviews</li>
-                <li>Deliver the design recommendations</li>
+                <li>Recruit interviewees</li>
+                <li>Conduct interviews</li>
+                <li>Analyze interviews</li>
+                <li>Deliver design recommendations</li>
               </ul>
             </div>
             <div className="full">
@@ -136,7 +136,7 @@ class Docs extends Component {
               title="Background"
             />
             <div>
-              <p>Stack Overflow has launched a product called the Documentation in July 2016. The idea was for <b>developers to collaboratively write reference materials for developer tools</b> (e.g. Java). Although it addressed the key element lacking in traditional technical documentations—the examples, the participation has waned rapidly. In April 2017, Stack Overflow has <a className="link" href="https://meta.stackoverflow.com/a/348087"> identified some key issues:</a></p>
+              <p>Stack Overflow has launched a product called Documentation in July 2016. It was <b>a collaborative writing space for technical reference material</b>. Although it addressed some problems in traditional technical documentation, the participation has constantly decreased since the beta launch. In April 2017, Stack Overflow has <a className="link" href="https://meta.stackoverflow.com/a/348087"> released the analysis of the situation:</a></p>
 
               <div className="flex justify-between">
 
@@ -147,7 +147,7 @@ class Docs extends Component {
                     <li>Low quality, scattered content and poor findability </li>
                   </ul>
                   <p className="space-up">Seeing that these issues could not be addressed with minor adjustments, the company decided to <a className="link" href="https://meta.stackoverflow.com/questions/349410/tearing-down-the-structure-of-documentation">redesign the product</a>. <br/><br/>
-                    If we were to design a tool that everyone could write together openly on the web, first we had to learn how documentations were written by the professionals: the technical writers. <b>As a User Researcher, I delivered 6 design recommendations based on the findings from the semi-structured interviews with the technical writers.</b></p>
+                    If we were to design a tool that enabled everyone to write online documentation together, first we had to learn how they wrote both individually and collaboratively. <b>As a User Researcher, I researched technical writers and delivered 6 design recommendations based on the findings.</b></p>
                 </div>
                 <div className="half">
                   <img src={docsExamples} alt=" "/>
@@ -162,18 +162,18 @@ class Docs extends Component {
             />
             <div>
               <ul>
-                <li>How do the technical writers <b>define technical documentation</b>? And what <b>characteristics</b> should it have?</li>
-                <li>How do the technical writers <b>write</b> documentations and what kind of <b>tools</b> do they use?</li>
-                <li>How do the technical writers <b>collaborate</b> with other writers, developers and others?</li>
+                <li>How do the technical writers <b>define technical documentation</b>? What <b>characteristics</b> should it have?</li>
+                <li>How do the they <b>write</b> documentations and what kind of <b>tools</b> do they use?</li>
+                <li>How do they <b>collaborate</b> with other writers, developers and stakeholders?</li>
               </ul>
-              <p><span className="bg-grey">In order to find answers to these research questions, I decided that there is need for in-depth conversations on one's experience. Therefore, I chose to conduct semi-structured interview as the research method.</span></p>
+              <p><span className="bg-grey">In order to answer these questions, I decided that there was a need for in-depth conversations on one's experience as a technical writer. Therefore, I conducted semi-structured interviews.</span></p>
             </div>
           </div>
           <div id="Interviews" className="section">
             <Heading
               title="Interviews"
             />
-            <p>All interviews were <b>semi-structured</b> and conducted <b>remotely</b>, using Google Hangouts. Most of the interviews have <b>shared their screens</b> to show the researchers show how they used the writing or collaboration tools. Even though all interviews were recorded, I cannot share the screens here. </p>
+            <p>All interviews were <b>semi-structured</b> and conducted <b>remotely</b>, using Google Hangouts. Most of the interviews  <b>shared their screens</b> to show how they used their writing or collaboration tools.</p>
             <div className="flex justify-between">
               <div className="third">
                 <img className="" src={pic1} alt="1" />
@@ -204,7 +204,7 @@ class Docs extends Component {
               title="Analysis"
             />
             <div>
-              <p>I coded the interview notes within 24 hours and transferred them to sticky notes. <b>After organizing them in an affinity diagram, I reconnected the themes, referring back to the specific quotes.</b></p>
+              <p>I coded the interview notes and transferred them to sticky notes. <b>After organizing them in an affinity diagram, I connected the themes, referring back to the specific quotes that each sticky note was linked to.</b></p>
               <img className="" src={stickies} />
             </div>
           </div>
@@ -216,10 +216,10 @@ class Docs extends Component {
               <p className="title bg-grey">1. What is technical documentation?</p>
               <div className="flex justify-between justify-start">
                 <div className="half">
-                  <p>Technical documentation is a type of documentation where users can <b>find solutions to their problems on a particular technology</b>.</p>
+                  <p>Technical documentation is a type of reference material where users can find solutions to their problems on a particular technology.</p>
                 </div>
                 <div className="half">
-                  <p><b>Successful documentation</b> is a living product that grows along with the technology and <b>adapts</b> to its context.</p>
+                  <p><b>A successful documentation is a living product that grows along with the technology and adapts to user needs.</b></p>
                 </div>
               </div>
               <div>
@@ -238,7 +238,7 @@ class Docs extends Component {
                     <img src={independence} />
                     <p className="text-center bold"><b>Independence</b></p>
                     <ul>
-                      <li>Users should not need external help.</li>
+                      <li>Users should not need an external help.</li>
                       <li>It should not require users to read from beginning to end.</li>
                     </ul>
                   </div>
@@ -247,7 +247,7 @@ class Docs extends Component {
                     <p className="text-center bold"><b>Expandability</b></p>
                     <ul>
                       <li>Ability to go in-depth or beyond</li>
-                      <li>Each page should be a stand-alone (independent), but is still connected to the related information.</li>
+                      <li>Each page should be a stand-alone (independent), but it should lead to the related information if needed.</li>
                     </ul>
                   </div>
                 </div>
@@ -257,13 +257,13 @@ class Docs extends Component {
               <p className="title bg-grey">2. Process of creating a technical documentation</p>
               <div className="inner">
                 <div>
-                  <p className="bold"><span className="bg-grey">STEP 1:</span> <b>Plan</b> what this documentation is trying to achieve, “Doc Spec.”</p>
+                  <p className="bold"><span className="bg-grey">STEP 1:</span> <b>Plan</b> what this documentation is trying to achieve, aka Docs Spec.</p>
                   <div className="flex justify-between">
                     <div className="forty">
                       <ul>
-                        <li>Who is the audience of the doc?</li>
-                        <li>Why will they come to the doc?</li>
-                        <li>What will they get out of the doc? </li>
+                        <li>Who is the audience of the docs?</li>
+                        <li>Why will they come to the docs?</li>
+                        <li>What will they get out of the docs? </li>
                       </ul>
                     </div>
                     <div className="sixty">
@@ -276,23 +276,23 @@ class Docs extends Component {
                 </div>
                 <div className="upper">
                   <p className="bold"><span className="bg-grey">STEP 2:</span> <b>Outline</b> in every level.</p>
-                  <p className="inner">The outline determines logical order and groupings which later turn into:</p>
+                  <p className="inner">Outlining determines logical order and groups.</p>
                   <ul>
                     <li>Table of contents</li>
-                    <li>Sections in a single page </li>
+                    <li>Headers and subheaders (sections)</li>
                   </ul>
                 </div>
                 <div className="upper">
                   <p className="bold"><span className="bg-grey">STEP 3:</span> Start <b>writing</b> (and use templates!).</p>
-                  <p className="inner">Templates define what kind of sections are included according to the type of document. <i>Madcap Flare</i> and <i>Confluence</i> were mentioned multiple times as good tool for keeping templates.</p>
+                  <p className="inner">Templates define what kind of sections should be included according to each type of the docs. <i>Madcap Flare</i> and <i>Confluence</i> were mentioned as good tools for keeping templates.</p>
                 </div>
                 <div className="upper">
-                  <p className="bold"><span className="bg-grey">STEP 4:</span> Go through multiple <b>edit phases</b> and if possible, keep all the versions and drafts.</p>
+                  <p className="bold"><span className="bg-grey">STEP 4:</span> Go through multiple <b>editing phases</b> and if possible, keep all the versions.</p>
                   <div className="flex justify-between">
                     <div className="forty">
                       <ul>
                         <li>Version control system (Confluence and SharePoint)</li>
-                        <li>Branches (Github)</li>
+                        <li>Branching (Github)</li>
                         <li>Phase tracking (Trello)</li>
                       </ul>
                     </div>
@@ -313,8 +313,8 @@ class Docs extends Component {
                   <img src={motivation} />
                   <p className=" bold text-center"><b>Motivation</b></p>
                   <ul>
-                    <li>Intrinsic value</li>
-                    <li>Careef opportunity</li>
+                    <li>Intrinsic values</li>
+                    <li>Career opportunities</li>
                   </ul>
                 </div>
                 <div className="third">
@@ -342,30 +342,30 @@ class Docs extends Component {
               <Heading
                 title="Design Recommendations"
               />
-              <p>My audience was not just the coworkers who were familiar with the product. In preparation, I decided to <b>deliver design recommendations in one analogical story</b> so they could reflect on their own experience. I asked the audience to imagine that they were walking into a unfamiliar conference room. What do they see? Chairs? Where would they sit? What would nudge them to sit in the first place? By comparing <b>open source collaborative writing to being part of discussion in a conference room</b>, I delivered <b>6 design recommendations</b>.</p>
+              <p>I knew that my audience would not be just the Documentation and Design teams. There would be people who are not familiar with the Documentation product. In preparation, I decided to deliver the design recommendations using a story. I asked the audience to imagine that they were walking into a unfamiliar conference room. What do they see? Chairs? Where would they sit? What would nudge them to sit in the first place? <b>By comparing collaborative contents writing to being part of discussion in a conference room, I delivered six design recommendations for collaborative documentation.</b></p>
               <div className="flex justify-between">
                 <div className="half">
                   <p className="title bg-grey">1. Provide a place to plan and outline</p>
                   <img src={recommend1} />
-                  <p className="caption">Chaotic arrangement vs. Organized chairs</p>
-                  <p>What kind of situation is easier to voluntarily sit down? <b>Early organization gives a solid direction and lays out placeholders</b>, making it clear for newcomers to see where to participate.</p>
+                  <p className="caption">Chaos vs. Organization</p>
+                  <p>What kind of situation is easier to voluntarily sit down? <b>Early organization gives solid direction and a placeholder for contribution gives even those hesitant a chance to participate.</b></p>
                 </div>
                 <div className="half">
                   <p className="title bg-grey">2. Go Modular</p>
                   <img src={recommend2} />
                   <p className="caption">Bench vs. One-person chairs</p>
-                  <p>The chairs are easier to move around for various situations: grouping and moving. <b>If contents are modular like chairs, it will be be easier to adapt</b>.</p>
+                  <p>One-person chairs are easier to adjust to various situations: grouping and moving. <b>If the content is modular like these chairs, it will be be easier to adapt.</b></p>
                 </div>
                 <div className="half">
                   <p className="title bg-grey">3. Utilize Modules for Templating</p>
                   <img src={recommend3} />
-                  <p>As the chairs can be grouped, <b>the modules can be grouped to make templates</b>. A template would be a set of well matched chairs. They don’t have to stay together strictly, but they are provided as a recommendation.</p>
+                  <p>As chairs can be grouped, <b> modules can be grouped to make templates.</b> A template would be a set of well matched chairs. They don’t have to stay together, but they are provided as a recommendation.</p>
                 </div>
                 <div className="half">
-                  <p className="title bg-grey">4. Label phases of draft</p>
+                  <p className="title bg-grey">4. Label phases of editing</p>
                   <img src={recommend4} />
                   <p className="caption">Talking ASAP vs. Waiting for them to sit</p>
-                  <p><b>Show others the phases of draft to ensure community understanding</b>.</p>
+                  <p>Don’t talk before the person is properly seated. <b>Showing  others the current editing phase  ensures a community understanding of what is important to address at the moment, instead of focusing on the grammar of a draft, it’s more important to consider if some content is relevant or not.</b></p>
                   <ul>
                     <li>Placeholder for TBD</li>
                     <li>Need content contributions</li>
@@ -375,12 +375,12 @@ class Docs extends Component {
                 <div className="half">
                   <p className="title bg-grey">5. Welcome the newcomers</p>
                   <img src={recommend5} />
-                  <p><b>Welcoming community is a good start for contribution</b>. A newcomer may walk in and ask, “what are we talking about?” It may be too obvious to you, but try to give a nice answer. The person will feel encouraged to join in.</p>
+                  <p><b>Welcoming community is a good start for contribution.</b> A newcomer may walk in and ask, “what are we talking about?” The answer may be too obvious for you, but try to give a nice answer. The person will feel encouraged to join in.</p>
                 </div>
                 <div className="half">
                   <p className="title bg-grey">6. Help every contribution matter</p>
                   <img src={recommend6} />
-                  <p>Recognize who spoke what. <b>The sense of appreciation will give the speaker, and documentation contributor, a boost.</b> Even a micro-contribution, like fixing a typo, is still a contribution. <b>Anyone can do it, but not everyone does it</b>.</p>
+                  <p>Recognize who spoke what. <b>The sense of appreciation will give the speaker, or the documentation contributor, a boost.</b> Even a micro-contribution, like fixing a typo, is still a contribution. <b>Anyone can do it, but not everyone does it.</b></p>
                 </div>
               </div>
             </div>
@@ -395,12 +395,12 @@ class Docs extends Component {
               <p className="eighty center">
                 <i>"The results were encouraging in the sense that <b>we know a lot more about what makes for great documentation and how we might support that effort</b>. But it was also clear <b>fixing Documentation would require a significantly larger team</b>. [...] Unfortunately, we can't afford to work on the problem at the moment."</i>
               </p>
-              <p>The researches not only decided the end of the Documentation, but also have changed the way Stack Overflow works.</p>
+              <p>However, it has changed the way Stack Overflow works.</p>
               <p className="eighty center bigP">
-                <i>"[After the Documentation, we have] <span className="bg-grey">changed our approach to product development across the company</span>."</i>
+                <i>"[After Documentation, we have] <span className="bg-grey">changed our approach to product development across the company</span>."</i>
               </p>
               <p>
-                The product development process at Stack Overflow has been 'develop and test’ for the first 7 years of the company history. I am proud that I was part of the Documentation Team who impacted the entire company, and the users out there.</p>
+                This is a leap from Stack Overflow’s more traditional “develop a new product and see how it goes” process. I am proud that I was part of the Documentation team who made an impact on the entire company, and all the developers out there.</p>
             </div>
         </div>
         <Next

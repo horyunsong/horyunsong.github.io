@@ -97,17 +97,7 @@ class Work extends Component {
             <div className="flex justify-center">
               <div>
               </div>
-              <Link to="/docs">
-                <Piece
-                  title="Documentation"
-                  type="Research"
-                  description="Conducted research"
-                  image={bslide}
-                  filters={
-                    ["Research", (this.state.research  ? "active" : "") ]
-                  }
-                />
-              </Link>
+
               <Link to="/logue">
                 <Piece
                   title="LOGUE"
