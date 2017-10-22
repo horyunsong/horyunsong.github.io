@@ -14,6 +14,7 @@ import recaffeine from "../../img/work/thumb/re-caffeine.png";
 import bunnynail from "../../img/work/thumb/bunnynail.jpg";
 import underlined from "../../img/work/thumb/underlined.png";
 import misc from "../../img/work/thumb/misc.jpg";
+import docs from "../../img/work/thumb/docs_thumb.png";
 
 
 class Work extends Component {
@@ -98,7 +99,14 @@ class Work extends Component {
               <div>
               </div>
 
-              <Link to="/logue">
+              <Link to="/docs">
+                <Piece
+                  title="Collaborative Documentation"
+                  type="Research"
+                  description="Stack Overflow Documentation was a collaborative writing space for technical reference material. I took the lead on gathering insights for a redesign of the product."
+                  image={docs}
+                  filters={["Research", (this.state.research ? "active" : "") ]}
+                />
                 <Piece
                   title="LOGUE"
                   type="Research, Design & Prototype"
