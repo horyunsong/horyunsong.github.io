@@ -107,6 +107,8 @@ class Work extends Component {
                   image={docs}
                   filters={["Research", (this.state.research ? "active" : "") ]}
                 />
+              </Link>
+              <Link to="/logue">
                 <Piece
                   title="LOGUE"
                   type="Research, Design & Prototype"

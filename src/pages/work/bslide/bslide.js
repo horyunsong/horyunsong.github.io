@@ -458,16 +458,16 @@ class Bslide extends Component {
                 title="Wireframe"
               />
               <p>Based on task flow from information architecture, we <b>specified UI scenarios</b>. Then finally, the UI map of entire system was drawn.</p>
+              <div className="full">
+                <img src={uiScenario1} alt="ui scenario 1"/>
+                <img src={uiScenario2} alt="ui scenario 2"/>
+              </div>
               <div className="button-wrapper">
                 <button onClick={this.wireClick} className="button expand">
-                  {this.state.wire ? 'Close' : 'Show'} UI Scenario and Map
+                  {this.state.wire ? 'Close' : 'Show'} UI Map
                 </button>
               </div>
               <Collapse isOpened={this.state.wire}>
-                <div className="full">
-                  <img src={uiScenario1} alt="ui scenario 1"/>
-                  <img src={uiScenario2} alt="ui scenario 2"/>
-                </div>
                 <div className="ui-map">
                   <p className="title">Ui Map</p>
                   <img src={uiMap} alt="ui map"/>
