@@ -506,10 +506,10 @@ class Bslide extends Component {
             </div>
         </div>
         <Next
-          leftItem="Bunny Nail"
-          leftLink="/bunny"
-          rightItem="Logue"
-          rightLink="/logue"
+          leftItem="Detecting Emotions"
+          leftLink="/emotion"
+          rightItem="Bunny"
+          rightLink="/bunny"
         />
         <Credit/>
       </div>

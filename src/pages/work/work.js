@@ -149,26 +149,6 @@ class Work extends Component {
                   filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "")]}
                 />
               </Link>
-              <Link to="/underlined">
-                <Piece
-                  title="UNDERLINED"
-                  category="UX"
-                  type="Design"
-                  description="Underlined is a context-based vocabulary aid application that allows children to learn new vocabulary naturally by reading stories of their interest."
-                  image={underlined}
-                  filters={["Design"]}
-                />
-              </Link>
-              <Link to="/recaffeine">
-                <Piece
-                  title="RE-CAFFEINE"
-                  category="UX"
-                  type="Design & Prototype"
-                  description="Re-Caffeine is gamification of the recycling system. By recycling, user is rewarded with water points to grow virtual trees. As community, users can cultivate virtual mountain."
-                  image={recaffeine}
-                  filters={["Design", "Prototype", (this.state.prototype || this.state.design ? "active" : "")]}
-                />
-              </Link>
               <Link to="/bunny">
                 <Piece
                   title="BUNNY NAIL"
@@ -200,3 +180,6 @@ class Work extends Component {
   }
 }
 export default Work;
+/*underlined: Underlined is a context-based vocabulary aid application that allows children to learn new vocabulary naturally by reading stories of their interest.
+Re-Caffeine is gamification of the recycling system. By recycling, user is rewarded with water points to grow virtual trees. As community, users can cultivate virtual mountain.
+ */

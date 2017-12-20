@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68650267-ee64-4966-a3e6-dad9fc1bee34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/work/emotion/emotion.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/work/emotion/emotion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/work/emotion/human-computer.png" afterPath="$PROJECT_DIR$/src/img/work/emotion/human-computer.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/work/mini/process.js" afterPath="$PROJECT_DIR$/src/components/work/mini/process.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/docs/docs.css" afterPath="$PROJECT_DIR$/src/pages/work/docs/docs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/docs/docs.js" afterPath="$PROJECT_DIR$/src/pages/work/docs/docs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/logue/logue.js" afterPath="$PROJECT_DIR$/src/pages/work/logue/logue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/misc/misc.js" afterPath="$PROJECT_DIR$/src/pages/work/misc/misc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/recaffeine/recaffeine.js" afterPath="$PROJECT_DIR$/src/pages/work/recaffeine/recaffeine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/urack/urack.js" afterPath="$PROJECT_DIR$/src/pages/work/urack/urack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/bslide/bslide.js" afterPath="$PROJECT_DIR$/src/pages/work/bslide/bslide.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/bunny/bunny.js" afterPath="$PROJECT_DIR$/src/pages/work/bunny/bunny.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/work/work.js" afterPath="$PROJECT_DIR$/src/pages/work/work.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,8 +27,8 @@
       <file leaf-file-name="work.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/work/work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-435">
-              <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+            <state relative-caret-position="405">
+              <caret line="150" column="21" lean-forward="false" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -43,10 +36,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emotion.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bslide.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/work/bslide/bslide.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-183">
+              <caret line="509" column="28" lean-forward="false" selection-start-line="509" selection-start-column="28" selection-end-line="509" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bunny.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/work/bunny/bunny.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="93" column="27" lean-forward="false" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emotion.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/work/emotion/emotion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="-165">
               <caret line="272" column="37" lean-forward="false" selection-start-line="272" selection-start-column="37" selection-end-line="272" selection-end-column="37" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -59,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/src/pages/work/emotion/emotion.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -140,7 +153,6 @@
         <option value="$PROJECT_DIR$/src/components/credit/next.js" />
         <option value="$PROJECT_DIR$/src/components/credit/credit.js" />
         <option value="$PROJECT_DIR$/src/components/nav/nav.js" />
-        <option value="$PROJECT_DIR$/src/pages/work/bunny/bunny.js" />
         <option value="$PROJECT_DIR$/src/pages/work/underlined/underlined.js" />
         <option value="$PROJECT_DIR$/src/components/work/piece/piece.js" />
         <option value="$PROJECT_DIR$/src/pages/work/work.css" />
@@ -150,14 +162,12 @@
         <option value="$PROJECT_DIR$/../../GRA/web/socialjustice.html" />
         <option value="$PROJECT_DIR$/src/pages/work/bslide/bslide.css" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/pages/work/bslide/bslide.js" />
         <option value="$PROJECT_DIR$/src/pages/work/stack/stack.js" />
         <option value="$PROJECT_DIR$/src/pages/work/docs/stack.js" />
         <option value="$PROJECT_DIR$/src/pages/index/index.css" />
         <option value="$PROJECT_DIR$/../../GRA/web/visualculturedesign1016.html" />
         <option value="$PROJECT_DIR$/src/pages/work/docs/docs.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/work/work.js" />
         <option value="$PROJECT_DIR$/src/components/work/mini/process.js" />
         <option value="$PROJECT_DIR$/src/pages/work/docs/docs.js" />
         <option value="$PROJECT_DIR$/src/pages/work/logue/logue.js" />
@@ -166,6 +176,9 @@
         <option value="$PROJECT_DIR$/src/pages/work/misc/misc.js" />
         <option value="$PROJECT_DIR$/src/pages/work/emotion/emotion.css" />
         <option value="$PROJECT_DIR$/src/pages/work/emotion/emotion.js" />
+        <option value="$PROJECT_DIR$/src/pages/work/work.js" />
+        <option value="$PROJECT_DIR$/src/pages/work/bslide/bslide.js" />
+        <option value="$PROJECT_DIR$/src/pages/work/bunny/bunny.js" />
       </list>
     </option>
   </component>
@@ -444,6 +457,32 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bslide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="horyunsong.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="horyunsong.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -654,12 +693,12 @@
       <workItem from="1508699260436" duration="226000" />
       <workItem from="1512326905514" duration="216000" />
       <workItem from="1513468733994" duration="3087000" />
-      <workItem from="1513562979963" duration="24799000" />
+      <workItem from="1513562979963" duration="25359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234136000" />
+    <option name="totallyTimeSpent" value="234696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -745,7 +784,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json" />
-    <entry file="file://$PROJECT_DIR$/src/pages/work/bslide/bslide.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/home/home.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/index/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/work/mini/heading.js" />
@@ -776,14 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/work/bunny/bunny.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -820,16 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/work/work.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/nav/nav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-165">
@@ -851,7 +871,7 @@
         <state relative-caret-position="4047">
           <caret line="347" column="27" lean-forward="false" selection-start-line="347" selection-start-column="27" selection-end-line="347" selection-end-column="27" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -899,18 +919,44 @@
     <entry file="file://$PROJECT_DIR$/src/pages/work/emotion/emotion.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/work/emotion/emotion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="-165">
           <caret line="272" column="37" lean-forward="false" selection-start-line="272" selection-start-column="37" selection-end-line="272" selection-end-column="37" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/work/work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="150" column="21" lean-forward="false" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/work/bslide/bslide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="509" column="28" lean-forward="false" selection-start-line="509" selection-start-column="28" selection-end-line="509" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/work/bunny/bunny.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="93" column="27" lean-forward="false" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
