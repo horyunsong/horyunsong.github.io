@@ -330,10 +330,10 @@ class Logue extends Component {
           </div>
         </div>
         <Next
-          leftItem="B-slide"
-          leftLink="/bslide"
-          rightItem="U-rack"
-          rightLink="/urack"
+          leftItem="Documentation"
+          leftLink="/docs"
+          rightItem="Detecting Emotions"
+          rightLink="/emotion"
         />
         <Credit/>
       </div>

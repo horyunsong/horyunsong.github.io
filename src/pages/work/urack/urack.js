@@ -381,10 +381,10 @@ class Urack extends Component {
           </div>
         </div>
         <Next
-          leftItem="Logue"
-          leftLink="/logue"
-          rightItem="Underlined"
-          rightLink="/underlined"
+          leftItem="B-Slide"
+          leftLink="/bslide"
+          rightItem="Re-Caffeine"
+          rightLink="/recaffeine"
         />
         <Credit/>
       </div>

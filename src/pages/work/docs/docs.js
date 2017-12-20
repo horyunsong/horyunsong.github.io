@@ -10,6 +10,7 @@ import Title from '../../../components/work/mini/title';
 import Process from '../../../components/work/mini/process';
 import Heading from '../../../components/work/mini/heading';
 
+import self from '../../../img/work/docs/self.jpeg';
 import docsExamples from '../../../img/work/docs/docs-example.png';
 import docsHeader from '../../../img/work/docs/docs-header.png';
 import pic1 from '../../../img/work/docs/1.png';
@@ -100,6 +101,7 @@ class Docs extends Component {
               <p><b>Stack Overflow had a product called Documentation, which was a collaborative writing space for technical reference material.</b> Nine months after the beta launch, the company has identified some key problems and decided to <a className="link" href="https://meta.stackoverflow.com/questions/349410/tearing-down-the-structure-of-documentation">redesign the product.</a></p>
               <p  className="title">Solution</p>
               <p>In order to design a tool that enabled everyone to write online documentation together, we had to learn how technical writers—the professionals—wrote both individually and collaboratively. <b>I took the lead on gathering insights from technical writers and delivered six design recommendations based on the findings from semi-structured interviews.</b></p>
+
             </div>
             <div className="forty">
               <p className="title">My role</p>
@@ -111,6 +113,11 @@ class Docs extends Component {
                 <li>Analyze interviews</li>
                 <li>Deliver design recommendations</li>
               </ul>
+              <div className="smaller-self" >
+                <img src={self} alt="self portrait"/>
+                <p><a className="link" href="https://medium.com/@horyunsong/life-as-a-stack-overflow-user-research-intern-ff9ce133996a">Medium Article "Life as a Stack Overflow User Research Intern"</a></p>
+              </div>
+
             </div>
             <div className="full">
               <br/>
@@ -156,7 +163,7 @@ class Docs extends Component {
               </div>
             </div>
           </div>
-          <div id="Research Questions" className="section">
+          <div id="Research" className="section">
             <Heading
               title="Research Questions"
             />
@@ -338,7 +345,7 @@ class Docs extends Component {
               </div>
             </div>
             </div>
-            <div id="Design Recommendations" className="section">
+            <div id="Design" className="section">
               <Heading
                 title="Design Recommendations"
               />

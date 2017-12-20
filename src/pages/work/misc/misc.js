@@ -95,8 +95,8 @@ class Misc extends Component {
         <Next
           leftItem="Bunny Nail"
           leftLink="/bunny"
-          rightItem="B-slide"
-          rightLink="/bslide"
+          rightItem="Documentation"
+          rightLink="/docs"
         />
 
         <Credit/>

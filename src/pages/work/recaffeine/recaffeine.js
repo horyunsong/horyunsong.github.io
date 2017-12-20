@@ -190,8 +190,8 @@ class Recaffeine extends Component {
           </div>
         </div>
         <Next
-          leftItem="underlined"
-          leftLink="/underlined"
+          leftItem="U-Rack"
+          leftLink="/urack"
           rightItem="Bunny Nail"
           rightLink="/bunny"
         />

@@ -1,0 +1,24 @@
+.smaller-img {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+.middle-img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.spoiler {
+    padding: 1em 0.5em 2em 0.5em;
+}
+.indent {
+    padding: 1em 0 1em 3em;
+    display: block;
+}
+.framework {
+    max-height: 400px;
+    width: auto;
+    display: block;
+    margin: auto;
+    padding-bottom: 1em;
+}

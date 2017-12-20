@@ -30,5 +30,5 @@ class Process extends Component {
     )
   }
 }
-
+/**/
 export default Process;

@@ -15,6 +15,7 @@ import bunnynail from "../../img/work/thumb/bunnynail.jpg";
 import underlined from "../../img/work/thumb/underlined.png";
 import misc from "../../img/work/thumb/misc.jpg";
 import docs from "../../img/work/thumb/docs_thumb.png";
+import emo from "../../img/work/thumb/emotion_thumb.png";
 
 
 class Work extends Component {
@@ -110,11 +111,21 @@ class Work extends Component {
               </Link>
               <Link to="/logue">
                 <Piece
-                  title="LOGUE"
+                  title="Co-creation Tool"
                   type="Research, Design & Prototype"
-                  description="Logue is a unit of stories contained in a standardized card. Logue breaks the linearity of story to view it differently using three factors: category, perspective, and route."
+                  description="Logue is a unit of stories contained in a standardized card. It enables co-creators to view a story  differently from different perspectives ."
                   image={logue}
                   filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]}
+                />
+              </Link>
+              <Link to="/emotion">
+                <Piece
+                  title="Detecting Emotions"
+                  category="Social Computing"
+                  type="Research"
+                  description="Who can tell my emotion better? Friends, strangers or computer? The short answer: people are better than computer, but there is no difference between friends and strangers."
+                  image={emo}
+                  filters={["Research", (this.state.research ? "active" : "") ]}
                 />
               </Link>
               <Link to="/bslide">

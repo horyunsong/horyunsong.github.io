@@ -1,1 +1,11 @@
-
+.smaller-self {
+    display: block;
+}
+.smaller-self img {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+.smaller-self p {
+    margin-top: 0;
+}
