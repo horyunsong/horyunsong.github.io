@@ -189,7 +189,7 @@ class Emotion extends Component {
               title="Framework"
             />
             <div>
-              <img className="framework" src={framework} />
+                <img className="framework" src={framework} />
               <ol>
                 <li><b>Survey</b> a subject’s Facebook friends to get their <b>evaluation of her emotion projected on each Facebook post </b></li>
                 <li>Find a correlation between the continuous scale of <b>tie strength</b> and the accuracy of friends’ evaluation</li>

@@ -130,7 +130,7 @@ class Work extends Component {
               </Link>
               <Link to="/bslide">
                 <Piece
-                  title="B-SLIDE"
+                  title="Bookmark Curator"
                   type="Research, Design & Prototype"
                   description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
                   image={bslide}
@@ -141,7 +141,7 @@ class Work extends Component {
               </Link>
               <Link to="/urack">
                 <Piece
-                  title="U-RACK"
+                  title="U-lock + Bike Rack"
                   category="UX"
                   type="Research, Design & Prototype"
                   description="U-rack is the easiest way to safely lock your bike. Mount this special U-lock to the smart bike rack, and off you go. U-rack will look after it. "
@@ -151,17 +151,17 @@ class Work extends Component {
               </Link>
               <Link to="/bunny">
                 <Piece
-                  title="BUNNY NAIL"
+                  title="Nail Polish Design"
                   category="Industrial"
                   type="Design"
-                  description="Really, glitter nail polish should not come with brush, but scooper. Bunny Nail has just right applicator for each nail polish. "
+                  description="Really, glitter nail polish should not come with a brush, but a scooper. Bunny Nail provides a just right applicator for each nail polish. "
                   image={bunnynail}
                   filters={["Design", (this.state.design ? "active" : "")]}
                 />
               </Link>
               <Link to="/misc">
                 <Piece
-                  title="MISCELLANEOUS"
+                  title="Seemingly Miscellaneous Designs"
                   category="Misc."
                   type="Design"
                   description="Tail (cable organizer) and Adventurous Cereal (concept calendar)"

@@ -18,6 +18,7 @@
 .framework {
     max-height: 400px;
     width: auto;
+    max-width: 100%;
     display: block;
     margin: auto;
     padding-bottom: 1em;
