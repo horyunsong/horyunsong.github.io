@@ -217,41 +217,30 @@ class Urack extends Component {
               title="Design Concepts"
             />
             <div className="flex justify-between">
-              <div className="third">
+              <div className="half">
                 <p  className="title">How</p>
                 <p>Placed our design ideas onto a whiteboard to create a diagram based on <b>Feasibility vs. Usability</b></p>
-              </div>
-              <div className="third">
                 <p className="title">Why</p>
                 <p>to help us define which ideas were not only the most useful to our user group, but also the most practical to implement</p>
-              </div>
-              <div className="third">
                 <p className="title">Finding</p>
                 <p>Two ideas based on the clusters: <b>modular storage</b> and <b>sensor for pedestrian</b></p>
               </div>
-            </div>
-            <div className="button-wrapper">
-              <button onClick={this.designClick} className="button expand center">
-                {this.state.design ? 'Close' : 'Show'} Design Concept Details
-              </button>
-            </div>
-            <Collapse isOpened={this.state.design}>
-              <br/>
-              <div className="sixty center">
+              <div className="half">
                 <img src={concepts} alt="concept diagram"/>
               </div>
+
+            </div>
               <div className="flex">
                 <div className="half modular center">
                   <img src={modular} role="presentation"/>
-                  <p className="caption">Modular storage storyboard</p>
-                  <p className="text-center"><b>Bike rack is flushed to the ground when not in use.</b></p>
+                  <p className="caption">Modular storage storyboard<br/><b>Bike rack is flushed to the ground when not in use.</b></p>
+                  <p className="text-center"></p>
                 </div>
                 <div className="half center sensor">
                   <img  src={sensor} role="presentation"/>
                   <p className="caption">Traffic sensor storyboard</p>
                 </div>
               </div>
-            </Collapse>
           </div>
           <div id="Expert" className="section">
             <Heading
@@ -287,12 +276,7 @@ class Urack extends Component {
               title="Low-fid Prototype"
             />
             <p>Based on storyboard and feedback, we sketched detailed designs and extracted requirements. We built <b>physical prototype and designed wireframes</b>.</p>
-            <div className="button-wrapper">
-              <button onClick={this.prototypeClick} className="button expand center">
-                {this.state.prototype ? 'Close' : 'Show'} Prototype Details
-              </button>
-            </div>
-            <Collapse isOpened={this.state.prototype}>
+
               <div className="flex justify-between">
                 <div className="half">
                   <p className="title">Lock: Sketches</p>
@@ -304,7 +288,6 @@ class Urack extends Component {
                   <p className="caption">Used pink foam, dowels, and paper</p>
                 </div>
               </div>
-            </Collapse>
             <div>
               <p className="title">Pilot Testing</p>
               <div className="flex align-start">
