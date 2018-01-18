@@ -16,6 +16,7 @@
 }
 .spark-wrapper {
     position: relative;
+    margin-top: 1em;
 }
 .spark {
     width: 3em;
@@ -23,83 +24,44 @@
     left: 5em;
     top: 0.5em;
 }
-.process ul {
-    width: 60vw;
-    list-style: none;
+.arrow-wrapper {
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 40px 0 0 0;
-    margin: 0;
+    margin-top: 1.2em;
+    justify-content: center;
 }
-@media only screen and (max-width: 768px) {
-    .process ul{
-        width: 80vw;
-    }
-}
-.process ul li {
-    display: block;
+.arrow {
+    display: inline-block;
+    font-size: 0.85em;
+    padding: 0.3em 0 0.3em 0.4em;
+    background-color: #e2e2e2;
     position: relative;
-    width: 76px; /*53*/
-    margin: 15px 2px;
-    text-align: center;
-    font-size: 0.7em;
+    margin: 0.2em 2em 1em 0;
 }
-.process ul li.active a {
-    color: #B54D7E;
-}
-.process ul li:before {
-    position: absolute;
-    top: -15px;
-    left: 33px; /*27*/
+.arrow:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
     content: " ";
-    width: 2px;
-    height: 2px;
-    border-radius: 10px;
-    border: 2px solid #9B9B9B;
-    background-color: #9B9B9B;
-}
-
-.process ul li:after {
+    height: 0;
+    width: 0;
     position: absolute;
-    top: -13px;
-    left: -26px;
-    content: " ";
-    width: 122px;
-    height: 1px;
-    background-color: #9B9B9B;
+    pointer-events: none;
+    border-left-color: #e2e2e2;
+    border-width: 1em;
+    margin-top: -1em;
 }
-.process ul li:first-child:after {
-    left: 34px;/*28*/
+.arrow:last-child:before {
+    border: none;
 }
-.process ul li:nth-child(4):after {
-    left: -30px;
+.arrow:last-child {
+    padding: 0.3em 0.4em 0.3em 0.4em;
 }
-.process ul li:nth-child(5):after {
-    left: -30px;
+.arrow:hover {
+    background-color: #ffb1cb;
 }
-.process ul li:last-child:after {
-    left: -90px;
-}
-@media only screen and (max-width: 550px) {
-    .process ul li:after {
-        width: 100px;
-        left: 0px;
-    }
-    .process ul li:first-child:after {
-        left: 27px;
-    }
-    .process ul li:nth-child(4):after {
-        left: -38px;
-    }
-    .process ul li:nth-child(5):after {
-        left: 2px;
-    }
-    .process ul li:nth-child(6):after {
-        left: -35px;
-        width: 130px;
-    }
-    .process ul li:last-child:after {
-        left: -38px;
-    }
+.arrow:hover::before {
+    border-left-color: #ffb1cb;
 }

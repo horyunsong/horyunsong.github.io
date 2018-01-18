@@ -161,7 +161,7 @@ class Work extends Component {
               </Link>
               <Link to="/misc">
                 <Piece
-                  title="Seemingly Miscellaneous Designs"
+                  title="Miscellaneous Designs"
                   category="Misc."
                   type="Design"
                   description="Tail (cable organizer) and Adventurous Cereal (concept calendar)"

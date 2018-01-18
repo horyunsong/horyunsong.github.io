@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import "./docs.css";
 
-import Collapse from 'react-collapse';
+import ImageZoom from 'react-medium-image-zoom';
+
 
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
@@ -98,7 +99,7 @@ class Docs extends Component {
           <div className="flex justify-between">
             <div className="problem sixty">
               <p className="title">Problem</p>
-              <p><b>Stack Overflow had a product called Documentation, which was a collaborative writing space for technical reference material.</b> Nine months after the beta launch, the company has identified some key problems and decided to <a className="link" href="https://meta.stackoverflow.com/questions/349410/tearing-down-the-structure-of-documentation">redesign the product.</a></p>
+              <p>Stack Overflow had a product called <b>Documentation, which was a collaborative writing space for technical reference material.</b> Nine months after the beta launch, the company has identified some key problems and decided to <a className="link" href="https://meta.stackoverflow.com/questions/349410/tearing-down-the-structure-of-documentation">redesign the product.</a></p>
               <p  className="title">Solution</p>
               <p>In order to design a tool that enabled everyone to write online documentation together, we had to learn how technical writers—the professionals—wrote both individually and collaboratively. <b>I took the lead on gathering insights from technical writers and delivered six design recommendations based on the findings from semi-structured interviews.</b></p>
 
@@ -107,11 +108,8 @@ class Docs extends Component {
               <p className="title">My role</p>
               <ul>
                 <li>Define research questions</li>
-                <li>Plan the research</li>
-                <li>Recruit interviewees</li>
-                <li>Conduct interviews</li>
-                <li>Analyze interviews</li>
-                <li>Deliver design recommendations</li>
+                <li>Recruit and conduct interviews</li>
+                <li>Analyze and deliver design recommendations</li>
               </ul>
               <div className="smaller-self" >
                 <img src={self} alt="self portrait"/>
@@ -119,11 +117,22 @@ class Docs extends Component {
               </div>
 
             </div>
-            <div className="full">
-              <br/>
-              <img className="center" src={docsHeader} alt=""/>
-              <p className="caption">Original Documentation Header. Image from Stack Overflow.</p>
-            </div>
+
+          </div>
+          <div className="">
+            <br/>
+            <ImageZoom
+              image={{
+                src: docsHeader,
+                alt: "docs header",
+                className: "center"
+              }}
+              zoomImage={{
+                src: docsHeader,
+                alt: "docs header"
+              }}
+            />
+            <p className="caption">Original Documentation Header. Image from Stack Overflow.</p>
           </div>
 
           <br/>
@@ -138,12 +147,12 @@ class Docs extends Component {
               "Analysis", "Findings", "Design Recommendations", "Impact"]}
             names={["Background", "Research Questions", "Interviews", "Analysis", "Findings", "Design Recommendations", "Impact"]}
           />
-          <div id="Background" className="section">
+          <div id="Background" className="wrapper section">
             <Heading
               title="Background"
             />
             <div>
-              <p>Stack Overflow has launched a product called Documentation in July 2016. It was <b>a collaborative writing space for technical reference material</b>. Although it addressed some problems in traditional technical documentation, the participation has constantly decreased since the beta launch. In April 2017, Stack Overflow has <a className="link" href="https://meta.stackoverflow.com/a/348087"> released the analysis of the situation:</a></p>
+              <p>Stack Overflow has launched a product called Documentation in July 2016. Although it addressed some problems in traditional technical documentation, the participation has constantly decreased since the beta launch. In April 2017, the company has <a className="link" href="https://meta.stackoverflow.com/a/348087"> released the analysis of the situation:</a></p>
 
               <div className="flex justify-between">
 
@@ -154,10 +163,19 @@ class Docs extends Component {
                     <li>Low quality, scattered content and poor findability </li>
                   </ul>
                   <p className="space-up">Seeing that these issues could not be addressed with minor adjustments, the company decided to <a className="link" href="https://meta.stackoverflow.com/questions/349410/tearing-down-the-structure-of-documentation">redesign the product</a>. <br/><br/>
-                    If we were to design a tool that enabled everyone to write online documentation together, first we had to learn how they wrote both individually and collaboratively. <b>As a User Researcher, I researched technical writers and delivered 6 design recommendations based on the findings.</b></p>
+                    If we were to design a tool that enabled everyone to write online documentation together, <b>first we had to learn how the professionals―technical writers―wrote reference materials both individually and collaboratively.</b></p>
                 </div>
                 <div className="half">
-                  <img src={docsExamples} alt=" "/>
+                  <ImageZoom
+                    image={{
+                      src: docsExamples,
+                      alt: "docs examples",
+                    }}
+                    zoomImage={{
+                      src: docsExamples,
+                      alt: "docs examples"
+                    }}
+                  />
                   <p className="caption">Original Documentation UI. Image from Stack Overflow Blog.</p>
                 </div>
               </div>
@@ -169,11 +187,22 @@ class Docs extends Component {
             />
             <div>
               <ul>
-                <li>How do the technical writers <b>define technical documentation</b>? What <b>characteristics</b> should it have?</li>
-                <li>How do the they <b>write</b> documentations and what kind of <b>tools</b> do they use?</li>
-                <li>How do they <b>collaborate</b> with other writers, developers and stakeholders?</li>
+                <li>RQ1. How do the technical writers define technical documentation? What characteristics should it have?</li>
+                <li>RQ2. How do the they write documentations and what kind of tools do they use?</li>
+                <li>RQ3. How do they collaborate with other writers, developers and stakeholders?</li>
               </ul>
-              <p><span className="bg-grey">In order to answer these questions, I decided that there was a need for in-depth conversations on one's experience as a technical writer. Therefore, I conducted semi-structured interviews.</span></p>
+              <p><b>In order to answer these questions, I decided that there was a need for in-depth conversations on one's experience as a technical writer. Therefore, I conducted semi-structured interviews.</b><br/>
+                {/*
+                <ol>
+                  <li>Introduction + Background</li>
+                  <li>What is documentation? (definition and types)</li>
+                  <li>How does your documentation look like? </li>
+                  <li>What is your process of writing a documentation? (interviewee shares a working screen)</li>
+                  <li>How do you collaborate? (internal and open-source)</li>
+                  <li>Final thoughts</li>
+                </ol>
+                */}
+            </p>
             </div>
           </div>
           <div id="Interviews" className="section">
@@ -211,8 +240,25 @@ class Docs extends Component {
               title="Analysis"
             />
             <div>
-              <p>I coded the interview notes and transferred them to sticky notes. <b>After organizing them in an affinity diagram, I connected the themes, referring back to the specific quotes that each sticky note was linked to.</b></p>
-              <img className="" src={stickies} />
+              <ol>
+                <li>Coded interview notes based on the keywords I found from <a className="link" href="http://opensourcesurvey.org/2017/">Github Open Source Survey</a> to reflect current developer community's language and concerns</li>
+                <li><b>Bright Yellow Notes:</b> Transfered the interview notes (yellow) to sticky notes</li>
+                <li><b>Pink Notes:</b> Grouped them according to the codes </li>
+                <li><b>Blue Notes:</b> Grouped the pink notes according to the underlying values within research question (e.g. what motivates collaboration in RQ3) </li>
+                <li><b>Big Light Yellow Notes:</b> Grouped blue notes to each research question. If the group was too big, I divded them into two.</li>
+              </ol>
+              <p><b>Limitation: I was the only coder and organizer. There is chance of my bias creeping in.</b></p>
+              <ImageZoom
+                image={{
+                  src: stickies,
+                  alt: "stickies",
+                  className: "space-up"
+                }}
+                zoomImage={{
+                  src: stickies,
+                  alt: "stickies"
+                }}
+              />
             </div>
           </div>
           <div id="Findings" className="section">
@@ -372,7 +418,7 @@ class Docs extends Component {
                   <p className="title bg-grey">4. Label phases of editing</p>
                   <img src={recommend4} />
                   <p className="caption">Talking ASAP vs. Waiting for them to sit</p>
-                  <p>Don’t talk before the person is properly seated. <b>Showing  others the current editing phase  ensures a community understanding of what is important to address at the moment, instead of focusing on the grammar of a draft, it’s more important to consider if some content is relevant or not.</b></p>
+                  <p>Don’t talk before the person is properly seated. <b>Showing others the current editing phase ensures a community understanding of what is important to address at the moment.</b> Instead of focusing on the grammar of a draft, it’s more important to consider if some content is relevant or not.</p>
                   <ul>
                     <li>Placeholder for TBD</li>
                     <li>Need content contributions</li>
@@ -387,7 +433,7 @@ class Docs extends Component {
                 <div className="half">
                   <p className="title bg-grey">6. Help every contribution matter</p>
                   <img src={recommend6} />
-                  <p>Recognize who spoke what. <b>The sense of appreciation will give the speaker, or the documentation contributor, a boost.</b> Even a micro-contribution, like fixing a typo, is still a contribution. <b>Anyone can do it, but not everyone does it.</b></p>
+                  <p>Recognize who spoke what. <b>The sense of appreciation</b> will give the speaker, or the documentation contributor, a boost. Even a micro-contribution, like fixing a typo, is still a contribution. <b>Anyone can do it, but not everyone does it.</b></p>
                 </div>
               </div>
             </div>
@@ -411,9 +457,9 @@ class Docs extends Component {
             </div>
         </div>
         <Next
-          leftItem="Bunny Nail"
-          leftLink="/bunny"
-          rightItem="Logue"
+          leftItem="Miscellaneous Designs"
+          leftLink="/misc"
+          rightItem="Co-creation Tool"
           rightLink="/logue"
         />
         <Credit/>

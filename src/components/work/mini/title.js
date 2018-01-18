@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 
 class Title extends Component {
   static propTypes = {
-    title: React.PropTypes.string,
-    category: React.PropTypes.string,
-    type: React.PropTypes.string,
-    role: React.PropTypes.string
+    title: PropTypes.string,
+    category: PropTypes.string,
+    type: PropTypes.string,
+    role: PropTypes.string
   }
 
   static defaultProps = {

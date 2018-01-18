@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 
 class Heading extends Component {
   static propTypes = {
-    title: React.PropTypes.string,
-    content: React.PropTypes.string
+    title: PropTypes.string,
+    content: PropTypes.string
   }
 
   static defaultProps = {

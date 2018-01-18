@@ -90,9 +90,9 @@ class Bunny extends Component {
           </div>
         </div>
         <Next
-          leftItem="B-Slide"
+          leftItem="Bookmark Curator"
           leftLink="/bslide"
-          rightItem="Miscellaneous"
+          rightItem="Miscellaneous Designs"
           rightLink="/misc"
         />
         <Credit/>

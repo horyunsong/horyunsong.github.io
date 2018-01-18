@@ -27,29 +27,34 @@ class Home extends Component {
               <img src={people} alt="My name is Horyun Song, I'm a UX Researcher and Designer"/>
             </div>
           </div>
-          <div className="flex justify-center align-center">
-            <div className="mouse">
-              <img src={mouse} role="presentation"/>
+          <div className="">
+            <div >
+
             </div>
-            <div className="find">
-              <h3 className="text-center">Hi! My name is Horyun Song. I research&nbsp;
-                <TextLoop
-                  springConfig={{ stiffness: 100, damping: 10 }}
-                  children={[
-                    "User Experience",
-                    "Online Communities",
-                  ]}
-                >
-                </TextLoop>.
-              </h3>
+            <div className="flex justify-center">
+              <div className="mouse">
+                <img src={mouse} role="presentation"/>
+              </div>
+              <div>
+                <h3>Hi! My name is Horyun Song.</h3>
+                <h3>I research&nbsp;
+                  <TextLoop>
+                    <span>User Experience</span>
+                    <span>Online Communities</span>
+                    <span>when I'm not drawing</span>
+                  </TextLoop>.
+                </h3>
+              </div>
+              <div className="pencil">
+                <img src={pencil} role="presentation"/>
+              </div>
+
+
               {/*
               <h3>You can find more about me
                 <br/>on my <a className="link" href={process.env.PUBLIC_URL+"/Horyun_Song_Resume.pdf"}>resume</a> or <a className="link" href="http://linkedin.com/in/horyunsong">linkedin</a>,
                 <br/>or even better, from</h3>
                 */}
-            </div>
-            <div className="pencil">
-              <img src={pencil} role="presentation"/>
             </div>
           </div>
         </div>

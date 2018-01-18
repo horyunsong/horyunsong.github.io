@@ -39,13 +39,14 @@ a.link {
     border-bottom: solid 3px #e2e2e2;
 }
 a.link:hover {
-    border-bottom: solid 3px #FE6C61;
+    border-bottom: solid 3px #6eb8d0;
 }
 .bold {
     font-weight: 900;
 }
 .container.small b {
-    color: #FE6C61;
+    background-color: rgba(180, 226, 230, 0.81);
+    font-weight: normal;
 }
 /*** Reset ***/
 body {
@@ -70,6 +71,12 @@ img {
         width: 80vw;
     }
 }
+.wrapper {
+    width: 60vw;
+    min-width: 310px;
+    margin: 0 auto;
+}
+
 .section {
     padding-top: 52px;
 }

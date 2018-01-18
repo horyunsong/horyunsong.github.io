@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./misc.css";
+import ImageZoom from 'react-medium-image-zoom';
 
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
@@ -37,7 +38,16 @@ class Misc extends Component {
           <p><i>Cable organizer</i></p>
           <p>Tail is <b>always attached to the cable</b>, clinging like ivy. The small metal strip inside the rubber coating holds it tightly but is malleable enough that <b>simple grabbing</b> can change the shape. Unwinding it is even simpler, just open it to bring it back to its original shape.</p>
           <div className=" center">
-            <img src={kkori} alt="Tail"/>
+            <ImageZoom
+              image={{
+                src: kkori,
+                alt: "Tail"
+              }}
+              zoomImage={{
+                src: kkori,
+                alt: "Tail"
+              }}
+            />
           </div>
           <br/><br/><br/>
 
@@ -49,51 +59,168 @@ class Misc extends Component {
               <p>Cereal boxes are not regular cardboard boxes. Brilliant characters, excitement, sweetness, and joy all combine, to make a cereal box. Each of the twelve months are represented by these cereal boxes.</p>
             </div>
             <div className="forty">
-              <img src={cover} alt="cover of calendar"/>
+              <ImageZoom
+                image={{
+                  src: cover,
+                  alt: "cover of calendar"
+                }}
+                zoomImage={{
+                  src: cover,
+                  alt: "cover of calendar"
+                }}
+              />
             </div>
           </div>
           <div className="flex justify-between">
             <div className="quarter">
-              <img src={tony} alt="January Frosted Flakes"/>
+              <ImageZoom
+                image={{
+                  src: tony,
+                  alt: "January Frosted Flakes"
+                }}
+                zoomImage={{
+                  src: tony,
+                  alt: "January Frosted Flakes"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={trix} alt="February Trix" />
+              <ImageZoom
+                image={{
+                  src: trix,
+                  alt: "February Trix"
+                }}
+                zoomImage={{
+                  src: trix,
+                  alt: "February Trix"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={rice} alt="March Rice Krispies"/>
+              <ImageZoom
+                image={{
+                  src: rice,
+                  alt: "March Rice Krispies"
+                }}
+                zoomImage={{
+                  src: rice,
+                  alt: "March Rice Krispies"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={corn} alt="April Corn Flakes"/>
+              <ImageZoom
+                image={{
+                  src: corn,
+                  alt: "April Corn Flakes"
+                }}
+                zoomImage={{
+                  src: corn,
+                  alt: "April Corn Flakes"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={franken} alt="May Frankenberry"/>
+              <ImageZoom
+                image={{
+                  src: franken,
+                  alt: "May Frankenberry"
+                }}
+                zoomImage={{
+                  src: franken,
+                  alt: "May Frankenberry"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={froot} alt="June Froot Loops"/>
+              <ImageZoom
+                image={{
+                  src: froot,
+                  alt: "June Froot Loops"
+                }}
+                zoomImage={{
+                  src: froot,
+                  alt: "June Froot Loops"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={capn} alt="July Capn Crunch"/>
+              <ImageZoom
+                image={{
+                  src: capn,
+                  alt: "July Capn Crunch"
+                }}
+                zoomImage={{
+                  src: capn,
+                  alt: "July Capn Crunch"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={oreo} alt="August Oreo Oz"/>
+              <ImageZoom
+                image={{
+                  src: oreo,
+                  alt: "August Oreo Oz"
+                }}
+                zoomImage={{
+                  src: oreo,
+                  alt: "August Oreo Oz"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={cocoa} alt="September Cocoa puffs"/>
+              <ImageZoom
+                image={{
+                  src: cocoa,
+                  alt: "September Cocoa puffs"
+                }}
+                zoomImage={{
+                  src: cocoa,
+                  alt: "September Cocoa puffs"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={count} alt="October Count Chocula"/>
+              <ImageZoom
+                image={{
+                  src: count,
+                  alt: "October Count Chocula"
+                }}
+                zoomImage={{
+                  src: count,
+                  alt: "October Count Chocula"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={boo} alt="November Booberry"/>
+              <ImageZoom
+                image={{
+                  src: boo,
+                  alt: "November Booberry"
+                }}
+                zoomImage={{
+                  src: boo,
+                  alt: "November Booberry"
+                }}
+              />
             </div>
             <div className="quarter">
-              <img src={lucky}  alt="December Lucky Charms"/>
+              <ImageZoom
+                image={{
+                  src: lucky,
+                  alt: "December Lucky Charms"
+                }}
+                zoomImage={{
+                  src: lucky,
+                  alt: "December Lucky Charms"
+                }}
+              />
             </div>
           </div>
 
         </div>
         <Next
-          leftItem="Bunny Nail"
+          leftItem="Nail Polish Design"
           leftLink="/bunny"
           rightItem="Documentation"
           rightLink="/docs"

@@ -89,7 +89,7 @@ class Urack extends Component {
               <p className="title">Problem</p>
               <p>Not enough bike rack pushes cyclists to lock bikes to unassigned area can impede walkways and make it easier for bike thieves to take the bikes.</p>
               <p  className="title">Solution</p>
-              <p>U-Rack is modular bike storage system that consists of three parts: <b>the rack, the U-lock, and the app</b>. Just prop up the smart bike rack, <b>push the U shaped steel bar of lock through the handle, mount the lock to the rack</b> and off you go! The mobile app will take care of the rest: <b>lock and unlock easily with proximity, give real-time information about the available storage, your bike location and security</b>.</p>
+              <p>U-Rack is modular bike storage system that consists of three parts: <b>the rack, the U-lock, and the app</b>. Just prop up the smart bike rack, push the U shaped steel bar of lock through the handle, mount the lock to the rack and off you go! The mobile app will take care of the rest: lock and unlock easily with proximity, give real-time information about the available storage, your bike location and security.</p>
             </div>
             <div className="half">
               <img src={storyboard} alt="storyboard"/>
@@ -309,10 +309,10 @@ class Urack extends Component {
                   </p>
                   <p>Finding:</p>
                   <ul className="pilot">
-                    <li><b>+</b> Fluidity of locking bicycle</li>
-                    <li><b>+</b> Constant monitor of bike creates a feeling of security</li>
-                    <li><b>+</b> GPS/Location feature decreases the time it takes for students to find their bike</li>
-                    <li><b>-</b> Having the phone in hand while locking the bike with the app could be cumbersome</li>
+                    <li>+ Fluidity of locking bicycle</li>
+                    <li>+ Constant monitor of bike creates a feeling of security</li>
+                    <li>+ GPS/Location feature decreases the time it takes for students to find their bike</li>
+                    <li>- Having the phone in hand while locking the bike with the app could be cumbersome</li>
                   </ul>
                 </div>
               </div>
@@ -353,21 +353,21 @@ class Urack extends Component {
               </ol>
               <p className="title">Finding</p>
               <ul className="pilot">
-                <li><b>+</b> All: The system is easy to learn and to get started on.</li>
-                <li><b>+</b> Unlock: Do not need keys to unlock the bike from the smart rack.</li>
-                <li><b>+</b> Lock: Nice to be able to check the status of your bike when you are not physically there.</li>
-                <li><b>-</b> Registration: Many students buy used bikes, and the bikes may not have a serial number.</li>
-                <li><b>-</b> Find: Heat-map style of showing open bike racks on the app is confusing</li>
-                <li><b>-</b> Lock: Some students may want to leave their bike in one location for longer than a month.</li>
+                <li>+ All: The system is easy to learn and to get started on.</li>
+                <li>+ Unlock: Do not need keys to unlock the bike from the smart rack.</li>
+                <li>+ Lock: Nice to be able to check the status of your bike when you are not physically there.</li>
+                <li>- Registration: Many students buy used bikes, and the bikes may not have a serial number.</li>
+                <li>- Find: Heat-map style of showing open bike racks on the app is confusing</li>
+                <li>- Lock: Some students may want to leave their bike in one location for longer than a month.</li>
               </ul>
             </div>
           </div>
         </div>
         <Next
-          leftItem="B-Slide"
+          leftItem="Bookmark Curator"
           leftLink="/bslide"
-          rightItem="Re-Caffeine"
-          rightLink="/recaffeine"
+          rightItem="Nail Polish Design"
+          rightLink="/bunny"
         />
         <Credit/>
       </div>

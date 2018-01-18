@@ -2,6 +2,7 @@
  * Created by horyunsong on 19/01/2017.
  */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import "./credit.css";
 
 import {Link} from "react-router";
@@ -11,10 +12,10 @@ import right from "../../img/nav/right.png";
 
 class Next extends Component {
   static propTypes = {
-    leftItem: React.PropTypes.string,
-    leftLink: React.PropTypes.string,
-    rightItem: React.PropTypes.string,
-    rightLink: React.PropTypes.string
+    leftItem: PropTypes.string,
+    leftLink: PropTypes.string,
+    rightItem: PropTypes.string,
+    rightLink: PropTypes.string
   }
   static defaultProps = {
     leftItem: "left",

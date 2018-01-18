@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import "./piece.css";
 
 class Piece extends Component {
   static propTypes = {
-    image: React.PropTypes.string,
-    category: React.PropTypes.string,
-    type: React.PropTypes.string,
-    title: React.PropTypes.string,
-    description: React.PropTypes.string,
-    filters: React.PropTypes.array
+    image: PropTypes.string,
+    category: PropTypes.string,
+    type: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    filters: PropTypes.array
   }
 
   static defaultProps = {

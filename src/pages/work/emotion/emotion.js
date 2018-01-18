@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./emotion.css";
 
-import Collapse from 'react-collapse';
+import ImageZoom from 'react-medium-image-zoom';
 
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
@@ -10,8 +10,6 @@ import Title from '../../../components/work/mini/title';
 import Process from '../../../components/work/mini/process';
 import Heading from '../../../components/work/mini/heading';
 import spark from '../../../img/home/spark.png';
-
-import sunset from '../../../img/work/docs/sunset2.jpg';
 
 import humancomputer from '../../../img/work/emotion/human-computer.png';
 import heartbeat from '../../../img/work/emotion/heartbeat.png';
@@ -30,53 +28,10 @@ import tie from '../../../img/work/emotion/tie.png';
 import years from '../../../img/work/emotion/years.png';
 import gender from '../../../img/work/emotion/gender.png';
 import compare from '../../../img/work/emotion/compare.png';
+import nograph from '../../../img/work/emotion/nograph.png';
 
 
 class Emotion extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      interview: false,
-      persona: false,
-      require: false,
-      ia: false,
-      wire: false
-    };
-
-    this.personaClick = this.personaClick.bind(this);
-    this.interviewClick = this.interviewClick.bind(this);
-    this.requireClick = this.requireClick.bind(this);
-    this.iaClick = this.iaClick.bind(this);
-    this.wireClick = this.wireClick.bind(this);
-
-  }
-
-  personaClick() {
-    this.setState(prevState => ({
-      persona: !prevState.persona
-    }));
-  }
-  interviewClick() {
-    this.setState(prevState => ({
-      interview: !prevState.interview
-    }));
-  }
-  requireClick() {
-    this.setState(prevState => ({
-      require: !prevState.require
-    }));
-  }
-  iaClick() {
-    this.setState(prevState => ({
-      ia: !prevState.ia
-    }));
-  }
-  wireClick() {
-    this.setState(prevState => ({
-      wire: !prevState.wire
-    }));
-  }
 
   render() {
     return (
@@ -95,9 +50,9 @@ class Emotion extends Component {
           <div className="flex justify-between">
             <div className="problem sixty">
               <p className="title">Problem</p>
-              <p>Emotion is an important measure to tell one's health. To <b>detect emotions</b>, researchers employ different research methods such as measuring physiological signals or computing language. However, <b>current methods come with critical shortcomings</b>, calling for a new method to detect emotions more conveniently and timely. </p>
+              <p>Emotion is an important measure to tell one's health. To detect emotions, researchers employ different research methods such as measuring physiological signals or computing language. However, <b>current methods come with critical shortcomings</b>, calling for a new method to detect emotions more conveniently and timely. </p>
               <p  className="title">Solution</p>
-              <p>We hypothesized that <b>people are better at telling a person's emotions from digital artifacts than computational methods .</b> Thus, we proposed a <b>Human Sensor</b>, a detection method more capable of making contextual and holistic judgment on projected emotions. We prove this by <b>comparing its accuracy to a subject's self-report emotions on Facebook posts.</b></p>
+              <p>We hypothesized that <b>people are better at telling a person's emotions from digital artifacts than computational methods .</b> Thus, we proposed a Human Sensor, a detection method more capable of making contextual and holistic judgment on projected emotions. We prove this by <b>comparing its accuracy to a subject's self-report emotions on Facebook posts.</b></p>
             </div>
             <div className="forty">
               <p className="title">My role</p>
@@ -137,7 +92,7 @@ class Emotion extends Component {
             />
             <div>
               <p className="title">Background</p>
-              <p>Emotion recognition is used in various fields, but most notably to detect health problems such as predicting functional impairment of PTSD and suicidal tendencies. With the emergence of social media, we are also witnessing possible ways of <b>utilizing social media artifacts to detect emotions.</b> For instance, <b>depression can be predicted through emotions and other behavioral cues displayed on tweets.</b> (De Choudhury et al., 2013)
+              <p>Emotion recognition is used in various fields, but most notably to detect health problems. With the emergence of social media, we are also witnessing possible ways of <b>utilizing social media artifacts to detect emotions.</b> For instance, depression can be predicted through emotions and other behavioral cues displayed on tweets. (De Choudhury et al., 2013)
               </p>
               <p className="title">Motivation</p>
               <p>We speculate current emotion detection methods are lacking for below reasons and find there is a need for more accurate and dependable method that accounts complex human emotion in given contexts.
@@ -145,15 +100,15 @@ class Emotion extends Component {
               <div className="flex justify-between motivation">
                 <div className="third">
                   <img className="smaller-img" src={heartbeat} alt="physiological" />
-                  <p><b>Using physiological signals</b> is challenging to measure in a daily life because of its <b>obstructiveness.</b> - Wagner et al. (2005)</p>
+                  <p><b>Using physiological signals</b> is challenging to measure in a daily life because of its obstructiveness. - Wagner et al. (2005)</p>
                 </div>
                 <div className="third">
                   <img className="smaller-img" src={computing} alt="machine learning" />
-                  <p>The latest <b>machine learning</b> techniques only achieved an <b>accuracy of 80 percent.</b> - Poria et al. (2016)</p>
+                  <p>The latest <b>machine learning</b> techniques only achieved an accuracy of 80 percent. - Poria et al. (2016)</p>
                 </div>
                 <div className="third">
                   <img className="smaller-img" src={lang} alt="language" />
-                  <p>“For the typical user, <b>dictionary-based sentiment analysis tools (LIWC) may not be sufficient</b> to infer how they truly feel.” - Beasley and Mason (2015)</p>
+                  <p>“For the typical user, <b>dictionary-based sentiment analysis tools (LIWC)</b> may not be sufficient to infer how they truly feel.” - Beasley and Mason (2015)</p>
                 </div>
 
               </div>
@@ -165,8 +120,8 @@ class Emotion extends Component {
             />
             <p><span className="">Thus, we propose a new technique of emotion measurement called Human sensor. </span></p>
             <ul>
-              <li>Human sensor is <b>an informant that provides his or her observation and perception regarding target persons or situations.</b></li>
-              <li>Human sensor is more capable of making a <b>contextual and holistic judgement</b> than any other methods.
+              <li><b>Human sensor is an informant that provides his or her observation and perception regarding target persons or situations.</b></li>
+              <li>Human sensor is more capable of making a contextual and holistic judgement than any other methods.
               </li>
             </ul>
           </div>
@@ -176,10 +131,10 @@ class Emotion extends Component {
             />
             <div>
               <ul>
-                <li>How can a participant’s <b>Facebook friends</b> function as <b>sensors of her emotion?</b></li>
-                <li>Can we <b>trust friends’ perceptions</b> compared to <b>other sensing methods?</b></li>
-                <li>How can the <b>tie strength/number of year/gender</b> affect the <b>accuracy of friend sensors?</b></li>
-                <li>What is the correlation between the <b>accuracy of sensors</b> and the continuous <b>scale of tie strength?</b></li>
+                <li>How can a participant’s <b>Facebook friends</b> function as sensors of her emotion?</li>
+                <li>Can we <b>trust friends’ perceptions</b> compared to other sensing methods?</li>
+                <li>How can the <b>tie strength / number of year / gender</b> affect the accuracy of friend sensors?</li>
+                <li>What is the correlation between the accuracy of sensors and the continuous scale of tie strength?</li>
               </ul>
             </div>
           </div>
@@ -189,14 +144,28 @@ class Emotion extends Component {
               title="Framework"
             />
             <div>
-                <img className="framework" src={framework} />
+              <ImageZoom
+                image={{
+                  src: framework,
+                  alt: "framework"
+                }}
+                zoomImage={{
+                  src: framework,
+                  alt: "framework"
+                }}
+              />
+              <p className="title">I. Survey & Computing</p>
+              <ol className="space-up">
+                <li><b>Survey a subject’s Facebook friends</b> to get their evaluation of her emotion projected on each Facebook post.</li>
+                <li><b>Survey Amazon Mechanical Turkers (strangers)</b> on all three subjects' surveys.</li>
+                <li><b>Use computational methods</b> (Natural Language Processing and Image Processing) to get machine results</li>
+              </ol>
+              <p className="title">II. Correlation & Comparison</p>
               <ol>
-                <li><b>Survey</b> a subject’s Facebook friends to get their <b>evaluation of her emotion projected on each Facebook post </b></li>
-                <li>Find a correlation between the continuous scale of <b>tie strength</b> and the accuracy of friends’ evaluation</li>
-                <li>Find a correlation between the <b>years of friendship</b> and the accuracy of friends’ evaluation</li>
-                <li><b>Survey</b> Amazon Mechanical Turkers on all three subjects' surveys</li>
-                <li><b>Compare</b> the results of <b>friends'</b> and Amazon Mechanical Turkers' <b>(strangers)</b> survey answers</li>
-                <li><b>Compare</b> the results of <b>computational methods</b> (Natural Language Processing and Image Processing) and <b>human</b> surveys(both friends and Amazon Mechanical Turkers)</li>
+                <li>Find a correlation between the continuous scale of tie strength and the accuracy of friends’ evaluation.</li>
+                <li>Find a correlation between the years of friendship and the accuracy of friends’ evaluation.</li>
+                <li>Compare the results of friends' and Amazon Mechanical Turkers' (strangers) survey answers</li>
+                <li>Compare the results of computational methods and human surveys(both friends and Amazon Mechanical Turkers)</li>
               </ol>
             </div>
           </div>
@@ -211,22 +180,50 @@ class Emotion extends Component {
                   <p className="inner">To measure emotions, we used the Circumplex Model of Emotion. On this model, each emotion was understood as a linear combination of these <b>two dimensions: valence (positive/pleasant and negative/unpleasant) and arousal (magnitude/activation)</b></p>
                 </div>
                 <div className="forty">
-                  <img src={circumplex} />
+                  <ImageZoom
+                    image={{
+                      src: circumplex,
+                      alt: "circumplex"
+                    }}
+                    zoomImage={{
+                      src: circumplex,
+                      alt: "circumplex"
+                    }}
+                  />
                 </div>
               </div>
             </div>
             <div>
               <p className="title bg-grey">II. Survey Design</p>
               <p className="inner">Each participant's <b>Facebook post</b> was followed by a <b>clickable Circumplex Model of Emotion.</b> Her friends and Amazon Mechanical Turkers clicked an emotion they guessed from the post. Surveys for friends collected personal questions of name to identify years of freindship and tie-strength. <br/>
-                <b>Tie-strength was self-identified by a subject:</b> 0 =  stranger, 0.25 = acquaintance, 0.5 = friends, 0.75 = close friends, 1.0 = best friends</p>
+                Tie-strength was self-identified by a subject: 0 =  stranger, 0.25 = acquaintance, 0.5 = friends, 0.75 = close friends, 1.0 = best friends</p>
               <div className="flex justify-between">
                 <div className="half">
-                  <img className="" src={elated} />
+                  <ImageZoom
+                    image={{
+                      src: elated,
+                      alt: "elated"
+                    }}
+                    zoomImage={{
+                      src: elated,
+                      alt: "elated"
+                    }}
+                  />
                 </div>
                 <div className="half">
-                  <img src={survey} />
+                  <ImageZoom
+                    image={{
+                      src: survey,
+                      alt: "survey"
+                    }}
+                    zoomImage={{
+                      src: survey,
+                      alt: "survey"
+                    }}
+                  />
                 </div>
               </div>
+              <p className="title space-up">Survey Demographics</p>
               <div className="flex justify-between">
                 <div className="half">
                   <p className=""><span className="bg-grey">Friends </span></p>
@@ -279,7 +276,16 @@ class Emotion extends Component {
                   We developed a script to parse the CSV file exported by Qualtrics, and calculate the valence, arousal and total error of each participant's response.</p>
               </div>
               <div className="half">
-                <img src={rated} alt="rated"/>
+                <ImageZoom
+                  image={{
+                    src: rated,
+                    alt: "rated"
+                  }}
+                  zoomImage={{
+                    src: rated,
+                    alt: "rated"
+                  }}
+                />
               </div>
             </div>
             <p className="title bg-grey">II. NLP + IP</p>
@@ -299,6 +305,12 @@ class Emotion extends Component {
                 title="Outcome"
               />
               <div className="flex justify-between">
+                <div className="half">
+                  <img src={nograph}/>
+                </div>
+                <p className="half">Unfortunately, the interesting outcome we have found cannot be shared at this time because we are working on an academic paper.<br/>
+                  To give you a little more info, my friends who took the survey were NOT pleased with the outcome. </p>
+                {/*
                 <div className="full">
                   <p className="title">What we expected</p>
                   <p>When we designed the research, we hypothesized that <b>the human sensors would yield a better result than computer and tie strength will scale the accuracy of emotion detection.</b> We rationalized, because a human expression is a result of complex factors, rather than a simple positive-negative magnitude, we needed humans to tell the emotion based on the artifacts. Therefore, one’s history and background need to be considered at all times. On this note, we believed that one’s friends would be more accurate because they share a timeline beyond survey. Strangers lack this extra hand when making a judgment, therefore would have to see each Facebook post on the survey as a standalone artifact.</p>
@@ -328,6 +340,7 @@ class Emotion extends Component {
                   <p>Not part of our hypothesis, but an interesting outcome: <b>Females were better than males at detecting emotions.</b></p>
                   <img src={gender} alt="gender" />
                 </div>
+                */}
               </div>
 
 
@@ -335,9 +348,9 @@ class Emotion extends Component {
             </div>
         </div>
         <Next
-          leftItem="Logue"
+          leftItem="Co-creation Tool"
           leftLink="/logue"
-          rightItem="B-Slide"
+          rightItem="Bookmark Curator"
           rightLink="/bslide"
         />
         <Credit/>

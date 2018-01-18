@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './logue.css';
 
 import Collapse from 'react-collapse';
+import ImageZoom from 'react-medium-image-zoom';
+
 
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
@@ -56,17 +58,26 @@ class Logue extends Component {
             subtitle="Prototype Iteration"
             role="Personal project"
           />
-          <div className="problem">
-            <p className="title">Target User</p>
-            <p>Story co-creators and readers who enjoy co-created stories</p>
-            <p className="title">Problem</p>
-            <p>Co-creators rely on various services to collaborate —Twitter, blog, forum and custom websites. However, they do not  perfectly suit the needs of co-creators and readers.</p>
-            <p  className="title">Solution</p>
-            <p>To accommodate versatile nature of co-creation, stories are unitized to small pieces. Logue is a unit of stories contained in a <b>standardized card</b> — a certain part of a story, categories and characters of the part. Logue breaks linearity and co-creators and readers can <b>rearrange cards to approach the story in various ways.</b></p>
-            <div className="video-wrapper">
-              <iframe src="https://player.vimeo.com/video/141978956?portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div className="problem flex justify-between">
+            <div className="sixty">
+              <p className="title">Target User</p>
+              <p>Story co-creators and readers who enjoy co-created stories</p>
+              <p className="title">Problem</p>
+              <p>Co-creators rely on various services to collaborate —Twitter, blog, forum and custom websites. However, they do not  perfectly suit the needs of co-creators and readers.</p>
+              <p  className="title">Solution</p>
+              <p>To accommodate versatile nature of co-creation, stories are unitized to small pieces. Logue is a unit of stories contained in a standardized card—a certain part of a story, categories and characters of the part. Logue breaks linearity and co-creators and readers can <b>rearrange cards to approach the story in various ways.</b></p>
+
+              <br/>
             </div>
-            <br/>
+            <div className="forty">
+              <p className="title">Publication</p>
+              <p><b>Song, H. </b>& Jun, S. (2017) <a className="link" href="https://dl.acm.org/citation.cfm?id=3064663.3064761">Logue: Unitizing Interactive Fictions for Co-creation</a> <br/>
+                – ACM Conference on the Designing Interactive Systems (DIS '17).
+              </p>
+            </div>
+          </div>
+          <div className="video-wrapper">
+            <iframe src="https://player.vimeo.com/video/141978956?portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
           <div className="spark-wrapper">
             <h3 className="heading" >Process</h3>
@@ -76,8 +87,8 @@ class Logue extends Component {
           </div>
           <Process
             processes={["Image Mapping", "1st Prototype: Flow", "2nd Prototype: Story Deck",
-              "Focus Group", "3rd Prototype:  Logue", "User Testing", "4th Prototype: Timeline"]}
-            names={["Image", "Flow", "Story", "Focus", "Logue", "User", "Timeline"]}
+              "Focus Group", "3rd Prototype:  Logue", "User Testing", "Finding"]}
+            names={["Image", "Flow", "Story", "Focus", "Logue", "User", "Finding"]}
           />
           <div id="Image" className="section">
             <Heading
@@ -99,11 +110,29 @@ class Logue extends Component {
             </div>
             <div className="flex justify-between">
               <div className="half center">
-                <img src={image1} alt="Initial image mapping"/>
+                <ImageZoom
+                  image={{
+                    src: image1,
+                    alt: "Initial image mapping"
+                  }}
+                  zoomImage={{
+                    src: image1,
+                    alt: "Initial image mapping"
+                  }}
+                />
                 <p className="caption">Initial image mapping</p>
               </div>
               <div className="half center">
-                <img src={image2} alt="Simplified image mapping"/>
+                <ImageZoom
+                  image={{
+                    src: image2,
+                    alt: "Simplified image mapping"
+                  }}
+                  zoomImage={{
+                    src: image2,
+                    alt: "Simplified image mapping"
+                  }}
+                />
                 <p className="caption">Simplified image mapping</p>
               </div>
             </div>
@@ -127,7 +156,16 @@ class Logue extends Component {
               </div>
             </div>
             <div className="full">
-              <img src={flow} alt="flow"/>
+              <ImageZoom
+                image={{
+                  src: flow,
+                  alt: "flow"
+                }}
+                zoomImage={{
+                  src: flow,
+                  alt: "flow"
+                }}
+              />
               <p className="caption">Contents adapted from Cartoon Network’s animation Adventure Time</p>
             </div>
           </div>
@@ -138,11 +176,11 @@ class Logue extends Component {
             <div className="flex justify-between">
               <div className="third">
                 <p className="title">How</p>
-                <p>Adapted <a className="link" href="https://storify.com/penguinpress/elliotholt-s-twitterfiction-story">Elliot Holt’s Twitterfiction “Evidence”</a> and <b>wireframed the story tweets in x-axis (character) and y-axis (time) frame</b>. And I conducted <b>guerilla user testing with 10 students followed by informal interview</b> on campus about wireframed webpage.</p>
+                <p>Adapted <a className="link" href="https://storify.com/penguinpress/elliotholt-s-twitterfiction-story">Elliot Holt’s Twitterfiction “Evidence”</a> and wireframed the story tweets in x-axis (character) and y-axis (time) frame. And I conducted <b>guerilla user testing with 10 students followed by informal interviews</b> on campus about the prototype webpage.</p>
               </div>
               <div className="third">
                 <p className="title">Why</p>
-                <p>Twitter Fiction is a <b>dynamic modular storytelling</b> with Twitter handles, word limitation and reader's participation. However, with Twitter's typical <b>linear delivery</b>, it is hard to see the relation of story tweets. To maximize modular story reading experience, I adopted plane frame.</p>
+                <p>Twitter Fiction is a <b>dynamic modular storytelling</b> with Twitter handles, word limitation and reader's participation. However, with Twitter's typical linear delivery, it is hard to see the relation of story tweets. To maximize modular story reading experience, I adopted plane frame.</p>
               </div>
               <div className="third">
                 <p className="title">Finding</p>
@@ -150,7 +188,16 @@ class Logue extends Component {
               </div>
             </div>
             <div className="full">
-              <img src={storydeck} alt="storydeck"/>
+              <ImageZoom
+                image={{
+                  src: storydeck,
+                  alt: "storydeck"
+                }}
+                zoomImage={{
+                  src: storydeck,
+                  alt: "storydeck"
+                }}
+              />
               <p className="caption">Contents adapted from Elliot Holt’s Twitter Fiction “Evidence”</p>
             </div>
           </div>
@@ -196,49 +243,71 @@ class Logue extends Component {
             />
             <div className="full">
               <div className="sixty center">
-                <img src={card} alt="Logue card components: category, characters, story"/>
+                <ImageZoom
+                  image={{
+                    src: card,
+                    alt: "Logue card components: category, characters, story"
+                  }}
+                  zoomImage={{
+                    src: card,
+                    alt: "Logue card components: category, characters, story"
+                  }}
+                />
                 <p className="caption">One Logue</p>
               </div>
               <div className="flex justify-between">
-                <div className="half">
+                <div className="">
                   <p className="title">How</p>
                   <p>Louge was defined as a <b>unit of complex fictional stories</b>. The basic rule of a Logue is to embody the smallest meaningful portion of <b>content and metadata</b> the content should entail.</p>
                 </div>
-                <div className="half">
+                <div className="">
                   <p className="title">Why</p>
                   <p>By breaking down stories to units and giving them affiliation such as storyline, characters, and locations, creators would be able to compile story according to their needs.</p>
                 </div>
               </div>
             </div>
-            <div className="button-wrapper">
-              <button onClick={this.prototypeClick} className="button expand center">
-                {this.state.prototype ? 'Close' : 'Show'} Prototype Details
-              </button>
-            </div>
-            <Collapse isOpened={this.state.prototype}>
+            <div>
               <div className="flex justify-between prototype">
                 <div className="half">
                   <div className="center">
-                    <img src={screens} alt="screens of logue beta"/>
+                    <ImageZoom
+                      image={{
+                        src: screens,
+                        alt: "screens of logue beta"
+                      }}
+                      zoomImage={{
+                        src: screens,
+                        alt: "screens of logue beta"
+                      }}
+                    />
                     <p className="caption">Screens from Logue Beta</p>
                   </div>
                   <div className="">
-                    <p className="title">Logue beta</p>
-                    <p><a className="link" href="http://logue.co.kr/beta-eng"> Logue Beta</a> is a WordPress theme designed specifically for authors and co-authors who want to venture into a new type of <b>storytelling by tagging metadata</b>.</p>
+                    <p className="title">Prototype 1: Logue beta</p>
+                    <p>Logue Beta is a WordPress theme designed specifically for authors and co-authors who want to venture into a new type of <b>storytelling by tagging metadata</b>.</p>
                   </div>
                 </div>
                 <div className="half">
                   <div className="sixty center">
-                    <img src={storymap} alt="sample of storymap"/>
+                    <ImageZoom
+                      image={{
+                        src: storymap,
+                        alt: "sample of storymap"
+                      }}
+                      zoomImage={{
+                        src: storymap,
+                        alt: "sample of storymap"
+                      }}
+                    />
                     <p className="caption">Logue Story Map</p>
                   </div>
                   <div className="full">
-                    <p className="title">Story Map</p>
-                    <p>While Logue Beta is for authorship using Logue, <a className="link" href="http://logue.co.kr/handg-en">Story Map</a> is designed for better <b>reader experience</b>. It uses categories, perspectives and routes as the starting point of directions. <b>Readers can choose which flow of the story</b> they would prefer to read.</p>
+                    <p className="title">Prototype 2: Story Map</p>
+                    <p>While Logue Beta is for authorship using Logue, Story Map is designed for better <b>reader experience</b>. It uses categories, perspectives and routes as the starting point of directions. <b>Readers can choose which flow of the story</b> they would prefer to read.</p>
                   </div>
                 </div>
               </div>
-            </Collapse>
+            </div>
           </div>
           <div id="User" className="section">
             <Heading
@@ -282,8 +351,12 @@ class Logue extends Component {
                 </div>
               </div>
             </Collapse>
+          </div>
+          <div id="Finding" className="section">
             <div>
-              <p className="title">Finding</p>
+              <Heading
+                title="Finding"
+              />
               <p>After two weeks of testing, <b>semi-structured interviews and participatory design session</b> were conducted. Evaluation focused on the holistic system of Logue. As the last part of interview, <b>each team was asked to draw Story Maps based on their knowledge of Logue</b> and explain the structure to determine whether the co-creators’ understanding of Logue was congruent with Logue system. </p>
               <div className="flex justify-between">
                 <div className="half">
@@ -305,20 +378,39 @@ class Logue extends Component {
               </div>
 
               <p>3. Participatory Design: <br/>
-                Both teams could <b>draw story map without hesitation</b>n. As they explained their own story map, they said that thinking in terms of Logue helps them to approach the structure from holistic view. By drawing and explaining, they came up with <b>ideas that would help novice guide through this new system and also advanced features they want</b>.</p>
+                Both teams could draw story map without a hesitation. As they explained their own story map, they said that thinking in terms of Logue helps them to approach the structure from holistic view. By drawing and explaining, they came up with <b>ideas that would help novice guide through this new system and also advanced features they want</b>.</p>
               <div className="flex justify-around team">
                 <div className="third center">
-                  <img src={teamA} alt="team A story map"/>
+                  <ImageZoom
+                    image={{
+                      src: teamA,
+                      alt: "team A story map"
+                    }}
+                    zoomImage={{
+                      src: teamA,
+                      alt: "team A story map"
+                    }}
+                  />
                   <p className="caption">Team A story map</p>
                 </div>
                 <div className="third center">
-                  <img src={teamB} alt="team B story map"/>
+                  <ImageZoom
+                    image={{
+                      src: teamB,
+                      alt: "team B story map"
+                    }}
+                    zoomImage={{
+                      src: teamB,
+                      alt: "team B story map"
+                    }}
+                  />
                   <p className="caption">Team B story map</p>
                 </div>
               </div>
 
             </div>
           </div>
+          {/*
           <div id="4th" className="section">
             <Heading
               title="4th Prototype: Timeline (Working in Progress)"
@@ -328,6 +420,7 @@ class Logue extends Component {
               <img src={timeline} alt="timeline"/>
             </div>
           </div>
+          */}
         </div>
         <Next
           leftItem="Documentation"

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./bslide.css";
 
 import Collapse from 'react-collapse';
+import ImageZoom from 'react-medium-image-zoom';
 
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
@@ -108,9 +109,9 @@ class Bslide extends Component {
               <p  className="title">Target User Group</p>
               <p>University students in Korea, who bookmark in social media</p>
               <p className="title">Problem</p>
-              <p>Students <b>bookmark useful contents</b> on a daily basis, thinking that they will organize and <b>read it later</b>. But, that later never comes.</p>
+              <p>Students bookmark useful contents on a daily basis, thinking that they will organize and <b>read it later</b>. But, that later never comes.</p>
               <p  className="title">Solution</p>
-              <p>B-slide prompts user by showing <b>bookmarked contents on the lock-screen</b> as compact cards. <b>By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content</b>.</p>
+              <p>B-slide prompts user by showing <b>bookmarked contents on the lock-screen</b> as compact cards. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content.</p>
             </div>
             <div className="forty">
               <p className="title">My role</p>
@@ -123,19 +124,48 @@ class Bslide extends Component {
                 <li>Planned journey map branches</li>
               </ul>
               <p className="title">Publication</p>
-                <p><a className="link" href="http://dl.acm.org/citation.cfm?id=2903693">Smartphone Lockscreen Interface Design<br/> to Facilitate Return for Cross-service Bookmarks
-                </a> <br/>
-                  – Proceeding of HCI Korea 2016
-                </p>
+              <p><b>Song, H.</b>, Jo, Y., Han, S., Lee, H., Kwon, H. (2016) <a className="link" href="http://dl.acm.org/citation.cfm?id=2903693">Smartphone Lockscreen Interface Design to Facilitate Return for Cross-service Bookmarks</a><br/>
+                  – Proceeding of HCI Korea (HCIK)
+              </p>
             </div>
           </div>
           <div className="flex justify-between">
             <div className="sixty">
-              <img className="center" src={read} alt="Read the stuff that you always plan to but never do. We will notify you lock-screen hen it's good time to read."/>
-              <img className="center" src={curate} alt="Curate what you'll read. No haphazard recommendation. Get what you want."/>
+              <ImageZoom
+                image={{
+                  src: read,
+                  alt: "Read the stuff that you always plan to but never do. We will notify you lock-screen hen it's good time to read.",
+                  className: "center"
+                }}
+                zoomImage={{
+                  src: read,
+                  alt: "Read the stuff that you always plan to but never do. We will notify you lock-screen hen it's good time to read."
+                }}
+              />
+              <ImageZoom
+                image={{
+                  src: curate,
+                  alt: "Curate what you'll read. No haphazard recommendation. Get what you want.",
+                  className: "center"
+                }}
+                zoomImage={{
+                  src: curate,
+                  alt: "Curate what you'll read. No haphazard recommendation. Get what you want."
+                }}
+              />
             </div>
             <div className="forty">
-              <img className="gif center" src={bGif} alt="gif image of prototype"/>
+              <ImageZoom
+                image={{
+                  src: bGif,
+                  alt: "gif image of prototype",
+                  className: "center gif"
+                }}
+                zoomImage={{
+                  src: bGif,
+                  alt: "gif image of prototype"
+                }}
+              />
             </div>
           </div>
 
@@ -169,7 +199,7 @@ class Bslide extends Component {
                 <p>Similar categories emerged: <b>the purpose of bookmarking</b>, how to organize, how to share and what device to use. There were varying degrees of purpose, but boookmarks were in general <b>for near future usage</b>. Limitation: Gender and age skewed interviewee demographic.</p>
               </div>
             </div>
-            <div className="sixty center">
+            <div className="half center">
               <img src={interviewees} alt="7 interviewees.
                 A 23 year old female, B 24 year old female, C 23 year old female, D 23 year old female
                 E 27 year old male, F 21 year old female, G 25 year old female."/>
@@ -183,7 +213,16 @@ class Bslide extends Component {
             <Collapse isOpened={this.state.interview}>
               <div className="flex justify-between">
                 <div className="half center">
-                  <img src={interviewECoding} alt="interview coding table"/>
+                  <ImageZoom
+                    image={{
+                      src: interviewECoding,
+                      alt: "interview coding table"
+                    }}
+                    zoomImage={{
+                      src: interviewECoding,
+                      alt: "interview coding table"
+                    }}
+                  />
                   <p className="caption"> Interviewee E coding </p>
                 </div>
                 <div className="half center padding10">
@@ -225,10 +264,28 @@ class Bslide extends Component {
               <p className="title">spotting interviewee patterns</p>
               <div className="flex justify-between">
                 <div className="half center">
-                  <img src={interviewOrganizing} alt="bookmark organizing pattern" />
+                  <ImageZoom
+                    image={{
+                      src: interviewOrganizing,
+                      alt: "bookmark organizing pattern"
+                    }}
+                    zoomImage={{
+                      src: interviewOrganizing,
+                      alt: "bookmark organizing pattern"
+                    }}
+                  />
                 </div>
                 <div className="half center">
-                  <img src={interviewPurpose} alt="purpose of bookmarking pattern" />
+                  <ImageZoom
+                    image={{
+                      src: interviewPurpose,
+                      alt: "purpose of bookmarking pattern"
+                    }}
+                    zoomImage={{
+                      src: interviewPurpose,
+                      alt: "purpose of bookmarking pattern"
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -349,11 +406,29 @@ class Bslide extends Component {
               <p className="title">Requirements</p>
               <div className="flex justify-between">
                 <div className="half">
-                  <img src={matrix} alt="Requirements matrix"/>
+                  <ImageZoom
+                    image={{
+                      src: matrix,
+                      alt: "Requirements matrix"
+                    }}
+                    zoomImage={{
+                      src: matrix,
+                      alt: "Requirements matrix"
+                    }}
+                  />
                   <p className="caption">Requirements matrix</p>
                 </div>
                 <div className="half">
-                  <img src={scenario} alt="Identifying context scenario"/>
+                  <ImageZoom
+                    image={{
+                      src: scenario,
+                      alt: "Identifying context scenario"
+                    }}
+                    zoomImage={{
+                      src: scenario,
+                      alt: "Identifying context scenario"
+                    }}
+                  />
                   <p className="caption">Identifying context scenario</p>
                 </div>
               </div>
@@ -385,7 +460,7 @@ class Bslide extends Component {
                 <div className="quarter">
                   <img src={primary1} role="presentation"/>
                   <p className="caption">In Bus</p>
-                  <p>Hyunjung opens the B-slide application to add her Facebook account into <b>the synced account list</b>, where she already has Chrome and Twitter accounts.</p>
+                  <p>Hyunjung <b>opens the B-slide application</b> to add her Facebook account into the synced account list, where she already has Chrome and Twitter accounts.</p>
                 </div>
                 <div className="quarter">
                   <img src={primary2} role="presentation"/>
@@ -400,7 +475,7 @@ class Bslide extends Component {
                 <div className="quarter">
                   <img src={primary4} role="presentation"/>
                   <p className="caption">At Home</p>
-                  <p>She <b>recalls</b> adding this contents to FB save. Since she has <b>time to read</b> until she goes to bed, she decides to read it. After 11PM, the <b>lock-screen returns to default state</b>.</p>
+                  <p>She <b>recalls</b> adding this contents to FB save. Since she has time to read until she goes to bed, she decides to read it. After 11PM, the lock-screen returns to default state.</p>
                 </div>
               </div>
             </div>
@@ -422,7 +497,16 @@ class Bslide extends Component {
             <div>
               <p className="title">Journey Map</p>
               <p>We considered primary user journey first and what alternative choices user would make based on needs. Thus, this journey map <b>branches out when such choice is made</b>.</p>
-              <img className="full" src={journeyMap} alt="journey map"/>
+              <ImageZoom
+                image={{
+                  src: journeyMap,
+                  alt: "journey map"
+                }}
+                zoomImage={{
+                  src: journeyMap,
+                  alt: "journey map"
+                }}
+              />
             </div>
           </div>
           <div id="Information" className="section">
@@ -438,16 +522,44 @@ class Bslide extends Component {
               <Collapse isOpened={this.state.ia}>
                 <div className="site-map">
                   <p className="title">Site Map</p>
-                  <img className="full" src={siteMap} alt="site map"/>
+                  <ImageZoom
+                    image={{
+                      src: siteMap,
+                      alt: "site map",
+                      className: "full"
+                    }}
+                    zoomImage={{
+                      src: siteMap,
+                      alt: "site map"
+                    }}
+                  />
                 </div>
                 <div>
                   <p className="title">Task Flow</p>
                   <div className="flex justify-between">
                     <div className="half">
-                      <img src={taskFlowRead} alt="task flow 1 about selecting bookmark to read"/>
+                      <ImageZoom
+                        image={{
+                          src: taskFlowRead,
+                          alt: "task flow 1 about selecting bookmark to read"
+                        }}
+                        zoomImage={{
+                          src: taskFlowRead,
+                          alt: "task flow 1 about selecting bookmark to read"
+                        }}
+                      />
                     </div>
                     <div className="half">
-                      <img src={taskFlowRecommend} alt="task flow 2 about getting recommendation"/>
+                      <ImageZoom
+                        image={{
+                          src: taskFlowRecommend,
+                          alt: "task flow 2 about getting recommendation"
+                        }}
+                        zoomImage={{
+                          src: taskFlowRecommend,
+                          alt: "task flow 2 about getting recommendation"
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -459,8 +571,26 @@ class Bslide extends Component {
               />
               <p>Based on task flow from information architecture, we <b>specified UI scenarios</b>. Then finally, the UI map of entire system was drawn.</p>
               <div className="full">
-                <img src={uiScenario1} alt="ui scenario 1"/>
-                <img src={uiScenario2} alt="ui scenario 2"/>
+                <ImageZoom
+                  image={{
+                    src: uiScenario1,
+                    alt: "ui scenario 1"
+                  }}
+                  zoomImage={{
+                    src: uiScenario1,
+                    alt: "ui scenario 1"
+                  }}
+                />
+                <ImageZoom
+                  image={{
+                    src: uiScenario2,
+                    alt: "ui scenario 2"
+                  }}
+                  zoomImage={{
+                    src: uiScenario2,
+                    alt: "ui scenario 2"
+                  }}
+                />
               </div>
               <div className="button-wrapper">
                 <button onClick={this.wireClick} className="button expand">
@@ -470,7 +600,16 @@ class Bslide extends Component {
               <Collapse isOpened={this.state.wire}>
                 <div className="ui-map">
                   <p className="title">Ui Map</p>
-                  <img src={uiMap} alt="ui map"/>
+                  <ImageZoom
+                    image={{
+                      src: uiMap,
+                      alt: "ui map"
+                    }}
+                    zoomImage={{
+                      src: uiMap,
+                      alt: "ui map"
+                    }}
+                  />
                 </div>
               </Collapse>
             </div>
@@ -480,26 +619,71 @@ class Bslide extends Component {
               />
               <div className="half center">
                 <p className="title">Default lock-screen UI</p>
-                <img src={wireframeHome} alt="Wireframe default"/>
+                <ImageZoom
+                  image={{
+                    src: wireframeHome,
+                    alt: "Wireframe default"
+                  }}
+                  zoomImage={{
+                    src: wireframeHome,
+                    alt: "Wireframe default"
+                  }}
+                />
               </div>
               <div className="flex justify-between">
                 <div className="half">
                   <p className="title">Swipe up to explore</p>
-                  <img src={wireframeUp} alt="Wireframe up"/>
+                  <ImageZoom
+                    image={{
+                      src: wireframeUp,
+                      alt: "Wireframe up"
+                    }}
+                    zoomImage={{
+                      src: wireframeUp,
+                      alt: "Wireframe up"
+                    }}
+                  />
                 </div>
                 <div className="half">
                   <p className="title">Double tap to read</p>
-                  <img src={wireframeRead} alt="Wireframe read"/>
+                  <ImageZoom
+                    image={{
+                      src: wireframeRead,
+                      alt: "Wireframe read"
+                    }}
+                    zoomImage={{
+                      src: wireframeRead,
+                      alt: "Wireframe read"
+                    }}
+                  />
                 </div>
               </div>
               <div className="flex justify-between">
                 <div className="half">
                   <p className="title">Swipe left to get recommendation</p>
-                  <img src={wireframeLeft} alt="Wireframe left"/>
+                  <ImageZoom
+                    image={{
+                      src: wireframeLeft,
+                      alt: "Wireframe left"
+                    }}
+                    zoomImage={{
+                      src: wireframeLeft,
+                      alt: "WWireframe left"
+                    }}
+                  />
                 </div>
                 <div className="half">
                   <p className="title">Favorite recommendation</p>
-                  <img src={wireframeStar} alt="Wireframe star"/>
+                  <ImageZoom
+                    image={{
+                      src: wireframeStar,
+                      alt: "Wireframe star"
+                    }}
+                    zoomImage={{
+                      src: wireframeStar,
+                      alt: "Wireframe star"
+                    }}
+                  />
                 </div>
               </div>
               <br/>
@@ -508,8 +692,8 @@ class Bslide extends Component {
         <Next
           leftItem="Detecting Emotions"
           leftLink="/emotion"
-          rightItem="Bunny"
-          rightLink="/bunny"
+          rightItem="U-lock + Bike Rack"
+          rightLink="/urack"
         />
         <Credit/>
       </div>
