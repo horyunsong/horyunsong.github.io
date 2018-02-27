@@ -13,6 +13,7 @@ import Urack from './pages/work/urack/urack';
 import Recaffeine from './pages/work/recaffeine/recaffeine';
 import Bunny from './pages/work/bunny/bunny';
 import Misc from './pages/work/misc/misc';
+import Ticket from './pages/work/ticket/ticket';
 import Not from './pages/notfound/notfound';
 
 function scrollTop () {
@@ -22,6 +23,7 @@ function scrollTop () {
 ReactDOM.render(
   <Router history={browserHistory} onUpdate={scrollTop}>
     <Route path="/" component={Index} />
+      <Route path="/ticket" component={Ticket}/>
     <Route path="/emotion" component={Emotion} />
     <Route path="/docs" component={Docs}/>
     <Route path="/bslide" component={Bslide}/>
