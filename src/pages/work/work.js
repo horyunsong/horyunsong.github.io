@@ -16,6 +16,7 @@ import underlined from "../../img/work/thumb/underlined.png";
 import misc from "../../img/work/thumb/misc.jpg";
 import docs from "../../img/work/thumb/docs_thumb.png";
 import emo from "../../img/work/thumb/emotion_thumb.png";
+import test from "../../img/work/thumb/test.jpg";
 
 
 class Work extends Component {
@@ -75,37 +76,15 @@ class Work extends Component {
 
     return (
       <div>
-        <Nav />
         <div id="work">
-          <div className="work-wrapper container small">
-            <div className="myworks">
-              <h3 className="title"><span>My Works</span></h3>
-            </div>
-              <div className="filter-wrapper flex justify-center">
-
-                <button className="filter" onClick={this.allClick}>
-                  <p className={this.state.research && this.state.design && this.state.prototype ? "focused" : ""}><span>All</span></p>
-                </button>
-                <button className="filter" onClick={this.researchClick}>
-                  <p><span>Research</span></p>
-                </button>
-                <button className="filter" onClick={this.designClick}>
-                  <p><span>Design</span></p>
-                </button>
-                <button className="filter" onClick={this.prototypeClick}>
-                  <p><span>Prototype</span></p>
-                </button>
-              </div>
-            <div className="flex justify-center">
-              <div>
-              </div>
-
+          <div className="">
+            <div className="flex full justify-center">
               <Link to="/docs">
                 <Piece
                   title="Collaborative Documentation"
                   type="Research"
                   description="Stack Overflow Documentation was a collaborative writing space for technical reference material. I took the lead on gathering insights for a redesign of the product."
-                  image={docs}
+                  image={test}
                   filters={["Research", (this.state.research ? "active" : "") ]}
                 />
               </Link>
@@ -114,7 +93,7 @@ class Work extends Component {
                   title="Bookmark Curator"
                   type="Research, Design & Prototype"
                   description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
-                  image={bslide}
+                  image={test}
                   filters={
                     ["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]
                   }
@@ -125,7 +104,7 @@ class Work extends Component {
                   title="Co-creation Tool"
                   type="Research, Design & Prototype"
                   description="Logue is a unit of stories contained in a standardized card. It enables co-creators to view a story  differently from different perspectives ."
-                  image={logue}
+                  image={test}
                   filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]}
                 />
               </Link>
@@ -135,7 +114,7 @@ class Work extends Component {
                   category="UX"
                   type="Research, Design & Prototype"
                   description="U-rack is the easiest way to safely lock your bike. Mount this special U-lock to the smart bike rack, and off you go. U-rack will look after it. "
-                  image={urack}
+                  image={test}
                   filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "")]}
                 />
               </Link>
@@ -146,7 +125,7 @@ class Work extends Component {
                   category="Social Computing"
                   type="Research"
                   description="Who can tell my emotion better? Friends, strangers or computer? The short answer: people are better than computer, but there is no difference between friends and strangers."
-                  image={emo}
+                  image={test}
                   filters={["Research", (this.state.research ? "active" : "") ]}
                 />
               </Link>

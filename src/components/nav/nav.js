@@ -15,36 +15,34 @@ class Nav extends Component {
   render() {
 
     return(
-      <div id="nav" className="">
+      <div id="nav" className="nav">
         <div className="flex justify-between nav-wrapper">
-          <div className="nav-left flex">
-            <Link to="/"  className="icon">
-              <div>
-                  <img src={home} alt="home"/>
-              </div>
+          <div className="home">
+            <Link to="/">
+              <h4 className="name">Horyun Song</h4>
+              <span className="job">UX Researcher · Designer</span>
             </Link>
-            <a href={window.location.pathname === "/" ? "#work" : "/#work"} className="icon">
-              <div>
-                  <img src={portfolio} alt="portfolio"/>
-              </div>
-            </a>
           </div>
-          <div className="nav-right flex">
-            <a href={process.env.PUBLIC_URL+"/Horyun_Song_Resume.pdf"} className="icon">
-              <div>
-                  <img src={resume} alt="resume"/>
-              </div>
-            </a>
+          <div className="nav-right">
+            <h4 className="menu-item">
+              <a href={window.location.pathname === "/" ? "#work" : "/#work"}>Portfolio</a>
+            </h4>
+            <h4 className="menu-item">
+              <a href="">About</a>
+            </h4>
+            <h4 className="menu-item">
+              <a href={process.env.PUBLIC_URL+"/Horyun_Song_Resume.pdf"}>Resume</a>
+            </h4>
+
+            {/*
             <a href="http://linkedin.com/in/horyunsong" className="icon">
-              <div>
-                  <img src={linkedin} alt="linkedin"/>
-              </div>
+              <p></p>
             </a>
             <a href="mailto:horyunsong@gatech.edu" className="icon">
               <div>
                   <img src={email} alt="email"/>
               </div>
-            </a>
+            </a>*/}
           </div>
         </div>
       </div>

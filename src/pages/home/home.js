@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "./home.css";
+import Work from "../work/work";
+import Nav from '../../components/nav/nav';
 import TextLoop from 'react-text-loop';
 
 import hi from "../../img/home/hi.png";
@@ -16,47 +18,20 @@ class Home extends Component {
 
     return(
       <div id="home">
-        <div className="container small">
-          <div className="flex align-bottom">
-            <div className="full">
-
-
-
-            </div>
-            <div className="im">
-              <img src={people} alt="My name is Horyun Song, I'm a UX Researcher and Designer"/>
-            </div>
+        <Nav/>
+        <div className="profile-container flex">
+          <div className="profile-img half">
+            <img src={people} alt="profile image" />
           </div>
-          <div className="">
-            <div >
-
-            </div>
-            <div className="flex justify-center">
-              <div className="mouse">
-                <img src={mouse} role="presentation"/>
-              </div>
-              <div>
-                <h3>Hi! My name is Horyun Song.</h3>
-                <h3>I research&nbsp;
-                  <TextLoop>
-                    <span>User Experience</span>
-                    <span>Online Communities</span>
-                    <span>when I'm not drawing</span>
-                  </TextLoop>.
-                </h3>
-              </div>
-              <div className="pencil">
-                <img src={pencil} role="presentation"/>
-              </div>
-
-
-              {/*
-              <h3>You can find more about me
-                <br/>on my <a className="link" href={process.env.PUBLIC_URL+"/Horyun_Song_Resume.pdf"}>resume</a> or <a className="link" href="http://linkedin.com/in/horyunsong">linkedin</a>,
-                <br/>or even better, from</h3>
-                */}
-            </div>
+          <div className="profile-text half">
+            <h1>
+              Hi, I'm Horyun Song.
+            </h1>
+            <p>I'm a UX Researcher and Designer with love for collaboration</p>
           </div>
+        </div>
+        <div className="full worklist">
+          <Work />
         </div>
       </div>
     )

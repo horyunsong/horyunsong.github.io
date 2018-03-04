@@ -9,7 +9,8 @@ class Piece extends Component {
     type: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
-    filters: PropTypes.array
+    filters: PropTypes.array,
+    projectName: PropTypes.string
   }
 
   static defaultProps = {
@@ -18,7 +19,8 @@ class Piece extends Component {
     type: "Research & Design",
     title: "undefined",
     description: "undefined",
-    filters: ["Research", "Design", "Prototype"]
+    filters: ["Research", "Design", "Prototype"],
+    projectName: ""
   }
 
   render() {
@@ -30,19 +32,14 @@ class Piece extends Component {
     }
 
     return(
-      <div className={filterString}
-
-      >
-        <div className="piece flex full">
-          <div className="piece-half">
-            <img className="work-img" src={this.props.image} alt="thumbnail"/>
-          </div>
-          <div className="piece-half piece-summary">
-            <p><span>{this.props.category}</span> {this.props.type}</p>
-            <div className="summary-bottom">
-              <h3 className="piece-title">{this.props.title}</h3>
-              <p className="">{this.props.description}</p>
-            </div>
+      <div className={this.props.projectName + " piece"} >
+        <div className="piece-img">
+          <img className="work-img" src={this.props.image} alt="thumbnail"/>
+        </div>
+        <div className="piece-summary">
+          <div className="summary-bottom meta text-center">
+            <h3 className="piece-title">{this.props.title}</h3>
+            <p className="piece-tag"><span>{this.props.category}</span> {this.props.type}</p>
           </div>
         </div>
       </div>

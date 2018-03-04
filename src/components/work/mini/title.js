@@ -20,7 +20,6 @@ class Title extends Component {
   render() {
     return (
       <div className="bigTitle">
-        <p className="type"><span>{this.props.category}</span> {this.props.type}</p>
         <div className="text-center">
           <h1>{this.props.title}</h1>
           <p className="subtitle"><i>{this.props.role}</i></p>

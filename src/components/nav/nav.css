@@ -1,3 +1,22 @@
+.name, .job, .menu-item {
+    display: inline-block;
+}
+.name {
+    font-size: 1.2em;
+}
+.job {
+    color: #9b9b9b;
+    font-size: 0.9em;
+    padding-left: 1.5em;
+}
+
+.nav-wrapper {
+    margin: 0 7.14%;
+}
+.menu-item {
+    margin-right: 1.1em;
+}
+
 #nav {
     position: fixed;
     top: 0;
@@ -5,26 +24,10 @@
     background-color: white;
     z-index: 999;
     width: 100vw;
+    padding: 1.2em 0;
+
 }
-.nav-wrapper {
-    width: 60%;
-    margin: 0 auto;
-}
+
 @media only screen and (max-width: 768px) {
-    .nav-wrapper {
-        width: 100%;
-    }
-}
-.icon {
-    padding: 0.5em;
-}
-.icon:first-child {
-    padding-left: 0.8em;
-}
-.icon:last-child {
-    padding-right: 0.8em;
-}
-.icon img{
-    height: 30px;
-    width: auto;
+
 }
