@@ -9,3 +9,15 @@
 .smaller-self p {
     margin-top: 0;
 }
+
+
+.img-wrapper, ul.inline {
+    display: inline-block;
+}
+.img-wrapper {
+    width: 10em;
+}
+.no-padding-start {
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0;
+}

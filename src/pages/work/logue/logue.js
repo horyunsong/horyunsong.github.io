@@ -51,29 +51,43 @@ class Logue extends Component {
   render() {
     return(
       <div>
-        <Nav />
-        <div className="logue container small">
+        <div className="bg-gradient">
+          <img src={card} />
+        </div>
+        <div className="container">
           <Title
             title="Logue"
-            subtitle="Prototype Iteration"
-            role="Personal project"
+            role="Modular collaborative storytelling"
           />
-          <div className="problem flex justify-between">
-            <div className="sixty">
-              <p className="title">Target User</p>
-              <p>Story co-creators and readers who enjoy co-created stories</p>
-              <p className="title">Problem</p>
-              <p>Co-creators rely on various services to collaborate —Twitter, blog, forum and custom websites. However, they do not  perfectly suit the needs of co-creators and readers.</p>
-              <p  className="title">Solution</p>
-              <p>To accommodate versatile nature of co-creation, stories are unitized to small pieces. Logue is a unit of stories contained in a standardized card—a certain part of a story, categories and characters of the part. Logue breaks linearity and co-creators and readers can <b>rearrange cards to approach the story in various ways.</b></p>
-
-              <br/>
+          <div className="flex justify-between meta">
+            <div className="third">
+              <p className="meta-head">Methods</p>
+              <p className="first">Image Mapping, Focus Group, Iterative Design, Hallway Testing, Longitudinal Testing, Participatory Design</p>
+              <p className="meta-head">Tools</p>
+              <p className="second">Adobe Illustrator, Sketch, Wordpress</p>
             </div>
-            <div className="forty">
-              <p className="title">Publication</p>
-              <p><b>Song, H. </b>& Jun, S. (2017) <a className="link" href="https://dl.acm.org/citation.cfm?id=3064663.3064761">Logue: Unitizing Interactive Fictions for Co-creation</a> <br/>
-                – ACM Conference on the Designing Interactive Systems (DIS '17).
+            <div className="third">
+              <p className="meta-head">Personal Project</p>
+              <ul>
+                <li>Designed iteratively through quick tests and design critiques</li>
+                <li>Conducted a longitudinal user testing with a functioning prototype</li>
+                <li>Advised by Sujin Jun, PhD</li>
+              </ul>
+            </div>
+            <div className="third">
+              <p className="meta-head">Publication</p>
+              <p className="second">Song, H. & Jun, S. (2017) &nbsp;<a className="link" href="https://dl.acm.org/citation.cfm?id=3064663.3064761">Logue: Unitizing Interactive Fictions for Co-creation.</a> <i>ACM Designing Interactive Systems (DIS)</i>
               </p>
+            </div>
+          </div>
+          <div className="container small">
+            <div className="sixty center ">
+              <p className="title">Problem</p>
+              <p>Co-creators rely on various platforms to tell a story―Twitter, blog, forum, etc. However, none of existing platforms provide a tailored experience for collaborative storytelling.</p>
+            </div>
+            <div className="sixty center">
+              <p  className="title">Solution</p>
+              <p>To accommodate dynamic nature of co-creation, <b>stories are modularized using Logue.</b> Logue is a unit of stories contained in a standardized card with metadata (characters, category, etc). Co-creators and readers can <b>rearrange Logues to approach the story differently </b>like character point of view.</p>
             </div>
           </div>
           <div className="video-wrapper">
@@ -85,6 +99,8 @@ class Logue extends Component {
               <img src={spark} role="presentation"/>
             </div>
           </div>
+        </div>
+        <div className="container small">
           <Process
             processes={["Image Mapping", "1st Prototype: Flow", "2nd Prototype: Story Deck",
               "Focus Group", "3rd Prototype:  Logue", "User Testing", "Finding"]}
@@ -94,18 +110,14 @@ class Logue extends Component {
             <Heading
               title="Image Mapping"
             />
-            <div className="flex justify-between">
-              <div className="third">
+            <div className="">
+              <div className="sixty center">
                 <p className="title">How</p>
-                <p><b>Mapped 19 creative writing and storytelling applications, online platforms and tools</b> on a coordinate system with an x-axis ranging from the narrative (author’s dictation) to the interactive (reader as part of co-creation) and a y-axis ranging from the simple to the sophisticated</p>
+                <p><b>I mapped 19 storytelling applications, online platforms and tools</b> on a plane with an x-axis ranging from the narrative (author’s dictation) to the interactive (reader as part of co-creation) and a y-axis ranging from simple to sophisticated</p>
               </div>
-              <div className="third">
-                <p className="title">Why</p>
-                <p>To understand how each artifact functions as a story creation or delivery machine and what their key UX/UI component is</p>
-              </div>
-              <div className="third">
+              <div className="sixty center">
                 <p className="title">Finding</p>
-                <p>The more sophisticated the system is, it adopted the <b>simpler unit</b> (e.g. card, tweet) for base and used diverse <b>categories and handles</b> (e.g. timeline, Twitter handle) to nagivate.</p>
+                <p>The more sophisticated a system was, it adopted <b>a simpler unit (e.g., card, tweet)</b>. And the more interactive a system was, it used more <b>communicative design affordances (e.g., comments, Twitter handle)</b> to navigate.</p>
               </div>
             </div>
             <div className="flex justify-between">
@@ -113,14 +125,14 @@ class Logue extends Component {
                 <ImageZoom
                   image={{
                     src: image1,
-                    alt: "Initial image mapping"
+                    alt: "Image mapping with examples"
                   }}
                   zoomImage={{
                     src: image1,
-                    alt: "Initial image mapping"
+                    alt: "Image mapping with examples"
                   }}
                 />
-                <p className="caption">Initial image mapping</p>
+                <p className="caption">Image mapping with examples</p>
               </div>
               <div className="half center">
                 <ImageZoom
@@ -137,54 +149,19 @@ class Logue extends Component {
               </div>
             </div>
           </div>
-          <div id="1st" className="section">
-            <Heading
-              title="1st Prototype: Flow"
-            />
-            <div className="flex justify-between">
-              <div className="third">
-                <p className="title">How</p>
-                <p><b>Wireframed flow of the story with episode cards</b> from cartoon (Adventure Time) and chapters from classic (Pride & Prejudice)</p>
-              </div>
-              <div className="third">
-                <p className="title">WHy</p>
-                <p>To think <b>stories as organic matter</b>, shifting as authors and readers wish (e.g. only reading chapters with certain character, only watching favorite episodes)</p>
-              </div>
-              <div className="third">
-                <p className="title">Finding</p>
-                <p>Story does not necessarily flow chronologically nor are created and received in certain order. <br/><i>Question:</i> What kind of system can <b>support organic story creation and reception?</b></p>
-              </div>
-            </div>
-            <div className="full">
-              <ImageZoom
-                image={{
-                  src: flow,
-                  alt: "flow"
-                }}
-                zoomImage={{
-                  src: flow,
-                  alt: "flow"
-                }}
-              />
-              <p className="caption">Contents adapted from Cartoon Network’s animation Adventure Time</p>
-            </div>
-          </div>
           <div id="2nd" className="section">
             <Heading
-              title="2nd Prototype: Story Deck (Re-designing Twitter Fiction)"
+              title="Exploratory Design"
             />
-            <div className="flex justify-between">
-              <div className="third">
+            <div className="">
+              <div className="sixty center">
                 <p className="title">How</p>
-                <p>Adapted <a className="link" href="https://storify.com/penguinpress/elliotholt-s-twitterfiction-story">Elliot Holt’s Twitterfiction “Evidence”</a> and wireframed the story tweets in x-axis (character) and y-axis (time) frame. And I conducted <b>guerilla user testing with 10 students followed by informal interviews</b> on campus about the prototype webpage.</p>
+                <p>To stand on a giant's shoulder, <b>I redeisnged one of Twitter Fictions,</b> which is a dynamic modular storytelling utilizing Twitter handles, word limitation and follower participation.</p>
+                <p>I adopted <a className="link" href="https://storify.com/penguinpress/elliotholt-s-twitterfiction-story">Elliot Holt’s  “Evidence”</a> and reimagined the story in a character-time frame instead linear tweet timeline. I conducted <b> 10 hallway user testings</b> in school lobby.</p>
               </div>
-              <div className="third">
-                <p className="title">Why</p>
-                <p>Twitter Fiction is a <b>dynamic modular storytelling</b> with Twitter handles, word limitation and reader's participation. However, with Twitter's typical linear delivery, it is hard to see the relation of story tweets. To maximize modular story reading experience, I adopted plane frame.</p>
-              </div>
-              <div className="third">
+              <div className="sixty center">
                 <p className="title">Finding</p>
-                <p> I found out that most of users (readers) perceived it as <b>new form of chatting or social network service, not storytelling</b>. It could be interpreted to two ways: because the content is purely in narration and dialogue or it <b>really does not look like anything storytelling</b>.</p>
+                <p> I found out that most of testers perceived the redesign as <b>a new form of social media, not a story</b>. There were two reasons: the content was purely in narration or dialogue and the form resembled an online chatroom.</p>
               </div>
             </div>
             <div className="full">
@@ -201,44 +178,59 @@ class Logue extends Component {
               <p className="caption">Contents adapted from Elliot Holt’s Twitter Fiction “Evidence”</p>
             </div>
           </div>
-
           <div id="Focus" className="section">
             <Heading
               title="Focus Group"
             />
-            <div className="flex justify-between">
-              <div className="third">
-                <p className="title">How</p>
-                <p>For 2 hours, recruits were prompted with neutral topics about co-creation experience (e.g., how do you plan plots with other co-creators?)</p>
-              </div>
-              <div className="third">
-                <p className="title">Who</p>
-                <ul>
-                  <li>Recruited via a co-creator online forum</li>
-                  <li>4 co-creators (four females, ages 20-29)</li>
-                  <li>10 years of experience as amateur co-creators</li>
-                  <li><b>2 with diverse platform experience (Twitter, forum, and custom website); 2 with single platform preference </b></li>
-                </ul>
-              </div>
-              <div className="third">
-                <p className="title">Why</p>
-                <p>Considering how units and relations of them played role in story creation and storytelling tools, I needed to clarify if <b> such system equally support the complexity of multi-author and multi-plot fictions</b> and if not, what are the other driving factors.</p>
-              </div>
+            <div className="sixty center">
+              <p className="title">How</p>
+              <p>I conducted <b>a 2-hour focus group interview with 4 co-creators.</b> They had 10 years of experience in collaborative storytelling on average. They were prompted with topics about co-creation experience (e.g., how do you plan plots with other co-creators?) and platform preferences.</p>
             </div>
-            <div>
+            <div className="sixty center">
               <p className="title">Finding</p>
-              <p><b>Open, axial, and selective coding in order were used</b> to identify issues and themes across the participants. The main themes drawn from the focus group interview were as follows: </p>
+              <p><b>I used open, axial, and selective coding</b> to emerge issues and themes across the participants. The main themes drawn from the focus group interview were as follows: </p>
               <ul>
-                <li><b>Context of episode</b> (e.g. Is the character aware of this scheme?) </li>
-                <li><b>Relationship between characters and settings</b> (e.g. Where is he from and how does it affect him?)</li>
-                <li>Archiving dispersed episodes (Many co-creators and stand-alones conflict archiving)</li>
-                <li>Communication between co-creators</li>
+                <li><b>Context of episode</b> (Is the character aware of another event?) </li>
+                <li><b>Relationship between characters and settings</b> (Where is he from and how does it affect him?)</li>
+                <li><b>Reading order </b>(Point of view, chronological, setting-specific, etc.) </li>
+                <li><b>Communication between co-creators</b></li>
               </ul>
             </div>
           </div>
+          <div id="1st" className="section">
+            <Heading
+              title="Modular Design"
+            />
+            <div className="">
+              <div className="sixty center">
+                <p className="title">How</p>
+                <p>Based on the foucs group interview, I designed a story timeline with episodic modules shared by characters, places and story arcs. I presented it to fellow student designers in <b>design critique sessions.</b></p>
+              </div>
+              <div className="sixty center">
+                <p className="title">Finding</p>
+                <p>While these modules visually showed the context of each episode (who and where), the structure was still too rigid to show the complexity of relationships. I needed to <b>consider more versatile modules to address different use cases.</b></p>
+              </div>
+            </div>
+            <div className="full">
+              <ImageZoom
+                image={{
+                  src: flow,
+                  alt: "flow"
+                }}
+                zoomImage={{
+                  src: flow,
+                  alt: "flow"
+                }}
+              />
+              <p className="caption">Contents adapted from Cartoon Network’s animation Adventure Time</p>
+            </div>
+          </div>
+
+
+
           <div id="3rd" className="section">
             <Heading
-              title="3rd Prototype: Logue"
+              title="Final Design: Logue"
               content=""
             />
             <div className="full">
@@ -253,16 +245,12 @@ class Logue extends Component {
                     alt: "Logue card components: category, characters, story"
                   }}
                 />
-                <p className="caption">One Logue</p>
+                <p className="caption">A Logue</p>
               </div>
-              <div className="flex justify-between">
-                <div className="">
+              <div className="">
+                <div className="sixty center">
                   <p className="title">How</p>
-                  <p>Louge was defined as a <b>unit of complex fictional stories</b>. The basic rule of a Logue is to embody the smallest meaningful portion of <b>content and metadata</b> the content should entail.</p>
-                </div>
-                <div className="">
-                  <p className="title">Why</p>
-                  <p>By breaking down stories to units and giving them affiliation such as storyline, characters, and locations, creators would be able to compile story according to their needs.</p>
+                  <p>Louge was defined as a <b>unit of complex fictional stories</b>. The basic rule of a Logue was to embody the smallest meaningful portion of <b>content and metadata</b> the content should entail. Co-creators could rearrange stories according to their needs.</p>
                 </div>
               </div>
             </div>
@@ -311,18 +299,12 @@ class Logue extends Component {
           </div>
           <div id="User" className="section">
             <Heading
-              title="User Testing"
+              title="Longitudinal User Testing"
             />
-            <div className="flex justify-between">
-              <div className="half">
+            <div className="">
+              <div className="sixty center">
                 <p className="title">How</p>
-                <p><b>Two teams, total 11 prospect users</b> from Twitter sub-culture creator network, were recruited to participate in the evaluation study with Logue Beta. Each team had a Wordpress site set up and <b>created original contents for two weeks</b>. Each member chose to have one character except for moderator with Non Playing Character (NPC) though it was possible to own more than one.</p>
-              </div>
-              <div className="half">
-                <p className="title">Why</p>
-                <p>To examine how co-creators perceived the affordances of the metadata and utilized the functions Logue provided.</p>
-                <p className="title">Who</p>
-                <p>Recruits had similar demographic as focus group</p>
+                <p><b>Two teams</b>, total 11 prospect users from Twitter sub-culture creator network, were recruited to participate in the evaluation study for <b>two weeks by collaboratively creating a story.</b> Each member chose to have one character except for a moderator who had an additional Non-Playing Character.</p>
               </div>
             </div>
             <div className="button-wrapper">
@@ -351,76 +333,59 @@ class Logue extends Component {
                 </div>
               </div>
             </Collapse>
-          </div>
-          <div id="Finding" className="section">
-            <div>
-              <Heading
-                title="Finding"
-              />
-              <p>After two weeks of testing, <b>semi-structured interviews and participatory design session</b> were conducted. Evaluation focused on the holistic system of Logue. As the last part of interview, <b>each team was asked to draw Story Maps based on their knowledge of Logue</b> and explain the structure to determine whether the co-creators’ understanding of Logue was congruent with Logue system. </p>
-              <div className="flex justify-between">
-                <div className="half">
-                  <p>1. Notable changes recruits experienced from unstructured co-creation to practicing Logue system:</p>
+            <div className="sixty center">
+              <p className="title">Finding</p>
+              <p>After two weeks of testing, I conducted <b>semi-structured interviews with individual participants and participatory design sessions with each team.</b> For participatory design, the team members discussed, drew and explained their future story.
+                {/*Evaluation focused on the holistic system of Logue. As the last part of interview, <b>each team was asked to draw Story Maps based on their knowledge of Logue</b> and explain the structure to determine whether the co-creators’ understanding of Logue was congruent with Logue system.*/} </p>
+                <div className="">
+                  <h4>1. Changes the participants experienced</h4>
                   <ul>
-                    <li>Visualize the structure of story and keep the <b>team aware of each other's creation</b></li>
-                    <li>From creator-centered to <b>character-centered collaboration</b></li>
-                    <li><b>Indexical connection</b> of story enabled via tags</li>
+                    <li>They started to visualize the structure of their story. It helped the team to be aware of each other's creation.</li>
+                    <li>They shifted from creator-centered to character-centered collaboration.</li>
+                    <li>They could efficiently rearrange the story using metadata.</li>
                   </ul>
                 </div>
-                <div className="half">
-                  <p>2. Things to improve</p>
+                <div className="">
+                  <h4>2. Things to improve</h4>
                   <ul>
-                    <li><b>Lower the entry bar</b>: setting up and tagging metadata</li>
-                    <li><b>Prevent errors</b>: let users know if their Logue is missing information</li>
-                    <li><b>Integrate Logue Beta with Story Map</b>: auto-generate story map</li>
+                    <li>The entry bar was too high. It was hard to understand how to set up and use meatadata.</li>
+                    <li>There was no error prevention. Even if some Logues were missing metadata, the prototype did not prompt the creators on it.</li>
+                    <li>Comments under individual Logue are not sufficient way of communication. There should be a communication hub.</li>
                   </ul>
                 </div>
-              </div>
-
-              <p>3. Participatory Design: <br/>
-                Both teams could draw story map without a hesitation. As they explained their own story map, they said that thinking in terms of Logue helps them to approach the structure from holistic view. By drawing and explaining, they came up with <b>ideas that would help novice guide through this new system and also advanced features they want</b>.</p>
-              <div className="flex justify-around team">
-                <div className="third center">
-                  <ImageZoom
-                    image={{
-                      src: teamA,
-                      alt: "team A story map"
-                    }}
-                    zoomImage={{
-                      src: teamA,
-                      alt: "team A story map"
-                    }}
-                  />
-                  <p className="caption">Team A story map</p>
+              <div className="">
+                <h4>3. Participatory design artifacts</h4>
+                <div className="flex justify-around team">
+                  <div className="third center">
+                    <ImageZoom
+                      image={{
+                        src: teamA,
+                        alt: "team A story map"
+                      }}
+                      zoomImage={{
+                        src: teamA,
+                        alt: "team A story map"
+                      }}
+                    />
+                    <p className="caption">Team A story map</p>
+                  </div>
+                  <div className="third center">
+                    <ImageZoom
+                      image={{
+                        src: teamB,
+                        alt: "team B story map"
+                      }}
+                      zoomImage={{
+                        src: teamB,
+                        alt: "team B story map"
+                      }}
+                    />
+                    <p className="caption">Team B story map</p>
+                  </div>
                 </div>
-                <div className="third center">
-                  <ImageZoom
-                    image={{
-                      src: teamB,
-                      alt: "team B story map"
-                    }}
-                    zoomImage={{
-                      src: teamB,
-                      alt: "team B story map"
-                    }}
-                  />
-                  <p className="caption">Team B story map</p>
-                </div>
               </div>
-
             </div>
           </div>
-          {/*
-          <div id="4th" className="section">
-            <Heading
-              title="4th Prototype: Timeline (Working in Progress)"
-            />
-            <p>Improving based on the findings from user testing, Logue system wil take a step further and <b>blur the line of creator and audience</b>. Via <b>branches (version control)</b> and easier Logue usage, anyone will be able to a participant.</p>
-            <div className="full">
-              <img src={timeline} alt="timeline"/>
-            </div>
-          </div>
-          */}
         </div>
         <Next
           leftItem="Documentation"

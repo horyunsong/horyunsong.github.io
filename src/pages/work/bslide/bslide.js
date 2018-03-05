@@ -3,7 +3,7 @@ import "./bslide.css";
 
 import Collapse from 'react-collapse';
 import ImageZoom from 'react-medium-image-zoom';
-
+import Headroom from 'react-headroom';
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
 import Next from "../../../components/credit/next";
@@ -29,7 +29,6 @@ import primary3 from '../../../img/work/bslide/primary3.jpg';
 import primary4 from '../../../img/work/bslide/primary4.jpg';
 import imageMap from '../../../img/work/bslide/imageMapping.png';
 import whyLockscreen from '../../../img/work/bslide/why-lockscreen.png';
-import journeyMap from '../../../img/work/bslide/journey-map.png';
 import siteMap from '../../../img/work/bslide/site-map.png';
 import taskFlowRead from '../../../img/work/bslide/task-flow-read.png';
 import taskFlowRecommend from '../../../img/work/bslide/task-flow-recommend.png';
@@ -52,6 +51,7 @@ import later from '../../../img/work/bslide/later.png';
 import contextScenario from '../../../img/work/bslide/context-scenario.png';
 import storyboard from '../../../img/work/bslide/storyboard.png';
 import contactpoint from '../../../img/work/bslide/contactpoint.png';
+import journeyMap from '../../../img/work/bslide/Journeymap.png';
 
 
 class Bslide extends Component {
@@ -103,6 +103,9 @@ class Bslide extends Component {
   render() {
     return (
       <div className="bslide">
+        <Headroom>
+          <Next/>
+        </Headroom>
         <div className="bg-gradient">
           <img src={mockup} />
         </div>
@@ -134,7 +137,7 @@ class Bslide extends Component {
               <p className="meta-head">Team</p>
               <p className="first">Horyun Song (Team Lead), Yein Jo, Sugyo Han, Hyunjoo Lee, advised by Huijung, Kwon, Ph.D.</p>
               <p className="meta-head">Publication</p>
-              <p className="second"><b>Song, H.</b>, et al. (2016) &nbsp;<a className="link" href="http://dl.acm.org/citation.cfm?id=2903693">Smartphone Lockscreen Interface Design to Facilitate Return for Cross-service Bookmarks.</a> <i>HCI Korea</i>
+              <p className="second">Song, H., et al. (2016) &nbsp;<a className="link" href="http://dl.acm.org/citation.cfm?id=2903693">Smartphone Lockscreen Interface Design to Facilitate Return for Cross-service Bookmarks.</a> <i>HCI Korea</i>
               </p>
             </div>
           </div>
@@ -283,7 +286,7 @@ class Bslide extends Component {
                 }}
               />
             </div>
-            <div className="sixty center">
+            <div className="sixty center space-up">
               <p>After exploring various appplication, notification, and nudging ideas, we realized that the key for taking action was motivation. If the article is visible and enticing to users, they will be more likely to read it. We combined the "notification and browsing to read" step by adopting <b>displaying the bookmarked contents directly on the lockscreen.</b></p>
               <p className="title space-up">Primary Persona Storyboard</p>
             </div>
@@ -302,9 +305,11 @@ class Bslide extends Component {
                 />
               </div>
             </div>
-            <div>
+            <div className="sixty center space-up">
               <p className="title">Journey Map</p>
-              <p>We considered primary user journey first and what alternative choices user would make based on needs. Thus, this journey map <b>branches out when such choice is made</b>.</p>
+              <p>We mapped a user journey from the moment a user realizes her problem to the satisfiaction she finds after reading number of bookmarked contents. </p>
+            </div>
+            <div className="full">
               <ImageZoom
                 image={{
                   src: journeyMap,

@@ -6,8 +6,12 @@ body {
 }
 /* Font */
 @import url('https://fonts.googleapis.com/css?family=Lora|PT+Sans|Open+Sans|Francois+One');
-a, h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .bg-grey {
     font-family: 'Francois One', 'Open Sans', sans-serif;
+    color: Black;
+    margin: 0;
+}
+a {
     color: Black;
     margin: 0;
 }
@@ -193,7 +197,7 @@ img {
 /* Text decoration */
 .caption {
     font-style: italic;
-    font-size: 0.7em;
+    font-size: 0.8em;
     text-align: center;
     margin-top: 1px;
 }
