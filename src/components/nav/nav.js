@@ -16,10 +16,11 @@ class Nav extends Component {
 
     return(
       <div id="nav" className="nav">
-        <div className="flex justify-between nav-wrapper">
+        <div className="flex justify-between nav-wrapper align-center">
           <div className="home">
             <Link to="/">
               <h4 className="name">Horyun Song</h4>
+              <h4 className="hidden">HS</h4>
               <span className="job">UX Researcher · Designer</span>
             </Link>
           </div>
@@ -28,12 +29,8 @@ class Nav extends Component {
               <a href={window.location.pathname === "/" ? "#work" : "/#work"}>Portfolio</a>
             </h4>
             <h4 className="menu-item">
-              <a href="">About</a>
-            </h4>
-            <h4 className="menu-item">
               <a href={process.env.PUBLIC_URL+"/Horyun_Song_Resume.pdf"}>Resume</a>
             </h4>
-
             {/*
             <a href="http://linkedin.com/in/horyunsong" className="icon">
               <p></p>

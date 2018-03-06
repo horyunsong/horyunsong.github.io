@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./emotion.css";
 
 import ImageZoom from 'react-medium-image-zoom';
+import Headroom from 'react-headroom';
 
 import Nav from "../../../components/nav/nav";
 import Credit from "../../../components/credit/credit";
@@ -29,6 +30,8 @@ import years from '../../../img/work/emotion/years.png';
 import gender from '../../../img/work/emotion/gender.png';
 import compare from '../../../img/work/emotion/compare.png';
 import nograph from '../../../img/work/emotion/nograph.png';
+import hero from '../../../img/work/emotion/emo-hero.png';
+import heroMobile from '../../../img/work/emotion/emo-hero-mobile.png';
 
 
 class Emotion extends Component {
@@ -36,50 +39,62 @@ class Emotion extends Component {
   render() {
     return (
       <div>
-        <Nav />
+        <Headroom>
+          <Next
+            rightItem="Collaborative Documentation"
+            rightLink="/docs"
+          />
+        </Headroom>
 
-        <div className="container small">
+        <div className="hero-desktop">
+          <img src={hero} />
+        </div>
+        <div className="hero-mobile">
+          <img src={heroMobile} />
+        </div>
+        <div className="container">
           <Title
             title="Detecting Emotions"
-            category="Social Computing"
-            type="Research"
-            role="Team Project"
+            role="Who's better? Friends vs. Strangers vs. Computer"
           />
-
-
-          <div className="flex justify-between">
-            <div className="problem sixty">
-              <p className="title">Problem</p>
-              <p>Emotion is an important measure to tell one's health. To detect emotions, researchers employ different research methods such as measuring physiological signals or computing language. However, <b>current methods come with critical shortcomings</b>, calling for a new method to detect emotions more conveniently and timely. </p>
-              <p  className="title">Solution</p>
-              <p>We hypothesized that <b>people are better at telling a person's emotions from digital artifacts than computational methods .</b> Thus, we proposed a Human Sensor, a detection method more capable of making contextual and holistic judgment on projected emotions. We prove this by <b>comparing its accuracy to a subject's self-report emotions on Facebook posts.</b></p>
+          <div className="flex justify-between meta">
+            <div className="third">
+              <p className="meta-head">Methods</p>
+              <p className="first">Survey, Amazon Mechanical Turk, Image Processing</p>
+              <p className="meta-head">Tools</p>
+              <p className="second">Qualtrics, Python, Tableau, Google API</p>
             </div>
-            <div className="forty">
-              <p className="title">My role</p>
+            <div className="third">
+              <p className="meta-head">My Contribution</p>
               <ul>
                 <li>Survey design</li>
+                <li>Survey distribution</li>
                 <li>Data Visualization</li>
               </ul>
-              <p className="title">Teammates</p>
+            </div>
+            <div className="third">
+              <p className="meta-head">Team</p>
               <ul>
                 <li><a className="link" href="https://www.linkedin.com/in/jung-wook-park-1061099b/">Jung Wook Park</a> (Team Lead, Study framework, Image Processing)</li>
                 <li><a className="link" href="https://www.linkedin.com/in/ashwin-bhide-86196b102/">Ashwin Bhide</a> (Statistical Analysis, Natural Language Processing)</li>
               </ul>
-
             </div>
           </div>
-          <div className="spoiler">
-              <img src={humancomputer} />
-            <div className="eighty center">
-              <p className="caption">Spoiler: While Humans were better than the Computer (NLP + IP), there was no statistical difference between friends and strangers (AMT).</p>
+          <div className="container small">
+            <div className="sixty center ">
+              <p className="title">Problem</p>
+              <p>Emotion is an important measure to tell one's health. To detect emotions, researchers employ different research methods such as measuring physiological signals or computing language. However, <b>current methods come with critical shortcomings</b>, calling for a new method to detect emotions more conveniently and timely. </p>
             </div>
-
+            <div className="sixty center">
+              <p  className="title">Solution</p>
+              <p>We hypothesized that <b>people are better at telling a person's emotions from digital artifacts than computational methods .</b> Thus, we proposed a Human Sensor, a detection method more capable of making contextual and holistic judgment on projected emotions. We prove this by <b>comparing its accuracy to a subject's self-report emotions on Facebook posts.</b></p>
+            </div>
           </div>
+        </div>
+
+        <div className="container small">
           <div className="spark-wrapper">
             <h3 className="heading" >Process</h3>
-            <div className="spark">
-              <img src={spark} role="presentation"/>
-            </div>
           </div>
           <Process
             processes={["Background & Motivation", "Human Sensor", "Research Questions",
@@ -91,12 +106,14 @@ class Emotion extends Component {
               title="Background & Motivation"
             />
             <div>
-              <p className="title">Background</p>
-              <p>Emotion recognition is used in various fields, but most notably to detect health problems. With the emergence of social media, we are also witnessing possible ways of <b>utilizing social media artifacts to detect emotions.</b> For instance, depression can be predicted through emotions and other behavioral cues displayed on tweets. (De Choudhury et al., 2013)
-              </p>
-              <p className="title">Motivation</p>
-              <p>We speculate current emotion detection methods are lacking for below reasons and find there is a need for more accurate and dependable method that accounts complex human emotion in given contexts.
-              </p>
+              <div className="sixty center">
+                <p className="title">Background</p>
+                <p>Emotion recognition is used in various fields, but most notably to detect health problems. With the emergence of social media, we are also witnessing possible ways of <b>utilizing social media artifacts to detect emotions.</b> For instance, depression can be predicted through emotions and other behavioral cues displayed on tweets. (De Choudhury et al., 2013)
+                </p>
+                <p className="title">Motivation</p>
+                <p>We speculate current emotion detection methods are lacking for below reasons and find there is a need for more accurate and dependable method that accounts complex human emotion in given contexts.
+                </p>
+              </div>
               <div className="flex justify-between motivation">
                 <div className="third">
                   <img className="smaller-img" src={heartbeat} alt="physiological" />
@@ -118,18 +135,20 @@ class Emotion extends Component {
             <Heading
               title="Human Sensor"
             />
-            <p><span className="">Thus, we propose a new technique of emotion measurement called Human sensor. </span></p>
-            <ul>
-              <li><b>Human sensor is an informant that provides his or her observation and perception regarding target persons or situations.</b></li>
-              <li>Human sensor is more capable of making a contextual and holistic judgement than any other methods.
-              </li>
-            </ul>
+            <div className="sixty center">
+              <p ><span className="">Thus, we propose a new technique of emotion measurement called Human sensor. </span></p>
+              <ul>
+                <li><b>Human sensor is an informant that provides his or her observation and perception regarding target persons or situations.</b></li>
+                <li>Human sensor is more capable of making a contextual and holistic judgement than any other methods.
+                </li>
+              </ul>
+            </div>
           </div>
           <div id="Research" className="section">
             <Heading
               title="Research Questions"
             />
-            <div>
+            <div className="sixty center">
               <ul>
                 <li>How can a participant’s <b>Facebook friends</b> function as sensors of her emotion?</li>
                 <li>Can we <b>trust friends’ perceptions</b> compared to other sensing methods?</li>
@@ -347,12 +366,6 @@ class Emotion extends Component {
 
             </div>
         </div>
-        <Next
-          leftItem="Co-creation Tool"
-          leftLink="/logue"
-          rightItem="Bookmark Curator"
-          rightLink="/bslide"
-        />
         <Credit/>
       </div>
     )

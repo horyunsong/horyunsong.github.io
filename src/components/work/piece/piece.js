@@ -37,9 +37,9 @@ class Piece extends Component {
           <img className="work-img" src={this.props.image} alt="thumbnail"/>
         </div>
         <div className="piece-summary">
-          <div className="summary-bottom meta text-center">
+          <div className="summary-bottom text-center">
             <h3 className="piece-title">{this.props.title}</h3>
-            <p className="piece-tag"><span>{this.props.category}</span> {this.props.type}</p>
+            <p className="piece-tag sans">{this.props.type}</p>
           </div>
         </div>
       </div>

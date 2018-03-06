@@ -1,34 +1,45 @@
-.bye {
-    width: 250px;
-    padding: 2em 0 3em 0;
-}
+
 .next img{
-    width: 2em;
-    height: 2em;
+    margin-left: 1em;
+    width: 1.2em;
+    height: 1.2em;
 }
 .next p {
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0 1em;
+
 }
 .left {
-    padding-left: 1em;
 }
 .right {
-    padding-right: 1em;
 }
-.right p {
+.right h4 {
     text-align: right;
 }
 .next img {
     vertical-align: middle;
 }
-.next p {
-    display: block;
+.next h4 {
+    display: inline-block;
 }
-.left img, .left p {
+.left img, .left h4 {
     float: left;
 }
-.right img, .right p {
+.right img, .right h4 {
     float: right;
+}
+
+#next {
+    width: 100vw;
+}
+.next-wrapper {
+    margin: 0 7.14%;
+    padding: 1.2em 0;
+}
+.home {
+    font-size: 1em;
+}
+.endbox {
+    width: 3em;
+    height: 0.5em;
+    background-color: black;
+    margin: 3em auto 5em auto;
 }

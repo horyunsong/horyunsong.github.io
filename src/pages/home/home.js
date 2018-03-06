@@ -20,15 +20,23 @@ class Home extends Component {
       <div id="home">
         <Nav/>
         <div className="profile-container flex">
+
           <div className="profile-img half">
             <img src={people} alt="profile image" />
           </div>
-          <div className="profile-text half">
-            <h1>
-              Hi, I'm Horyun Song.
-            </h1>
-            <p>I'm a UX Researcher and Designer with love for collaboration</p>
+          <div className="half">
+            <div className="profile-text ">
+              <h1 className="hi">
+                Hi, I'm Horyun Song.
+              </h1>
+              <p className="intro">I am a researcher and designer passionate about enhancing user experience with power of people and technology. (Especially crowdsourcing, collaboration and machine learning.)
+              <br/><br/>
+                Scroll down to my key projects, or check my <a className="highlight" href={process.env.PUBLIC_URL+"/Horyun_Song_Resume.pdf"}>resume</a> for a quick summary.
+
+              </p>
+            </div>
           </div>
+
         </div>
         <div className="full worklist">
           <Work />

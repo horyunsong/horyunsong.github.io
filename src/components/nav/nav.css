@@ -25,9 +25,15 @@
     z-index: 999;
     width: 100vw;
     padding: 1.2em 0;
-
 }
-
-@media only screen and (max-width: 768px) {
-
+.hidden {
+    display: none;
+}
+@media only screen and (max-width: 955px) {
+    .job, .name {
+        display: none;
+    }
+    .hidden {
+        display: block;
+    }
 }

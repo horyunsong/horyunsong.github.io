@@ -3,6 +3,7 @@ import './logue.css';
 
 import Collapse from 'react-collapse';
 import ImageZoom from 'react-medium-image-zoom';
+import Headroom from 'react-headroom';
 
 
 import Nav from "../../../components/nav/nav";
@@ -12,6 +13,8 @@ import Title from '../../../components/work/mini/title';
 import Process from '../../../components/work/mini/process';
 import Heading from '../../../components/work/mini/heading';
 
+import hero from '../../../img/work/logue/logue-hero.png';
+import heroMobile from '../../../img/work/logue/logue-hero-mobile.png';
 import flow from '../../../img/work/logue/flow.png';
 import storydeck from '../../../img/work/logue/storydeck.png';
 import image1 from '../../../img/work/logue/imageMapping1.png';
@@ -22,7 +25,10 @@ import timeline from '../../../img/work/logue/timeline.png';
 import card from '../../../img/work/logue/card.png';
 import teamA from '../../../img/work/logue/TeamA.png';
 import teamB from '../../../img/work/logue/TeamB.png';
-import spark from '../../../img/home/spark.png';
+import final from '../../../img/work/logue/logue-final.png';
+import beta from '../../../img/work/logue/beta.png';
+
+
 
 class Logue extends Component {
 
@@ -51,18 +57,28 @@ class Logue extends Component {
   render() {
     return(
       <div>
-        <div className="bg-gradient">
-          <img src={card} />
+        <Headroom>
+          <Next
+            rightItem="Detecting Emotions"
+            rightLink="/emotion"
+          />
+        </Headroom>
+
+        <div className="hero-desktop">
+          <img src={hero} />
+        </div>
+        <div className="hero-mobile">
+          <img src={heroMobile} />
         </div>
         <div className="container">
           <Title
             title="Logue"
-            role="Modular collaborative storytelling"
+            role="Collaborative storytelling made possible with modular stories"
           />
           <div className="flex justify-between meta">
             <div className="third">
               <p className="meta-head">Methods</p>
-              <p className="first">Image Mapping, Focus Group, Iterative Design, Hallway Testing, Longitudinal Testing, Participatory Design</p>
+              <p className="first">Image Mapping, Focus Group, Iterative Design, Longitudinal Testing, Participatory Design</p>
               <p className="meta-head">Tools</p>
               <p className="second">Adobe Illustrator, Sketch, Wordpress</p>
             </div>
@@ -87,17 +103,28 @@ class Logue extends Component {
             </div>
             <div className="sixty center">
               <p  className="title">Solution</p>
-              <p>To accommodate dynamic nature of co-creation, <b>stories are modularized using Logue.</b> Logue is a unit of stories contained in a standardized card with metadata (characters, category, etc). Co-creators and readers can <b>rearrange Logues to approach the story differently </b>like character point of view.</p>
+              <p>To accommodate dynamic nature of co-creation, <b>stories are modularized using Logue.</b> Logue is a unit of stories contained in a standardized card with metadata (characters, locations, etc). Co-creators and readers can <b>rearrange Logues to approach the story differently </b>like character point of view.</p>
             </div>
           </div>
+          <div className="full">
+            <ImageZoom
+              image={{
+                src: final,
+                alt: "Simplified image mapping"
+              }}
+              zoomImage={{
+                src: final,
+                alt: "Simplified image mapping"
+              }}
+            />
+          </div>
+          {/*
           <div className="video-wrapper">
             <iframe src="https://player.vimeo.com/video/141978956?portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
+          */}
           <div className="spark-wrapper">
             <h3 className="heading" >Process</h3>
-            <div className="spark">
-              <img src={spark} role="presentation"/>
-            </div>
           </div>
         </div>
         <div className="container small">
@@ -149,6 +176,7 @@ class Logue extends Component {
               </div>
             </div>
           </div>
+          {/*
           <div id="2nd" className="section">
             <Heading
               title="Exploratory Design"
@@ -197,9 +225,10 @@ class Logue extends Component {
               </ul>
             </div>
           </div>
-          <div id="1st" className="section">
+          */}
+          <div id="Exploratory" className="section">
             <Heading
-              title="Modular Design"
+              title="Exploratory Design"
             />
             <div className="">
               <div className="sixty center">
@@ -230,7 +259,7 @@ class Logue extends Component {
 
           <div id="3rd" className="section">
             <Heading
-              title="Final Design: Logue"
+              title="Prototype: Story Map"
               content=""
             />
             <div className="full">
@@ -249,50 +278,32 @@ class Logue extends Component {
               </div>
               <div className="">
                 <div className="sixty center">
-                  <p className="title">How</p>
+                  <p className="title">Logue as unit of a story</p>
                   <p>Louge was defined as a <b>unit of complex fictional stories</b>. The basic rule of a Logue was to embody the smallest meaningful portion of <b>content and metadata</b> the content should entail. Co-creators could rearrange stories according to their needs.</p>
                 </div>
               </div>
             </div>
             <div>
-              <div className="flex justify-between prototype">
-                <div className="half">
-                  <div className="center">
-                    <ImageZoom
-                      image={{
-                        src: screens,
-                        alt: "screens of logue beta"
-                      }}
-                      zoomImage={{
-                        src: screens,
-                        alt: "screens of logue beta"
-                      }}
-                    />
-                    <p className="caption">Screens from Logue Beta</p>
-                  </div>
-                  <div className="">
-                    <p className="title">Prototype 1: Logue beta</p>
-                    <p>Logue Beta is a WordPress theme designed specifically for authors and co-authors who want to venture into a new type of <b>storytelling by tagging metadata</b>.</p>
-                  </div>
+              <div className="">
+                <div className="sixty center">
+                  <p className="title">Story Map using Logues</p>
+                  <p>Story Map used metadata (categories, perspectives and story arcs) as story directions. Co-creators could choose a direction to check for current status of the story.</p>
                 </div>
-                <div className="half">
+                <div className="">
                   <div className="sixty center">
                     <ImageZoom
                       image={{
-                        src: storymap,
+                        src: beta,
                         alt: "sample of storymap"
                       }}
                       zoomImage={{
-                        src: storymap,
+                        src: beta,
                         alt: "sample of storymap"
                       }}
                     />
                     <p className="caption">Logue Story Map</p>
                   </div>
-                  <div className="full">
-                    <p className="title">Prototype 2: Story Map</p>
-                    <p>While Logue Beta is for authorship using Logue, Story Map is designed for better <b>reader experience</b>. It uses categories, perspectives and routes as the starting point of directions. <b>Readers can choose which flow of the story</b> they would prefer to read.</p>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -304,7 +315,8 @@ class Logue extends Component {
             <div className="">
               <div className="sixty center">
                 <p className="title">How</p>
-                <p><b>Two teams</b>, total 11 prospect users from Twitter sub-culture creator network, were recruited to participate in the evaluation study for <b>two weeks by collaboratively creating a story.</b> Each member chose to have one character except for a moderator who had an additional Non-Playing Character.</p>
+                <p><b>Two teams</b>, total 11 prospect users from Twitter sub-culture creator network, were recruited to participate in the evaluation study for <b>two weeks by collaboratively creating a story using Logue system.</b> Each member chose to have one character except for a moderator who had an additional Non-Playing Character.</p>
+                <p>I prototyped with Wordpress as backend, so partcipants could upload their creations on Story Map after logging in to Wordpress without my interference.</p>
               </div>
             </div>
             <div className="button-wrapper">
@@ -386,13 +398,16 @@ class Logue extends Component {
               </div>
             </div>
           </div>
+          <div id="Final" className="section">
+            <Heading
+              title="Final Design"
+            />
+          </div>
+          <div className="full center">
+            <img src={final} />
+          </div>
         </div>
-        <Next
-          leftItem="Documentation"
-          leftLink="/docs"
-          rightItem="Detecting Emotions"
-          rightLink="/emotion"
-        />
+
         <Credit/>
       </div>
     )

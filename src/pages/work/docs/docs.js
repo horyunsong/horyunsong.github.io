@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import "./docs.css";
 
 import ImageZoom from 'react-medium-image-zoom';
+import Headroom from 'react-headroom';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemTitle,
+  AccordionItemBody,
+} from 'react-accessible-accordion';
 
 
 import Nav from "../../../components/nav/nav";
@@ -12,6 +19,8 @@ import Process from '../../../components/work/mini/process';
 import Heading from '../../../components/work/mini/heading';
 
 import self from '../../../img/work/docs/self.jpeg';
+import hero from '../../../img/work/docs/docs-hero.png';
+import heroMobile from '../../../img/work/docs/docs-hero-mobile.png';
 import docsExamples from '../../../img/work/docs/docs-example.png';
 import docsHeader from '../../../img/work/docs/docs-header.png';
 import pic1 from '../../../img/work/docs/1.png';
@@ -34,7 +43,6 @@ import challenge from '../../../img/work/docs/challenge.jpg';
 import nudge from '../../../img/work/docs/nudge.jpg';
 import sunset from '../../../img/work/docs/sunset2.jpg';
 
-import spark from '../../../img/home/spark.png';
 
 
 class Docs extends Component {
@@ -86,14 +94,24 @@ class Docs extends Component {
   render() {
     return (
       <div>
-        <div className="bg-gradient">
-          <img src={docsHeader} />
+        <Headroom>
+          <Next
+
+            rightItem="Reading on Lockscreen"
+            rightLink="/bslide"
+          />
+        </Headroom>
+        <div className="hero-desktop">
+          <img src={hero} />
+        </div>
+        <div className="hero-mobile">
+          <img src={heroMobile} />
         </div>
 
         <div className=" container">
           <Title
-            title="Collaborative Documentation"
-            role="User Research Internship at Stack Overflow"
+            title="Crowdsourcing Documentation"
+            role="Open source technical documentation for developers"
           />
 
           <div className="flex justify-between meta">
@@ -116,7 +134,7 @@ class Docs extends Component {
             </div>
             <div className="third">
               <p className="meta-head">Team</p>
-              <p className="first">I was part of Documentation Product Team as a sole UX researcher and was supervised by Kristina Lustig (UX Researcher)</p>
+              <p className="first">As a sole UX researcher (intern) in Documentation Product Team, I took lead on expert interviews. I was supervised by Kristina Lustig (UX Researcher)</p>
               <p className="meta-head">Publication</p>
               <p><a className="link" href="https://medium.com/@horyunsong/life-as-a-stack-overflow-user-research-intern-ff9ce133996a">Medium Article "Life as a Stack Overflow User Research Intern"</a></p>
             </div>
@@ -125,7 +143,7 @@ class Docs extends Component {
           <div className="container small">
             <div className="sixty center ">
               <p className="title">Problem</p>
-              <p>Stack Overflow had a product called <b>Documentation, which was a collaborative writing space for technical reference material.</b> Nine months after the beta launch, the company has identified some key problems and decided to <a className="link" href="https://meta.stackoverflow.com/questions/349410/tearing-down-the-structure-of-documentation">redesign the product.</a>
+              <p>Stack Overflow had a product called <b>Documentation, which was a collaborative writing space for technical reference material, created and used by developers.</b> Nine months after the beta launch, the company has identified some key problems and decided to <a className="link" href="https://meta.stackoverflow.com/questions/349410/tearing-down-the-structure-of-documentation">redesign the product.</a>
                 <ul>
                   <li>Overtly focused on examples</li>
                   <li>Content artifact: one size didn’t fit all</li>
@@ -155,16 +173,13 @@ class Docs extends Component {
         <div className="bslide container small">
           <div className="spark-wrapper">
             <h3 className="heading" >Process</h3>
-            <div className="spark">
-              <img src={spark} role="presentation"/>
-            </div>
           </div>
           <Process
-            processes={["Background", "Research Questions", "Interviews",
+            processes={["Stakeholder Interview", "Research Questions", "Expert Interview",
               "Analysis", "Findings", "Design Recommendations", "Impact"]}
-            names={["Background", "Research Questions", "Interviews", "Analysis", "Findings", "Design Recommendations", "Impact"]}
+            names={["Stakeholder", "Research Questions", "Interviews", "Analysis", "Findings", "Design Recommendations", "Impact"]}
           />
-          <div id="stakeholder" className="section">
+          <div id="Stakeholder" className="section">
             <Heading
               title="Stakeholder Interview"
             />
@@ -191,7 +206,7 @@ class Docs extends Component {
               </ul>
             </div>
           </div>
-          <div id="Interviews" className="section">
+          <div id="Expert" className="section">
             <Heading
               title="Expert Interview"
             />
@@ -378,7 +393,7 @@ class Docs extends Component {
                   <p className="title bg-grey">1. Provide a place to plan and outline</p>
                   <img src={recommend1} />
                   <p className="caption">Chaos vs. Organization</p>
-                  <p>What kind of situation is easier to voluntarily sit down? <b>Early organization gives solid direction and a placeholder for contribution gives even those hesitant a chance to participate.</b></p>
+                  <p>What kind of situation is easier to voluntarily sit down? Early organization gives solid direction. <b>A placeholder for contribution gives even those hesitant a chance to participate.</b></p>
                 </div>
                 <div className="half">
                   <p className="title bg-grey">2. Go Modular</p>
@@ -435,12 +450,6 @@ class Docs extends Component {
               </div>
             </div>
         </div>
-        <Next
-          leftItem="Miscellaneous Designs"
-          leftLink="/misc"
-          rightItem="Co-creation Tool"
-          rightLink="/logue"
-        />
         <Credit/>
       </div>
     )

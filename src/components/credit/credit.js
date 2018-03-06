@@ -14,7 +14,7 @@ class Credit extends Component {
       <div id="credit" className="">
         <div className="container small">
           <div className="bye center">
-            <img src={bye} alt="Design and art by Horyun"/>
+            <div className="endbox"></div>
           </div>
         </div>
       </div>

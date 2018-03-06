@@ -5,12 +5,13 @@ body {
 
 }
 /* Font */
-@import url('https://fonts.googleapis.com/css?family=Lora|PT+Sans|Open+Sans|Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Lora|PT+Sans|Francois+One|Libre+Franklin|Questrial|}');
 h1, h2, h3, h4, h5, .bg-grey {
-    font-family: 'Francois One', 'Open Sans', sans-serif;
+    font-family: 'Francois One', 'PT Sans', sans-serif;
     color: Black;
     margin: 0;
 }
+
 a {
     color: Black;
     margin: 0;
@@ -18,10 +19,12 @@ a {
 p, li {
     font-family: 'Lora', 'PT Sans', sans-serif;
 }
-.meta p, .meta li, .meta a, .caption, .subtitle, .job {
+.meta p, .meta li, .meta a, .caption, .subtitle, .job, .sans {
     font-family: 'PT Sans', sans-serif;
 }
-
+p.intro {
+    font-family: 'Questrial', 'Lora', 'PT Sans', sans-serif;
+}
 p, li {
     color: #4A4A4A;
     font-size: 1em;
@@ -77,14 +80,28 @@ img {
 .container.small {
     width: 70vw;
 }
-@media only screen and (max-width: 768px) {
+.hero-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 955px) {
     .container {
         width: 90vw;
     }
     .container.small {
         width: 90vw;
     }
+
 }
+@media only screen and (max-width: 768px) {
+    .hero-desktop {
+        display: none;
+    }
+    .hero-mobile {
+        display: block;
+    }
+}
+
 .wrapper {
     width: 60vw;
     min-width: 310px;
@@ -172,6 +189,14 @@ img {
     width: 80%;
     min-width: 310px;
 }
+
+@media only screen and (max-width: 768px) {
+    .sixty {
+        width: 100%;
+    }
+
+}
+
 .bare-right {
     padding: 0 0.7em 0 0;
 }
@@ -302,7 +327,7 @@ p.subtitle {
     top: -4em;
     background: white;
     border-radius: 1.2em 1em 0 0;
-    padding: 3em 0 0 0;
+    padding: 4em 0 0 0;
 }
 .meta {
     position: relative;

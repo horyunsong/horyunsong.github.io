@@ -6,38 +6,38 @@ import PropTypes from 'prop-types';
 import "./credit.css";
 
 import {Link} from "react-router";
+import Headroom from "react-headroom";
 
 import left from "../../img/nav/left.png";
-import right from "../../img/nav/right.png";
+import right from "../../img/nav/right-arrow.png";
 
 class Next extends Component {
   static propTypes = {
     leftItem: PropTypes.string,
     leftLink: PropTypes.string,
     rightItem: PropTypes.string,
-    rightLink: PropTypes.string
+    rightLink: PropTypes.string,
+    bg: PropTypes.string
   }
   static defaultProps = {
     leftItem: "left",
     leftLink: "/",
     rightItem: "right",
-    rightLink: "/"
+    rightLink: "/",
+    bg: "white"
   }
   render() {
 
     return(
-      <div id="credit" className="">
-        <br/>
-        <div className="container small flex justify-between">
-          <Link to={this.props.leftLink}>
-            <div className="next left flex align-center">
-                <img src={left} alt="left"/>
-                <p>{this.props.leftItem}</p>
-            </div>
+      <div id="" className="" style={{'background-color':this.props.bg}}>
+        <div className="next-wrapper flex justify-between">
+          <Link to="/">
+            <h4 className="home">Home</h4>
           </Link>
+
           <Link to={this.props.rightLink}>
             <div className="next right flex align-center">
-              <p>{this.props.rightItem}</p>
+              <h4 className="home">{this.props.rightItem}</h4>
               <img src={right} alt="right"/>
             </div>
           </Link>

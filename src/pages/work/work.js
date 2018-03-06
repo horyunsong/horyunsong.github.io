@@ -7,15 +7,16 @@ import Credit from "../../components/credit/credit";
 import Piece from '../../components/work/piece/piece';
 import {Link} from "react-router";
 
-import bslide from "../../img/work/thumb/bslide.png";
-import logue from "../../img/work/thumb/logue.png";
+import bslide from "../../img/work/thumb/bslide-thumb.png";
+import logue from "../../img/work/thumb/logue-thumb.png";
+import logueHover from "../../img/work/thumb/logue-thumb-hover.png";
 import urack from "../../img/work/thumb/urack-sprite.jpg";
 import recaffeine from "../../img/work/thumb/re-caffeine.png";
 import bunnynail from "../../img/work/thumb/bunnynail.jpg";
 import underlined from "../../img/work/thumb/underlined.png";
 import misc from "../../img/work/thumb/misc.jpg";
-import docs from "../../img/work/thumb/docs_thumb.png";
-import emo from "../../img/work/thumb/emotion_thumb.png";
+import docs from "../../img/work/thumb/docs-thumb.png";
+import emo from "../../img/work/thumb/emotion-thumb.png";
 import test from "../../img/work/thumb/test.jpg";
 
 
@@ -81,19 +82,19 @@ class Work extends Component {
             <div className="flex full justify-center">
               <Link to="/docs">
                 <Piece
-                  title="Collaborative Documentation"
+                  title="Crowdsourcing Documentation"
                   type="Research"
                   description="Stack Overflow Documentation was a collaborative writing space for technical reference material. I took the lead on gathering insights for a redesign of the product."
-                  image={test}
+                  image={docs}
                   filters={["Research", (this.state.research ? "active" : "") ]}
                 />
               </Link>
               <Link to="/bslide">
                 <Piece
-                  title="Bookmark Curator"
-                  type="Research, Design & Prototype"
+                  title="Reading on Lockscreen"
+                  type="Research & Design"
                   description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
-                  image={test}
+                  image={bslide}
                   filters={
                     ["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]
                   }
@@ -101,31 +102,32 @@ class Work extends Component {
               </Link>
               <Link to="/logue">
                 <Piece
-                  title="Co-creation Tool"
+                  title="Modular Storytelling"
                   type="Research, Design & Prototype"
                   description="Logue is a unit of stories contained in a standardized card. It enables co-creators to view a story  differently from different perspectives ."
-                  image={test}
+                  image={logue}
                   filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]}
                 />
               </Link>
+              {/*
               <Link to="/urack">
                 <Piece
                   title="U-lock + Bike Rack"
                   category="UX"
                   type="Research, Design & Prototype"
                   description="U-rack is the easiest way to safely lock your bike. Mount this special U-lock to the smart bike rack, and off you go. U-rack will look after it. "
-                  image={test}
+                  image={logue}
                   filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "")]}
                 />
               </Link>
-
+*/}
               <Link to="/emotion">
                 <Piece
-                  title="Detecting Emotions"
+                  title="Detecting Emotions: Human vs. Computer"
                   category="Social Computing"
                   type="Research"
                   description="Who can tell my emotion better? Friends, strangers or computer? The short answer: people are better than computer, but there is no difference between friends and strangers."
-                  image={test}
+                  image={emo}
                   filters={["Research", (this.state.research ? "active" : "") ]}
                 />
               </Link>
