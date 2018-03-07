@@ -1,23 +1,75 @@
 body {
     width: 100vw;
-
 }
-
-
+.icon {
+    width: 2em;
+    padding: 1.5em 3em;
+    position: fixed;
+}
 .profile-container {
-    margin: 4.5em 7.14% 1.5em 7.14%;
+    padding: 3em
+}
+.profile-name {
+    font-family: 'Lato';
+    font-weight: normal;
+    font-size: 3em;
+    color: #4A4A4A;
 }
 .profile-text {
-   padding: 2em 2em;
-}
-.sans {
-    font-size: 1.1em;
+    font-family: 'Oxygen';
+    font-weight: lighter;
+    font-size: 1.2em;
+    padding: 0.3em 0 2em 0;
+    color: #4A4A4A;
 }
 .highlight {
     border-bottom: 3px solid #6eb8d0;
 }
+
+#home .half {
+    padding: 0;
+}
+.fixed {
+    position: fixed;
+}
+.home-left{
+    margin-top: 30vh;
+}
+.menu-item a{
+    color: #949494;
+
+}
+.menu-item a:hover, .menu-item a:active{
+    color: black;
+}
+.about-inner{
+    padding: 3em 0 ;
+}
+
 @media only screen and (max-width: 955px) {
+    .fixed {
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .fixed {
+        position: relative;
+    }
+    .icon, .profile-container {
+        padding-left: 7.14%;
+    }
+    .icon {
+        position: relative;
+        padding-bottom: 0;
+    }
+    .home-left{
+        margin-top: 15vh;
+    }
+    .profile-name {
+        font-size: 2em;
+    }
     .profile-text {
-        padding: 0.5em;
+        font-size: 1em;
+        padding: 0.3em 0 1em 0;
     }
 }

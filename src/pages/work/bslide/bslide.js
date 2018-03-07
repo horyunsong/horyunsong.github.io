@@ -146,22 +146,50 @@ class Bslide extends Component {
             </div>
           </div>
         </div>
-        <div className="full">
-
-
-
-        </div>
-        <div className="container small">
-          <br/>
-          <div className="spark-wrapper">
-            <h3 className="heading" >Process</h3>
-          </div>
-          <Process
-            processes={["Interview", "Persona", "Needs Assessment",
-              "Ideation", "Mapping the Experience", "Wireframe", "Usability Testing"]}
-            names={["Interview", "Persona", "Needs Assessment",
-              "Ideation", "Mapping the Experience", "Wireframe", "Usability Testing"]}
+        <div className="container small section">
+          <Heading
+            title="Process"
           />
+          <div className="full flex justify-between process">
+            <div className="fifth">
+              <h4>Research</h4>
+              <div className="spans">
+                <span>Interview</span>
+                <span>Literature Review</span>
+              </div>
+
+            </div>
+            <div className="fifth">
+              <h4>Explore</h4>
+              <div className="spans">
+                <span>Persona</span>
+                <span>Needs Assessment</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Ideate</h4>
+              <div className="spans">
+                <span>Contact Point</span>
+                <span>Storyboard</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Design</h4>
+              <div className="spans">
+                <span>Journey Map</span>
+                <span>Site Map</span>
+                <span>Sketch</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Validate</h4>
+              <div className="spans">
+                <span>Wireframe</span>
+                <span>Usability Testing (Work in Progress)</span>
+              </div>
+            </div>
+          </div>
+
           <div id="Interview" className="section">
             <Heading
               title="Interview"

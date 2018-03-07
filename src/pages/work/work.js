@@ -16,7 +16,7 @@ import bunnynail from "../../img/work/thumb/bunnynail.jpg";
 import underlined from "../../img/work/thumb/underlined.png";
 import misc from "../../img/work/thumb/misc.jpg";
 import docs from "../../img/work/thumb/docs-thumb.png";
-import emo from "../../img/work/thumb/emotion-thumb.png";
+import emo from "../../img/work/thumb/emo-thumb.png";
 import test from "../../img/work/thumb/test.jpg";
 
 
@@ -77,9 +77,9 @@ class Work extends Component {
 
     return (
       <div>
-        <div id="work">
+        <div id="portfolio">
           <div className="">
-            <div className="flex full justify-center">
+
               <Link to="/docs">
                 <Piece
                   title="Crowdsourcing Documentation"
@@ -87,8 +87,10 @@ class Work extends Component {
                   description="Stack Overflow Documentation was a collaborative writing space for technical reference material. I took the lead on gathering insights for a redesign of the product."
                   image={docs}
                   filters={["Research", (this.state.research ? "active" : "") ]}
+                  projectName="docs"
                 />
               </Link>
+
               <Link to="/bslide">
                 <Piece
                   title="Reading on Lockscreen"
@@ -98,6 +100,7 @@ class Work extends Component {
                   filters={
                     ["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]
                   }
+                  projectName="bslide"
                 />
               </Link>
               <Link to="/logue">
@@ -107,6 +110,7 @@ class Work extends Component {
                   description="Logue is a unit of stories contained in a standardized card. It enables co-creators to view a story  differently from different perspectives ."
                   image={logue}
                   filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]}
+                  projectName="logue"
                 />
               </Link>
               {/*
@@ -129,6 +133,7 @@ class Work extends Component {
                   description="Who can tell my emotion better? Friends, strangers or computer? The short answer: people are better than computer, but there is no difference between friends and strangers."
                   image={emo}
                   filters={["Research", (this.state.research ? "active" : "") ]}
+                  projectName="emo"
                 />
               </Link>
               {/*
@@ -156,8 +161,6 @@ class Work extends Component {
             </div>
           </div>
 
-      </div>
-        <Credit/>
       </div>
 
     )

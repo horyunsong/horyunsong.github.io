@@ -25,8 +25,15 @@ import timeline from '../../../img/work/logue/timeline.png';
 import card from '../../../img/work/logue/card.png';
 import teamA from '../../../img/work/logue/TeamA.png';
 import teamB from '../../../img/work/logue/TeamB.png';
-import final from '../../../img/work/logue/logue-final.png';
+import solution from '../../../img/work/logue/logue-solution.png';
 import beta from '../../../img/work/logue/beta.png';
+import final from '../../../img/work/logue/logue-final.png';
+import newCard from '../../../img/work/logue/newCard.png';
+import metadata from '../../../img/work/logue/logue-metadata.png';
+import time from '../../../img/work/logue/logue-time.png';
+import gretel from '../../../img/work/logue/logue-gretel.png';
+import discussion from '../../../img/work/logue/logue-discussion.png';
+
 
 
 
@@ -85,7 +92,7 @@ class Logue extends Component {
             <div className="third">
               <p className="meta-head">Personal Project</p>
               <ul>
-                <li>Designed iteratively through quick tests and design critiques</li>
+                <li>Designed iteratively through design critiques and quick tests</li>
                 <li>Conducted a longitudinal user testing with a functioning prototype</li>
                 <li>Advised by Sujin Jun, PhD</li>
               </ul>
@@ -106,33 +113,61 @@ class Logue extends Component {
               <p>To accommodate dynamic nature of co-creation, <b>stories are modularized using Logue.</b> Logue is a unit of stories contained in a standardized card with metadata (characters, locations, etc). Co-creators and readers can <b>rearrange Logues to approach the story differently </b>like character point of view.</p>
             </div>
           </div>
-          <div className="full">
+          <div className="full space-up">
             <ImageZoom
               image={{
-                src: final,
+                src: solution,
                 alt: "Simplified image mapping"
               }}
               zoomImage={{
-                src: final,
+                src: solution,
                 alt: "Simplified image mapping"
               }}
             />
           </div>
-          {/*
-          <div className="video-wrapper">
-            <iframe src="https://player.vimeo.com/video/141978956?portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-          */}
-          <div className="spark-wrapper">
-            <h3 className="heading" >Process</h3>
-          </div>
         </div>
-        <div className="container small">
-          <Process
-            processes={["Image Mapping", "1st Prototype: Flow", "2nd Prototype: Story Deck",
-              "Focus Group", "3rd Prototype:  Logue", "User Testing", "Finding"]}
-            names={["Image", "Flow", "Story", "Focus", "Logue", "User", "Finding"]}
+        <div className="container small space-up">
+          <Heading
+            title="Process"
           />
+          <div className="full flex justify-between process">
+            <div className="fifth">
+              <h4>Research</h4>
+              <div className="spans">
+                <span>Image Mapping</span>
+                <span>Focus Group</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Iterate</h4>
+              <div className="spans">
+                <span>Exploratory Design</span>
+                <span>Design Critique</span>
+                <span>Hallway Testing</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Design</h4>
+              <div className="spans">
+                <span>System Design</span>
+                <span>Prototype</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Validate</h4>
+              <div className="spans">
+                <span>Longitudinal User Testing</span>
+                <span>Participatory Design</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Deliver</h4>
+              <div className="spans">
+                <span>Redesign</span>
+                <span>Academic Paper</span>
+              </div>
+            </div>
+          </div>
           <div id="Image" className="section">
             <Heading
               title="Image Mapping"
@@ -176,6 +211,25 @@ class Logue extends Component {
               </div>
             </div>
           </div>
+          <div id="Focus" className="section">
+            <Heading
+              title="Focus Group"
+            />
+            <div className="sixty center">
+              <p className="title">How</p>
+              <p>I conducted <b>a 2-hour focus group interview with 4 co-creators.</b> They had 10 years of experience in collaborative storytelling on average. They were prompted with topics about co-creation experience (e.g., how do you plan plots with other co-creators?) and platform preferences.</p>
+            </div>
+            <div className="sixty center">
+              <p className="title">Finding</p>
+              <p><b>I used open, axial, and selective coding</b> to emerge issues and themes across the participants. The main themes drawn from the focus group interview were as follows: </p>
+              <ul>
+                <li><b>Context of episode</b> (Is the character aware of another event?) </li>
+                <li><b>Relationship between characters and settings</b> (Where is he from and how does it affect him?)</li>
+                <li><b>Reading order </b>(Point of view, chronological, setting-specific, etc.) </li>
+                <li><b>Communication between co-creators</b></li>
+              </ul>
+            </div>
+          </div>
           {/*
           <div id="2nd" className="section">
             <Heading
@@ -206,25 +260,7 @@ class Logue extends Component {
               <p className="caption">Contents adapted from Elliot Holt’s Twitter Fiction “Evidence”</p>
             </div>
           </div>
-          <div id="Focus" className="section">
-            <Heading
-              title="Focus Group"
-            />
-            <div className="sixty center">
-              <p className="title">How</p>
-              <p>I conducted <b>a 2-hour focus group interview with 4 co-creators.</b> They had 10 years of experience in collaborative storytelling on average. They were prompted with topics about co-creation experience (e.g., how do you plan plots with other co-creators?) and platform preferences.</p>
-            </div>
-            <div className="sixty center">
-              <p className="title">Finding</p>
-              <p><b>I used open, axial, and selective coding</b> to emerge issues and themes across the participants. The main themes drawn from the focus group interview were as follows: </p>
-              <ul>
-                <li><b>Context of episode</b> (Is the character aware of another event?) </li>
-                <li><b>Relationship between characters and settings</b> (Where is he from and how does it affect him?)</li>
-                <li><b>Reading order </b>(Point of view, chronological, setting-specific, etc.) </li>
-                <li><b>Communication between co-creators</b></li>
-              </ul>
-            </div>
-          </div>
+
           */}
           <div id="Exploratory" className="section">
             <Heading
@@ -278,7 +314,7 @@ class Logue extends Component {
               </div>
               <div className="">
                 <div className="sixty center">
-                  <p className="title">Logue as unit of a story</p>
+                  <p className="title">Logue as a unit of a story</p>
                   <p>Louge was defined as a <b>unit of complex fictional stories</b>. The basic rule of a Logue was to embody the smallest meaningful portion of <b>content and metadata</b> the content should entail. Co-creators could rearrange stories according to their needs.</p>
                 </div>
               </div>
@@ -312,20 +348,53 @@ class Logue extends Component {
             <Heading
               title="Longitudinal User Testing"
             />
-            <div className="">
-              <div className="sixty center">
-                <p className="title">How</p>
-                <p><b>Two teams</b>, total 11 prospect users from Twitter sub-culture creator network, were recruited to participate in the evaluation study for <b>two weeks by collaboratively creating a story using Logue system.</b> Each member chose to have one character except for a moderator who had an additional Non-Playing Character.</p>
-                <p>I prototyped with Wordpress as backend, so partcipants could upload their creations on Story Map after logging in to Wordpress without my interference.</p>
+            <div className="full flex justify-between">
+              <div className="third more-padding">
+                <p className="title text-center">11 Participants</p>
+                <p>Were recruited from Twitter amateur creator network. On average they had 10 years of experience as co-creators.</p>
+              </div>
+              <div className="third more-padding">
+                <p className="title text-center">2 Teams</p>
+                <p>Participants were recruited as teams. Each team had 4 and 7 participants</p>
+              </div>
+              <div className="third more-padding">
+                <p className="title  text-center">2 Weeks</p>
+                <p>Because creative process, especially co-creation, takes long time.</p>
               </div>
             </div>
+            <div className="">
+
+            </div>
+            <div className="sixty center">
+              <p className="title">Interview & Participatory Design</p>
+              <p>After two weeks of testing, I conducted <b>semi-structured interviews with individual participants and participatory design sessions with each team.</b> For participatory design, the team members discussed, drew and explained their future story.
+                {/*Evaluation focused on the holistic system of Logue. As the last part of interview, <b>each team was asked to draw Story Maps based on their knowledge of Logue</b> and explain the structure to determine whether the co-creators’ understanding of Logue was congruent with Logue system.*/} </p>
+            </div>
+            <div className="sixty center">
+              <p className="title">Key Findings</p>
+              <ul>
+                <li>Participants experienced a shift from creator-centered to character-centered storytelling.</li>
+                <li>Communication among co-creators happens in two places: contextually and globally.</li>
+                <li>Metadata and its usage are not clear from each Logue.</li>
+              </ul>
+            </div>
+
             <div className="button-wrapper">
               <button onClick={this.testingClick} className="button expand center">
-                {this.state.testing ? 'Close' : 'Show'} Team Details
+                {this.state.testing ? 'Close' : 'Show'} Research Details
               </button>
             </div>
             <Collapse isOpened={this.state.testing}>
-              <p className="title">Teams</p>
+              <div className="sixty center">
+                <p className="title">How</p>
+                <p><b>Two teams</b>, total 11 prospect users from Twitter sub-culture creator network, were recruited to participate in the evaluation study for <b>two weeks by collaboratively creating a story using Logue system.</b> Each member chose to have one character except for a moderator who had an additional Non-Playing Character.</p>
+              </div>
+              <div className="sixty center">
+                <p className="title">Prototype</p>
+                <p>I prototyped with Wordpress as backend, so partcipants could upload their creations on Story Map after logging in to Wordpress without my interference.</p>
+              </div>
+
+              <p className="title text-center">Participant Details</p>
               <div className="flex justify-between flex-start">
                 <div className="half">
                   <p><b>Team A</b></p>
@@ -344,12 +413,9 @@ class Logue extends Component {
                   </ul>
                 </div>
               </div>
-            </Collapse>
-            <div className="sixty center">
-              <p className="title">Finding</p>
-              <p>After two weeks of testing, I conducted <b>semi-structured interviews with individual participants and participatory design sessions with each team.</b> For participatory design, the team members discussed, drew and explained their future story.
-                {/*Evaluation focused on the holistic system of Logue. As the last part of interview, <b>each team was asked to draw Story Maps based on their knowledge of Logue</b> and explain the structure to determine whether the co-creators’ understanding of Logue was congruent with Logue system.*/} </p>
+              <div className="eighty center">
                 <div className="">
+                  <p className="title text-center">Results</p>
                   <h4>1. Changes the participants experienced</h4>
                   <ul>
                     <li>They started to visualize the structure of their story. It helped the team to be aware of each other's creation.</li>
@@ -360,43 +426,45 @@ class Logue extends Component {
                 <div className="">
                   <h4>2. Things to improve</h4>
                   <ul>
-                    <li>The entry bar was too high. It was hard to understand how to set up and use meatadata.</li>
+                    <li>The entry bar was too high. It was hard to understand what metadata is.</li>
                     <li>There was no error prevention. Even if some Logues were missing metadata, the prototype did not prompt the creators on it.</li>
                     <li>Comments under individual Logue are not sufficient way of communication. There should be a communication hub.</li>
                   </ul>
                 </div>
-              <div className="">
-                <h4>3. Participatory design artifacts</h4>
-                <div className="flex justify-around team">
-                  <div className="third center">
-                    <ImageZoom
-                      image={{
-                        src: teamA,
-                        alt: "team A story map"
-                      }}
-                      zoomImage={{
-                        src: teamA,
-                        alt: "team A story map"
-                      }}
-                    />
-                    <p className="caption">Team A story map</p>
-                  </div>
-                  <div className="third center">
-                    <ImageZoom
-                      image={{
-                        src: teamB,
-                        alt: "team B story map"
-                      }}
-                      zoomImage={{
-                        src: teamB,
-                        alt: "team B story map"
-                      }}
-                    />
-                    <p className="caption">Team B story map</p>
+                <div className="">
+                  <h4>3. Participatory design artifacts</h4>
+                  <div className="flex justify-around team">
+                    <div className="third center">
+                      <ImageZoom
+                        image={{
+                          src: teamA,
+                          alt: "team A story map"
+                        }}
+                        zoomImage={{
+                          src: teamA,
+                          alt: "team A story map"
+                        }}
+                      />
+                      <p className="caption">Team A story map</p>
+                    </div>
+                    <div className="third center">
+                      <ImageZoom
+                        image={{
+                          src: teamB,
+                          alt: "team B story map"
+                        }}
+                        zoomImage={{
+                          src: teamB,
+                          alt: "team B story map"
+                        }}
+                      />
+                      <p className="caption">Team B story map</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Collapse>
+
           </div>
           <div id="Final" className="section">
             <Heading
@@ -406,6 +474,86 @@ class Logue extends Component {
           <div className="full center">
             <img src={final} />
           </div>
+          <div className="sixty center">
+            <p className="title">Updated Logue, a unit of a story</p>
+            <p>New Logue contains what a previous version had: title, contents and metadata. I differentiated metadata with placement and pills and added comments for co-creators to discuss within context.</p>
+            <ImageZoom
+              image={{
+                src: newCard,
+                alt: "team A story map"
+              }}
+              zoomImage={{
+                src: newCard,
+                alt: "team A story map"
+              }}
+            />
+          </div>
+          <div className="sixty center ">
+            <p className="title">Sort and view by metadata</p>
+            <p>Select which metadata categories to show. Each metadata tag has a string connecting the related Logues.</p>
+          </div>
+          <div className="half center">
+            <ImageZoom
+              image={{
+                src: metadata,
+                alt: "team A story map",
+                className: "shadow"
+              }}
+              zoomImage={{
+                src: metadata,
+                alt: "team A story map"
+              }}
+            />
+          </div>
+          <div className="sixty center space-up">
+            <p className="title">Highlight a metadata tag</p>
+            <p>Select a metadata tag to see the story from a character point of view or a place-centered timeline.</p>
+          </div>
+          <div className="full">
+            <ImageZoom
+              image={{
+                src: gretel,
+                alt: "team A story map"
+              }}
+              zoomImage={{
+                src: gretel,
+                alt: "team A story map"
+              }}
+            />
+          </div>
+          <div className="sixty center space-up">
+            <p className="title">Adpative Timeline</p>
+            <p>Switch between timeline and the last edit time. Dense vertical lines show the time between Logues. </p>
+            <ImageZoom
+              image={{
+                src: time,
+                alt: "team A story map",
+                className: "shadow"
+              }}
+              zoomImage={{
+                src: time,
+                alt: "team A story map"
+              }}
+            />
+          </div>
+          <div className="sixty center space-up">
+            <p className="title">Discuss with co-creators</p>
+            <p>Discussion button that calls a chatroom modal is placed next to Write button within the action area. </p>
+          </div>
+          <div className="eighty center">
+            <ImageZoom
+              image={{
+                src: discussion,
+                alt: "team A story map",
+                className: "shadow"
+              }}
+              zoomImage={{
+                src: discussion,
+                alt: "team A story map"
+              }}
+            />
+          </div>
+
         </div>
 
         <Credit/>

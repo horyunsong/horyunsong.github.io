@@ -18,31 +18,32 @@
 .myworks h3 span:after {
     left: 70%;
 }
-button.filter {
+.filter {
     border:none;
     background: none;
     cursor: pointer;
 }
-button.filter:focus {
+.filter:focus {
     outline: 0;
 }
-button.filter p.focused span {
+.filter p.focused span {
     color: #FE6C61;
     border-top: 2px solid #FE6C61;
 }
-button.filter:focus span {
+.filter:focus span {
     color: #FE6C61;
     border-top: 2px solid #FE6C61;
 }
-button.filter:hover span {
+.filter:hover span {
     border-top: 2px solid #4A4A4A;
 }
-button.filter:focus:hover span {
+.filter:focus:hover span {
     border-top: 2px solid #FE6C61;
 }
 .filter p {
-    font-size: 1.2em;
-    padding: 0 1.2em;
+    font-family: 'Lato';
+    font-size: 1em;
+    padding: 0 1em;
     font-weight: bold;
 }
 .filter:first-child p {

@@ -5,7 +5,7 @@ body {
 
 }
 /* Font */
-@import url('https://fonts.googleapis.com/css?family=Lora|PT+Sans|Francois+One|Libre+Franklin|Questrial|}');
+@import url('https://fonts.googleapis.com/css?family=Lora|PT+Sans|Francois+One|Lato|Oxygen|}');
 h1, h2, h3, h4, h5, .bg-grey {
     font-family: 'Francois One', 'PT Sans', sans-serif;
     color: Black;
@@ -23,7 +23,7 @@ p, li {
     font-family: 'PT Sans', sans-serif;
 }
 p.intro {
-    font-family: 'Questrial', 'Lora', 'PT Sans', sans-serif;
+    font-family: 'Lora', 'PT Sans', sans-serif;
 }
 p, li {
     color: #4A4A4A;
@@ -150,10 +150,15 @@ img {
     width: 100%;
     min-width: 310px;
 }
-.quarter, .third, .half, .forty, .sixty, .eighty {
+.fifth, .quarter, .third, .half, .forty, .sixty, .eighty {
     flex-grow: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
+}
+.fifth {
+    width: 15%;
+    min-width: 80px;
+    padding: 0.6em;
 }
 .quarter {
     width: 22%;
@@ -163,7 +168,7 @@ img {
 .third {
     width: 31%;
     min-width: 200px;
-    padding: 0.4em;
+    padding: 0.5em;
 }
 .half {
     width: 47%;
@@ -191,7 +196,7 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
-    .sixty {
+    .sixty, .half {
         width: 100%;
     }
 
@@ -335,4 +340,20 @@ p.subtitle {
 }
 .summary {
     padding: 0 0.5em 0 0.5em;
+}
+.process span{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #949494;
+    font-size: 0.8em;
+    padding-bottom: 0.3em;
+}
+.process span:last-child{
+    padding-bottom: 0;
+}
+.spans {
+    border-left: 2px solid #949494;
+    padding-left: 0.5em;
+    margin-top: 0.5em
 }

@@ -36,6 +36,7 @@ import heroMobile from '../../../img/work/emotion/emo-hero-mobile.png';
 
 class Emotion extends Component {
 
+
   render() {
     return (
       <div>
@@ -67,9 +68,9 @@ class Emotion extends Component {
             <div className="third">
               <p className="meta-head">My Contribution</p>
               <ul>
-                <li>Survey design</li>
-                <li>Survey distribution</li>
-                <li>Data Visualization</li>
+                <li>Designed a customized survey</li>
+                <li>Distributed survey to friends and strangers (Amazon Mechanical Turkers)</li>
+                <li>Visualzed findings: scatter plots/correlation and p-value</li>
               </ul>
             </div>
             <div className="third">
@@ -92,15 +93,48 @@ class Emotion extends Component {
           </div>
         </div>
 
-        <div className="container small">
-          <div className="spark-wrapper">
-            <h3 className="heading" >Process</h3>
-          </div>
-          <Process
-            processes={["Background & Motivation", "Human Sensor", "Research Questions",
-              "Framework", "Collecting Data", "Analysis", "Outcome"]}
-            names={["Background", "Human", "Questions", "Design", "Collecting", "Analysis", "Outcome"]}
+        <div className="container small section">
+          <Heading
+            title="Process"
           />
+          <div className="full flex justify-between process">
+            <div className="fifth">
+              <h4>Research</h4>
+              <div className="spans">
+                <span>Image Mapping</span>
+                <span>Focus Group</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Design</h4>
+              <div className="spans">
+                <span>Research Framework Design</span>
+                <span>Survey Design</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Collecting Data</h4>
+              <div className="spans">
+                <span>Survey</span>
+                <span>Natural Language Processing</span>
+                <span>Image Processing</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Validate</h4>
+              <div className="spans">
+                <span>Correlation Coefficient</span>
+                <span>Hypothesis Testing (p-value)</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Deliver</h4>
+              <div className="spans">
+                <span>Presentation</span>
+                <span>Academic Paper (Work in Progress)</span>
+              </div>
+            </div>
+          </div>
           <div id="Background" className="section">
             <Heading
               title="Background & Motivation"
@@ -131,7 +165,7 @@ class Emotion extends Component {
               </div>
             </div>
           </div>
-          <div id="Human" className="section">
+          <div id="Human" className="section space-up">
             <Heading
               title="Human Sensor"
             />

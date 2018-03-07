@@ -10,6 +10,7 @@ import Headroom from "react-headroom";
 
 import left from "../../img/nav/left.png";
 import right from "../../img/nav/right-arrow.png";
+import icon from "../../img/home/icon.png";
 
 class Next extends Component {
   static propTypes = {
@@ -30,9 +31,11 @@ class Next extends Component {
 
     return(
       <div id="" className="" style={{'background-color':this.props.bg}}>
-        <div className="next-wrapper flex justify-between">
+        <div className="next-wrapper flex justify-between align-center">
           <Link to="/">
-            <h4 className="home">Home</h4>
+            <div className="toHome">
+              <img src={icon} />
+            </div>
           </Link>
 
           <Link to={this.props.rightLink}>

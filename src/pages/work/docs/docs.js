@@ -170,15 +170,51 @@ class Docs extends Component {
             </div>
           </div>
         </div>
-        <div className="bslide container small">
-          <div className="spark-wrapper">
-            <h3 className="heading" >Process</h3>
-          </div>
-          <Process
-            processes={["Stakeholder Interview", "Research Questions", "Expert Interview",
-              "Analysis", "Findings", "Design Recommendations", "Impact"]}
-            names={["Stakeholder", "Research Questions", "Interviews", "Analysis", "Findings", "Design Recommendations", "Impact"]}
+        <div className="bslide container small section">
+          <Heading
+            title="Process"
           />
+
+          <div className="full flex justify-between process">
+            <div className="fifth">
+              <h4>Prepare</h4>
+              <div className="spans">
+                <span>Competitive Analysis</span>
+                <span>Stakeholder Interview</span>
+                <span>Research Questions</span>
+              </div>
+
+            </div>
+            <div className="fifth">
+              <h4>Research</h4>
+              <div className="spans">
+                <span>Expert Interview</span>
+                <span>Ethnographic Study</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Synthesize</h4>
+              <div className="spans">
+                <span>Analysis</span>
+                <span>Finding</span>
+                <span>Design Recommendations</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Deliver</h4>
+              <div className="spans">
+                <span>Report</span>
+                <span>Presentation</span>
+              </div>
+            </div>
+            <div className="fifth">
+              <h4>Impact</h4>
+              <div className="spans">
+                <span>Product Decision</span>
+                <span>Company Culture</span>
+              </div>
+            </div>
+          </div>
           <div id="Stakeholder" className="section">
             <Heading
               title="Stakeholder Interview"
