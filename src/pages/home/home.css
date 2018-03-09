@@ -6,21 +6,27 @@ body {
     padding: 1.5em 3em;
     position: fixed;
 }
+.profile-img {
+    width: 19em;
+}
 .profile-container {
     padding: 3em
 }
 .profile-name {
-    font-family: 'Lato';
+    font-family: 'Francois One', 'Lato', 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 3em;
-    color: #4A4A4A;
+    /*color: #4A4A4A;*/
+    letter-spacing: 0.05em;
 }
 .profile-text {
-    font-family: 'Oxygen';
+    font-family: 'PT Sans', sans-serif;
     font-weight: lighter;
     font-size: 1.2em;
-    padding: 0.3em 0 2em 0;
+    padding: 0em 0 1em 0;
     color: #4A4A4A;
+    font-style: italic;
+    letter-spacing: 0.05em;
 }
 .highlight {
     border-bottom: 3px solid #6eb8d0;
@@ -33,7 +39,7 @@ body {
     position: fixed;
 }
 .home-left{
-    margin-top: 30vh;
+    margin-top: 15vh;
 }
 .menu-item a{
     color: #949494;
@@ -41,6 +47,15 @@ body {
 }
 .menu-item a:hover, .menu-item a:active{
     color: black;
+}
+.cereal {
+    padding-top: 1em;
+}
+.cereal .quarter {
+    min-width: 100px;
+}
+.cereal .quarter img {
+    border-radius: 50%;
 }
 .about-inner{
     padding: 3em 0 ;

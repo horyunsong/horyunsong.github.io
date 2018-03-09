@@ -3,6 +3,10 @@ import "./docs.css";
 
 import ImageZoom from 'react-medium-image-zoom';
 import Headroom from 'react-headroom';
+import Scroll from 'react-scroll';
+
+
+
 import {
   Accordion,
   AccordionItem,
@@ -43,7 +47,11 @@ import challenge from '../../../img/work/docs/challenge.jpg';
 import nudge from '../../../img/work/docs/nudge.jpg';
 import sunset from '../../../img/work/docs/sunset2.jpg';
 
-
+var ScrollLink = Scroll.Link;
+var Element = Scroll.Element;
+var Events = Scroll.Events;
+var scroll = Scroll.animateScroll;
+var scrollSpy = Scroll.scrollSpy;
 
 class Docs extends Component {
 

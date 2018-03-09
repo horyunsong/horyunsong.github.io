@@ -35,13 +35,13 @@
     margin: 0;
 }
 .piece-title {
-    font-family: 'Lato', 'PT Sans', sans-serif;
+    font-family: 'Francois One', 'PT Sans', sans-serif;
 }
 .piece-tag {
-    font-family: 'Lato', 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-style: italic;
-    font-size: 0.9em;
-    padding: 0.3em 0 1em 0;
+    font-size: 1.2em;
+    padding: 0.2em 0 1em 0;
 }
 
 @media only screen and (max-width: 955px) {

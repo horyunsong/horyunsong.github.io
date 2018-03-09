@@ -41,7 +41,7 @@ class Piece extends Component {
 
         <div className="piece-summary">
           <div className="summary-bottom text-center">
-            <h3 className="piece-title">{this.props.title}</h3>
+            <h2 className="piece-title">{this.props.title}</h2>
             <p className="piece-tag">{this.props.type}</p>
           </div>
         </div>

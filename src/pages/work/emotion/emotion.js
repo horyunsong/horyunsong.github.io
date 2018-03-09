@@ -42,7 +42,7 @@ class Emotion extends Component {
       <div>
         <Headroom>
           <Next
-            rightItem="Collaborative Documentation"
+            rightItem="Crowdsourcing Documentation"
             rightLink="/docs"
           />
         </Headroom>
