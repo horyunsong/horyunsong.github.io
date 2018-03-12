@@ -199,7 +199,6 @@ img {
     .sixty, .half {
         width: 100%;
     }
-
 }
 
 .bare-right {
@@ -233,8 +232,8 @@ img {
 }
 .title {
     font-weight: 800;
-    margin: 1.5em 0 0.5em 0;
-    font-size: 1.4em;
+    margin: 1.8em 0 1em 0;
+    font-size: 1.5em;
     font-family: 'Francois One', 'Open Sans', sans-serif;
     color: #4A4A4A;
 }

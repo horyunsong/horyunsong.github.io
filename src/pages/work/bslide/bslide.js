@@ -33,6 +33,9 @@ import base from '../../../img/work/bslide/mockups/base.png';
 import down from '../../../img/work/bslide/mockups/down.png';
 import contents from '../../../img/work/bslide/mockups/contentsbutton.png';
 import UI from '../../../img/work/bslide/mockups/UI.png';
+import List from '../../../img/work/bslide/mockups/List.png';
+import Discover from '../../../img/work/bslide/mockups/Discover.png';
+import LockView from '../../../img/work/bslide/mockups/LockscreenView.png';
 
 
 
@@ -87,8 +90,8 @@ class Bslide extends Component {
       <div className="bslide">
         <Headroom>
           <Next
-            rightItem="Modular Storytelling"
-            rightLink="/logue"
+            rightItem="Detecting Emotions"
+            rightLink="/emotion"
           />
         </Headroom>
         <div className="hero-desktop">
@@ -100,7 +103,7 @@ class Bslide extends Component {
 
         <div className=" container">
           <Title
-            title="B-slide"
+            title="B-slide (Bookmark Slide)"
             role="A friendly nudge to read bookmarked contents on lockscreen"
           />
 
@@ -141,7 +144,7 @@ class Bslide extends Component {
             </div>
             <div className="sixty center">
               <p  className="title">Solution</p>
-              <p>B-slide prompts users by showing <b>their bookmarked contents on mobile lockscreen</b> as compact cards. User can browse bookmarked contents horizontally and select one to read. Or, user can get related contents.</p>
+              <p>B-slide (Bookmark Slide) prompts users by showing <b>their bookmarked contents on their mobile lockscreens</b> as compact cards. User can browse bookmarked contents horizontally and select one to read. Or, user can get recommended contents.</p>
               <img src={solution} />
             </div>
           </div>
@@ -368,11 +371,11 @@ class Bslide extends Component {
                 <div className="quarter">
                   <ImageZoom
                     image={{
-                      src: base,
+                      src: List,
                       alt: "ui scenario 1"
                     }}
                     zoomImage={{
-                      src: base,
+                      src: List,
                       alt: "ui scenario 1"
                     }}
                   />
@@ -380,11 +383,11 @@ class Bslide extends Component {
                 <div className="quarter">
                   <ImageZoom
                     image={{
-                      src: down,
+                      src: Discover,
                       alt: "ui scenario 2"
                     }}
                     zoomImage={{
-                      src: down,
+                      src: Discover,
                       alt: "ui scenario 2"
                     }}
                   />
@@ -392,23 +395,11 @@ class Bslide extends Component {
                 <div className="quarter">
                   <ImageZoom
                     image={{
-                      src: contents,
+                      src: LockView,
                       alt: "ui scenario 2"
                     }}
                     zoomImage={{
-                      src: contents,
-                      alt: "ui scenario 2"
-                    }}
-                  />
-                </div>
-                <div className="quarter">
-                  <ImageZoom
-                    image={{
-                      src: UI,
-                      alt: "ui scenario 2"
-                    }}
-                    zoomImage={{
-                      src: UI,
+                      src: LockView,
                       alt: "ui scenario 2"
                     }}
                   />

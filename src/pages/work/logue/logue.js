@@ -66,8 +66,8 @@ class Logue extends Component {
       <div>
         <Headroom>
           <Next
-            rightItem="Detecting Emotions"
-            rightLink="/emotion"
+            rightItem="Reading on Lockscreen"
+            rightLink="/bslide"
           />
         </Headroom>
 

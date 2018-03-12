@@ -8,6 +8,7 @@ import Piece from '../../components/work/piece/piece';
 import {Link} from "react-router";
 
 import bslide from "../../img/work/thumb/bslide-thumb.png";
+import bslideHover from "../../img/work/thumb/bslide-thumb-hover.png";
 import logue from "../../img/work/thumb/logue-thumb.png";
 import logueHover from "../../img/work/thumb/logue-thumb-hover.png";
 import urack from "../../img/work/thumb/urack-sprite.jpg";
@@ -16,8 +17,9 @@ import bunnynail from "../../img/work/thumb/bunnynail.jpg";
 import underlined from "../../img/work/thumb/underlined.png";
 import misc from "../../img/work/thumb/misc.jpg";
 import docs from "../../img/work/thumb/docs-thumb.png";
+import docsHover from "../../img/work/thumb/docs-thumb-hover.png";
 import emo from "../../img/work/thumb/emo-thumb.png";
-import test from "../../img/work/thumb/test.jpg";
+import emoHover from "../../img/work/thumb/emo-thumb-hover.png";
 
 
 class Work extends Component {
@@ -86,10 +88,22 @@ class Work extends Component {
                   type="Research"
                   description="Stack Overflow Documentation was a collaborative writing space for technical reference material. I took the lead on gathering insights for a redesign of the product."
                   image={docs}
+                  hover={docsHover}
                   filters={["Research", (this.state.research ? "active" : "") ]}
                   projectName="docs"
                 />
               </Link>
+            <Link to="/logue">
+              <Piece
+                title="Modular Storytelling"
+                type="Research, Design & Prototype"
+                description="Logue is a unit of stories contained in a standardized card. It enables co-creators to view a story  differently from different perspectives ."
+                image={logue}
+                hover={logueHover}
+                filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]}
+                projectName="logue"
+              />
+            </Link>
 
               <Link to="/bslide">
                 <Piece
@@ -97,22 +111,14 @@ class Work extends Component {
                   type="Research & Design"
                   description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
                   image={bslide}
+                  hover={bslideHover}
                   filters={
                     ["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]
                   }
                   projectName="bslide"
                 />
               </Link>
-              <Link to="/logue">
-                <Piece
-                  title="Modular Storytelling"
-                  type="Research, Design & Prototype"
-                  description="Logue is a unit of stories contained in a standardized card. It enables co-creators to view a story  differently from different perspectives ."
-                  image={logue}
-                  filters={["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]}
-                  projectName="logue"
-                />
-              </Link>
+
               {/*
               <Link to="/urack">
                 <Piece
@@ -132,6 +138,7 @@ class Work extends Component {
                   type="Research"
                   description="Who can tell my emotion better? Friends, strangers or computer? The short answer: people are better than computer, but there is no difference between friends and strangers."
                   image={emo}
+                  hover={emoHover}
                   filters={["Research", (this.state.research ? "active" : "") ]}
                   projectName="emo"
                 />

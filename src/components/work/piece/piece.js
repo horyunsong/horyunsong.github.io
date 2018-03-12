@@ -5,6 +5,7 @@ import "./piece.css";
 class Piece extends Component {
   static propTypes = {
     image: PropTypes.string,
+    hover: PropTypes.string,
     category: PropTypes.string,
     type: PropTypes.string,
     title: PropTypes.string,
@@ -15,6 +16,7 @@ class Piece extends Component {
 
   static defaultProps = {
     image: "undefined",
+    hover: "undefined",
     category: "UX",
     type: "Research & Design",
     title: "undefined",
@@ -33,18 +35,22 @@ class Piece extends Component {
 
     return(
       <div className={this.props.projectName + " piece full"} >
-        <div className="full image-wrapper">
-          <div className="piece-img">
-            <img className="work-img" src={this.props.image} alt="thumbnail"/>
+        <div className="hover-wrapper">
+          <div className="full image-wrapper">
+            <div className="piece-img">
+              <img className="work-img original" src={this.props.image} alt="thumbnail"/>
+              <img className="work-img hover" src={this.props.hover} alt="thumbnail"/>
+            </div>
+          </div>
+
+          <div className="piece-summary">
+            <div className="summary-bottom text-center">
+              <h2 className="piece-title">{this.props.title}</h2>
+              <p className="piece-tag">{this.props.type}</p>
+            </div>
           </div>
         </div>
 
-        <div className="piece-summary">
-          <div className="summary-bottom text-center">
-            <h2 className="piece-title">{this.props.title}</h2>
-            <p className="piece-tag">{this.props.type}</p>
-          </div>
-        </div>
       </div>
     )
   }
