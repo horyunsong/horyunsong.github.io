@@ -17,7 +17,10 @@
 
 .piece  {
     margin: 0;
-    padding: 1em;
+    padding: 1em 0;
+}
+.hover-wrapper {
+    margin: 0 1em;
 }
 .image-wrapper {
     padding: 2.5em 0 0 0;
@@ -54,7 +57,6 @@
 }
 .piece:hover .hover-wrapper {
     background-color: white;
-
 }
 .piece:hover .hover {
     display: block;
