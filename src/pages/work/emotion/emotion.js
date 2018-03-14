@@ -56,7 +56,7 @@ class Emotion extends Component {
         <div className="container">
           <Title
             title="Detecting Emotions"
-            role="Who's better? Friends vs. Strangers vs. Computer"
+            role="Who detects emotions better? Friends vs. Strangers vs. Computer"
           />
           <div className="flex justify-between meta">
             <div className="third">
@@ -88,7 +88,7 @@ class Emotion extends Component {
             </div>
             <div className="sixty center">
               <p  className="title">Solution</p>
-              <p>We hypothesized that <b>people are better at telling a person's emotions from digital artifacts than computational methods .</b> Thus, we proposed a Human Sensor, a detection method more capable of making contextual and holistic judgment on projected emotions. We prove this by <b>comparing its accuracy to a subject's self-report emotions on Facebook posts.</b></p>
+              <p>We hypothesized that <b>people are better at telling a person's emotions from digital artifacts than computational methods .</b> Thus, we proposed a Human Sensor, a detection method more capable of making contextual and holistic judgment on projected emotions. We prove this by comparing its accuracy to a subject's self-report emotions on Facebook posts.</p>
             </div>
           </div>
         </div>

@@ -17,7 +17,6 @@ import solution from '../../../img/work/bslide/solution.gif';
 
 import siteMap from '../../../img/work/bslide/sitemap.png';
 
-import spark from '../../../img/home/spark.png';
 
 import coding from '../../../img/work/bslide/Interview-coding.png';
 import primary from '../../../img/work/bslide/Primary-Persona.png';
@@ -35,7 +34,18 @@ import contents from '../../../img/work/bslide/mockups/contentsbutton.png';
 import UI from '../../../img/work/bslide/mockups/UI.png';
 import List from '../../../img/work/bslide/mockups/List.png';
 import Discover from '../../../img/work/bslide/mockups/Discover.png';
+import DiscoverFilter from '../../../img/work/bslide/mockups/Discover-Filter.png';
 import LockView from '../../../img/work/bslide/mockups/LockscreenView.png';
+import Activity from '../../../img/work/bslide/mockups/Activity.png';
+import Recommendations from '../../../img/work/bslide/mockups/LockscreenRec.png';
+import RecommendationsOpen from '../../../img/work/bslide/mockups/LockscreenRec-open.png';
+import LockViewOpen from '../../../img/work/bslide/mockups/LockscreenView-open.png';
+import LockViewExpand from '../../../img/work/bslide/mockups/LockscreenView-expand.png';
+import LockViewShort from '../../../img/work/bslide/mockups/LockscreenView-short.png';
+
+import sketch1 from '../../../img/work/bslide/sketch/sketch1.jpeg';
+import sketch2 from '../../../img/work/bslide/sketch/sketch2.jpeg';
+import sketch3 from '../../../img/work/bslide/sketch/sketch3.jpeg';
 
 
 
@@ -90,8 +100,8 @@ class Bslide extends Component {
       <div className="bslide">
         <Headroom>
           <Next
-            rightItem="Detecting Emotions"
-            rightLink="/emotion"
+            rightItem="Modular Storytelling"
+            rightLink="/logue"
           />
         </Headroom>
         <div className="hero-desktop">
@@ -103,7 +113,7 @@ class Bslide extends Component {
 
         <div className=" container">
           <Title
-            title="B-slide (Bookmark Slide)"
+            title="Bookmark Slide (B-slide)"
             role="A friendly nudge to read bookmarked contents on lockscreen"
           />
 
@@ -185,10 +195,10 @@ class Bslide extends Component {
               </div>
             </div>
             <div className="fifth">
-              <h4>Validate</h4>
+              <h4>Prototype</h4>
               <div className="spans">
                 <span>Wireframe</span>
-                <span>Usability Testing (Work in Progress)</span>
+                <span>Conclusion</span>
               </div>
             </div>
           </div>
@@ -288,7 +298,7 @@ class Bslide extends Component {
             <Heading
               title="Ideation"
             />
-            <div className="space-up sixty center">
+            <div className="sixty center">
               <p className="title">Lock Screen as Contact Point</p>
             </div>
             <div className="eighty center">
@@ -324,9 +334,9 @@ class Bslide extends Component {
             </div>
 
           </div>
-          <div id="Mapping" className="section">
+          <div id="Design" className="section">
             <Heading
-              title="Mapping the Experience"
+              title="Design"
             />
             <div className="sixty center">
               <p className="title">Journey Map (Primary Persona)</p>
@@ -360,17 +370,70 @@ class Bslide extends Component {
               }}
             />
             </div>
+          <div className="sixty space-up center">
+            <p className="title ">Sketch</p>
+            <p>With paper sketches, we asked other student designers to look at them and do a quick Heuristic Evaluation. Number of low-hanging issues were found.</p>
+          </div>
+          <div className="full">
+            <div className="flex justify-between">
+              <div className="third">
+                <ImageZoom
+                  image={{
+                    src: sketch1,
+                    alt: "ui scenario 2"
+                  }}
+                  zoomImage={{
+                    src: sketch1,
+                    alt: "ui scenario 2"
+                  }}
+                />
+              </div>
+              <div className="third">
+                <ImageZoom
+                  image={{
+                    src: sketch2,
+                    alt: "ui scenario 2"
+                  }}
+                  zoomImage={{
+                    src: sketch2,
+                    alt: "ui scenario 2"
+                  }}
+                />
+              </div>
+              <div className="third">
+                <ImageZoom
+                  image={{
+                    src: sketch3,
+                    alt: "ui scenario 2"
+                  }}
+                  zoomImage={{
+                    src: sketch3,
+                    alt: "ui scenario 2"
+                  }}
+                />
+              </div>
+            </div>
+          </div>
             <div id="Wireframe" className="section">
               <Heading
                 title="Wireframe"
               />
-              <div className="sixty center">
-              </div>
-              <p></p>
               <div className="full flex justify-between">
                 <div className="quarter">
                   <ImageZoom
                     image={{
+                      src: LockView,
+                      alt: "ui scenario 2"
+                    }}
+                    zoomImage={{
+                      src: LockView,
+                      alt: "ui scenario 2"
+                    }}
+                  />
+                </div>
+                <div className="quarter">
+                  <ImageZoom
+                    image={{
                       src: List,
                       alt: "ui scenario 1"
                     }}
@@ -395,26 +458,177 @@ class Bslide extends Component {
                 <div className="quarter">
                   <ImageZoom
                     image={{
-                      src: LockView,
+                      src: Activity,
                       alt: "ui scenario 2"
                     }}
                     zoomImage={{
-                      src: LockView,
+                      src: Activity,
                       alt: "ui scenario 2"
                     }}
                   />
                 </div>
               </div>
+              <div className="sixty center  space-up">
+                <div className="full">
+                  <p className="title">1. Lockscreen: Action</p>
+                  <p>A user's list of bookmarks show on her lockscreen. She can swipe left to browse her list. Once she selects and reads one, she can expand the card and click "Mark as Read" or "Delete" to dismiss from the list. </p>
+                </div>
+              </div>
+              <div className="eighty center">
+                <div className="flex justify-between">
+                  <div className="third">
+                    <ImageZoom
+                      image={{
+                        src: LockViewShort,
+                        alt: "ui scenario 1"
+                      }}
+                      zoomImage={{
+                        src: LockViewShort,
+                        alt: "ui scenario 1"
+                      }}
+                    />
+                  </div>
+                  <div className="third">
+                    <ImageZoom
+                      image={{
+                        src: LockViewExpand,
+                        alt: "ui scenario 1"
+                      }}
+                      zoomImage={{
+                        src: LockViewExpand,
+                        alt: "ui scenario 1"
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="sixty center space-up">
+                <div className="full">
+                  <p className="title">2. Lockscreen: Recommendations</p>
+                  <p>A user may choose to view recommendations by choosing the option from the menu. Each menu card has an expanded action area like bookmark cards with "Bookmark" instead of "Mark as Read".</p>
+                </div>
+              </div>
+              <div className="eighty center">
+                <div className="flex justify-between">
+                  <div className="third">
+                    <ImageZoom
+                      image={{
+                        src: LockViewOpen,
+                        alt: "ui scenario 1"
+                      }}
+                      zoomImage={{
+                        src: LockViewOpen,
+                        alt: "ui scenario 1"
+                      }}
+                    />
+                  </div>
+                  <div className="third">
+                    <ImageZoom
+                      image={{
+                        src: RecommendationsOpen,
+                        alt: "ui scenario 1"
+                      }}
+                      zoomImage={{
+                        src: RecommendationsOpen,
+                        alt: "ui scenario 1"
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="sixty center space-up">
+                <div className="full">
+                  <p className="title">3. My List</p>
+                  <p>A user's list of bookmarks is shown here. The list is divided into two categories with a toggle button on top: To Read and Read. User can swipe each list item to the left to mark it as read or swipe right to delete from the list.</p>
+                </div>
+                <div className="eighty center">
+                  <ImageZoom
+                    image={{
+                      src: List,
+                      alt: "ui scenario 1"
+                    }}
+                    zoomImage={{
+                      src: List,
+                      alt: "ui scenario 1"
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="sixty center space-up">
+                <div className="full">
+                  <p className="title">4. Discover</p>
+                  <p>A user's recommended list of contents are shown here. She may filter them by topic. The topic filter is divded into Interests and All. Interested topics are pre-selected in the onboarding stage.</p>
+                </div>
+              </div>
+              <div className="eighty center">
+                <div className="flex justify-between">
+                  <div className="third">
+                    <ImageZoom
+                      image={{
+                        src: Discover,
+                        alt: "ui scenario 1"
+                      }}
+                      zoomImage={{
+                        src: Discover,
+                        alt: "ui scenario 1"
+                      }}
+                    />
+                  </div>
+                  <div className="third">
+                    <ImageZoom
+                      image={{
+                        src: DiscoverFilter,
+                        alt: "ui scenario 1"
+                      }}
+                      zoomImage={{
+                        src: DiscoverFilter,
+                        alt: "ui scenario 1"
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="sixty center space-up">
+                <div className="full">
+                  <p className="title">5. My Activity</p>
+                  <p>A user's reading activity is shown here. She can view number articles, topics, and sources by weekly or monthly.</p>
+                </div>
+                <div className="eighty center">
+                  <ImageZoom
+                    image={{
+                      src: Activity,
+                      alt: "ui scenario 1"
+                    }}
+                    zoomImage={{
+                      src: Activity,
+                      alt: "ui scenario 1"
+                    }}
+                  />
+                </div>
+              </div>
+              <div id="Wireframe" className="section">
+                <Heading
+                  title="Conclusion"
+                />
+              </div>
+              <div className="sixty center">
+                <p>We designed an interface to efficiently guide the users to return to the bookmarked contents by showing it on the lockscreen—the uppermost layer of a smartphone. While this might be a good solution to "read", it is questionable if this experience relates to a overall good experience in unlocking moments. From literature reviews, we found that there are <b>five guidelines for lockscreen design: </b></p>
+                  <ul>
+                    <li>Connectivity</li>
+                    <li>Functionality</li>
+                    <li>Entertainment</li>
+                    <li>Personalization</li>
+                    <li>Security</li>
+                  </ul>
+                <p>We believe that we answered the first four requirements. However, <b>security</b> remains largely unquestioned. In fact, by showing one's bookmarked contents, <b>the interface may be expsoing one's taste in contents unwillingly.</b> It's a question we wish to explore in future.</p>
+              </div>
+
+
 
             </div>
-          <div id="Usability" className="section">
-            <Heading
-              title="Usability Testing"
-            />
-          </div>
-          <div className="sixty center space-up">
-            <p className="title text-center">Coming Soon!</p>
-          </div>
         </div>
 
         <Credit/>

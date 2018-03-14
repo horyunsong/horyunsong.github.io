@@ -93,6 +93,19 @@ class Work extends Component {
                   projectName="docs"
                 />
               </Link>
+            <Link to="/bslide">
+              <Piece
+                title="Reading on Lockscreen"
+                type="Research & Design"
+                description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
+                image={bslide}
+                hover={bslideHover}
+                filters={
+                  ["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]
+                }
+                projectName="bslide"
+              />
+            </Link>
             <Link to="/logue">
               <Piece
                 title="Modular Storytelling"
@@ -105,19 +118,7 @@ class Work extends Component {
               />
             </Link>
 
-              <Link to="/bslide">
-                <Piece
-                  title="Reading on Lockscreen"
-                  type="Research & Design"
-                  description="B-slide is a personal curator on lock-screen. By swiping vertically, user can browse bookmarked contents; by swiping horizontally, user can get new contents based on current content."
-                  image={bslide}
-                  hover={bslideHover}
-                  filters={
-                    ["Research", "Design", "Prototype", (this.state.research || this.state.design || this.state.prototype ? "active" : "") ]
-                  }
-                  projectName="bslide"
-                />
-              </Link>
+
 
               {/*
               <Link to="/urack">

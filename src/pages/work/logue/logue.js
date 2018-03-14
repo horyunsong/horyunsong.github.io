@@ -66,8 +66,8 @@ class Logue extends Component {
       <div>
         <Headroom>
           <Next
-            rightItem="Reading on Lockscreen"
-            rightLink="/bslide"
+            rightItem="Detecting Emotions"
+            rightLink="/emotion"
           />
         </Headroom>
 
@@ -80,7 +80,7 @@ class Logue extends Component {
         <div className="container">
           <Title
             title="Logue"
-            role="Collaborative storytelling made possible with modular stories"
+            role="Modular storytelling for co-creators"
           />
           <div className="flex justify-between meta">
             <div className="third">
