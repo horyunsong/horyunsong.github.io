@@ -8,7 +8,7 @@ import Nav from '../../components/nav/nav';
 import TextLoop from 'react-text-loop';
 
 import hi from "../../img/home/hi.png";
-import im from "../../img/home/im.png";
+import im from "../../img/home/im-crop.png";
 import ruff from "../../img/home/ruff.png";
 import sniff from "../../img/home/sniff.png";
 import mouse from "../../img/home/mouse.png";
@@ -119,9 +119,22 @@ class Home extends Component {
                   Thank you for scrolling down this far, or clicking 'About' to get to know me.<br/><br/>
                   I'm a MS-HCI student at Georgia Tech with &#x1F525;curiosity on how to bring new technology to design and everyday life. I'm particularly interested in people's interaction with tech and each other in community settings.
                  <br/><br/>
-                  I often use my drawing skill to communicate ideas<br/>
-                  ... and paint cereal box characters.
+                  I often use my drawing skill to communicate ideas and express thoughts in comics.<br/>
                 </p>
+                <div className="space-up eighty center im">
+                  <ImageZoom
+                    image={{
+                      src: im,
+                      alt: "self-portrait"
+                    }}
+                    zoomImage={{
+                      src: im,
+                      alt: "self-portrait"
+                    }}
+                  />
+                </div>
+
+                {/*
                 <div className="flex justify-between cereal">
                   <div className="quarter">
                     <ImageZoom
@@ -197,7 +210,7 @@ class Home extends Component {
                     />
                   </div>
 
-                </div>
+                </div>*/}
 
               </div>
 

@@ -60,7 +60,7 @@ a.link:hover {
 .container.small b {
     /*background-color: rgba(180, 226, 230, 0.81);*/
     font-weight: 900;
-    color: #6eb8d0;
+    color: #4A90E2;
 }
 /*** Reset ***/
 body {
@@ -86,10 +86,10 @@ img {
 
 @media only screen and (max-width: 955px) {
     .container {
-        width: 90vw;
+        width: 93vw;
     }
     .container.small {
-        width: 90vw;
+        width: 93vw;
     }
 
 }
@@ -198,6 +198,7 @@ img {
 @media only screen and (max-width: 768px) {
     .sixty, .half {
         width: 100%;
+        padding: 0;
     }
 }
 

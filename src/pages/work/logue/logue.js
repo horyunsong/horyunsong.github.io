@@ -269,7 +269,7 @@ class Logue extends Component {
             <div className="">
               <div className="sixty center">
                 <p className="title">How</p>
-                <p>Based on the foucs group interview, I designed a story timeline with episodic modules shared by characters, places and story arcs. I presented it to fellow student designers in <b>design critique sessions.</b></p>
+                <p>Based on the foucs group interview, I designed a story timeline with episodic modules shared by characters, places and story arcs. I got feedback from <b>design critique sessions and hallway testings in campus student lounge.</b></p>
               </div>
               <div className="sixty center">
                 <p className="title">Finding</p>
@@ -295,7 +295,7 @@ class Logue extends Component {
 
           <div id="3rd" className="section">
             <Heading
-              title="Prototype: Story Map"
+              title="System Design"
               content=""
             />
             <div className="full">
@@ -323,7 +323,7 @@ class Logue extends Component {
               <div className="">
                 <div className="sixty center">
                   <p className="title">Story Map using Logues</p>
-                  <p>Story Map used metadata (categories, perspectives and story arcs) as story directions. Co-creators could choose a direction to check for current status of the story.</p>
+                  <p>I prototyped using Logues to present a story in a map-like timeline. <b>This story map used metadata (categories, perspectives and story arcs) as story directions.</b> Co-creators could choose a direction to check for current status of the story.</p>
                 </div>
                 <div className="">
                   <div className="sixty center">
@@ -475,7 +475,7 @@ class Logue extends Component {
             <img src={final} />
           </div>
           <div className="sixty center">
-            <p className="title">Updated Logue, a unit of a story</p>
+            <p className="title">1. Logue, a unit of a story (updated)</p>
             <p>New Logue contains what a previous version had: title, contents and metadata. I differentiated metadata with placement and pills and added comments for co-creators to discuss within context.</p>
             <ImageZoom
               image={{
@@ -489,7 +489,7 @@ class Logue extends Component {
             />
           </div>
           <div className="sixty center ">
-            <p className="title">Sort and view by metadata</p>
+            <p className="title">2. Sort and view by metadata</p>
             <p>Select which metadata categories to show. Each metadata tag has a string connecting the related Logues.</p>
           </div>
           <div className="half center">
@@ -506,7 +506,7 @@ class Logue extends Component {
             />
           </div>
           <div className="sixty center space-up">
-            <p className="title">Highlight a metadata tag</p>
+            <p className="title">3. Highlight a metadata tag</p>
             <p>Select a metadata tag to see the story from a character point of view or a place-centered timeline.</p>
           </div>
           <div className="full">
@@ -522,7 +522,7 @@ class Logue extends Component {
             />
           </div>
           <div className="sixty center space-up">
-            <p className="title">Adpative Timeline</p>
+            <p className="title">4. Adpative Timeline</p>
             <p>Switch between timeline and the last edit time. Dense vertical lines show the time between Logues. </p>
             <ImageZoom
               image={{
@@ -537,7 +537,7 @@ class Logue extends Component {
             />
           </div>
           <div className="sixty center space-up">
-            <p className="title">Discuss with co-creators</p>
+            <p className="title">5. Discuss with co-creators</p>
             <p>Discussion button that calls a chatroom modal is placed next to Write button within the action area. </p>
           </div>
           <div className="eighty center">
@@ -552,6 +552,18 @@ class Logue extends Component {
                 alt: "team A story map"
               }}
             />
+          </div>
+          <div id="Final" className="section">
+            <Heading
+              title="Conclusion"
+            />
+          </div>
+          <div className="">
+            <div className="sixty center">
+              {/*
+              <p>I proposed this design as a new way to engage creators who collaboratively tell an interactive fiction to an academic community. After presenting a research paper at ACM Designing Interactive Systems (2017), I got a question on <b>how effective this system is to creativity</b>. In other words, <b>is the story created using this system better than any other form of collaborative storytelling?</b> Creativity is not an easy thing to measure, let alone the quality of creation. My next journey with this project will be more objectively tackling the effectiveness of collaborative storytelling.</p>*/}
+              <p>I believe that this collaborative storytelling design, or system, can be applied beyond storytelling. One practical application I imagine is to <b>use it for story wikis</b>. I love <a className="link" href="http://batman.wikia.com/wiki/Batman_Wiki">Batman Wiki</a> (powered by Wikia) as it is, but with hundreds of characters and crossovers with the entire DC Comics Universe, it gets crazy. It can use some <b>more well suitably structured knowledge sharing, and Logue might be it.</b></p>
+            </div>
           </div>
 
         </div>

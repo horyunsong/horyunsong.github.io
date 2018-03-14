@@ -60,6 +60,9 @@ body {
 .about-inner{
     padding: 3em 0 ;
 }
+.im {
+    margin-top: 2em;
+}
 
 @media only screen and (max-width: 955px) {
     .fixed {

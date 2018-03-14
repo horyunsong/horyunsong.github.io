@@ -154,7 +154,7 @@ class Bslide extends Component {
             </div>
             <div className="sixty center">
               <p  className="title">Solution</p>
-              <p>B-slide (Bookmark Slide) prompts users by showing <b>their bookmarked contents on their mobile lockscreens</b> as compact cards. User can browse bookmarked contents horizontally and select one to read. Or, user can get recommended contents.</p>
+              <p>B-slide (Bookmark Slide) shows users <b>their bookmarked contents on mobile lockscreens</b> during notification time period. Users can browse the list of contents by sliding horizontally and select one to read. Or they can pull down an action area to mark it as read, or push it for later.</p>
               <img src={solution} />
             </div>
           </div>
@@ -471,7 +471,7 @@ class Bslide extends Component {
               <div className="sixty center  space-up">
                 <div className="full">
                   <p className="title">1. Lockscreen: Action</p>
-                  <p>A user's list of bookmarks show on her lockscreen. She can swipe left to browse her list. Once she selects and reads one, she can expand the card and click "Mark as Read" or "Delete" to dismiss from the list. </p>
+                  <p>A user's <b>list of bookmarks shows up on her lockscreen during her preferred reading time.</b> She can slide left and right to browse her list. Once she selects and reads one, she can expand the card and <b>tap "Mark as Read" or "Remind Me Later" to dismiss from the list. </b></p>
                 </div>
               </div>
               <div className="eighty center">
@@ -506,7 +506,7 @@ class Bslide extends Component {
               <div className="sixty center space-up">
                 <div className="full">
                   <p className="title">2. Lockscreen: Recommendations</p>
-                  <p>A user may choose to view recommendations by choosing the option from the menu. Each menu card has an expanded action area like bookmark cards with "Bookmark" instead of "Mark as Read".</p>
+                  <p>A user may view the <b>personalized recommendations</b> by choosing the "Recommendations" menu. Each recommendation content card has an expanded action area like bookmark cards. The actions are different: it comes with <b>"Bookmark"</b> instead of "Remind Me Later".</p>
                 </div>
               </div>
               <div className="eighty center">
@@ -541,7 +541,7 @@ class Bslide extends Component {
               <div className="sixty center space-up">
                 <div className="full">
                   <p className="title">3. My List</p>
-                  <p>A user's list of bookmarks is shown here. The list is divided into two categories with a toggle button on top: To Read and Read. User can swipe each list item to the left to mark it as read or swipe right to delete from the list.</p>
+                  <p>A user's list of bookmarked contents. The list is divided into two categories with a toggle button on top: <b>To Read and Read.</b> User can swipe each list item to the left to mark it as read or swipe right to delete from the list.</p>
                 </div>
                 <div className="eighty center">
                   <ImageZoom
@@ -559,7 +559,7 @@ class Bslide extends Component {
               <div className="sixty center space-up">
                 <div className="full">
                   <p className="title">4. Discover</p>
-                  <p>A user's recommended list of contents are shown here. She may filter them by topic. The topic filter is divded into Interests and All. Interested topics are pre-selected in the onboarding stage.</p>
+                  <p>A user's <b>personalized recommendations.</b> She may <b>filter them by topic</b> by selecting or deselecting topic tags. The topic filter is divided into Interests and All. Interested topics are pre-selected in the on-boarding stage for priority recommendations.</p>
                 </div>
               </div>
               <div className="eighty center">
@@ -594,7 +594,7 @@ class Bslide extends Component {
               <div className="sixty center space-up">
                 <div className="full">
                   <p className="title">5. My Activity</p>
-                  <p>A user's reading activity is shown here. She can view number articles, topics, and sources by weekly or monthly.</p>
+                  <p>A user's history of reading activity. She can view number articles, topics, and sources by weekly or monthly. The main purpose of Activity is <b>to motivate users by clearly showing the progress</b> (or lack of progress).</p>
                 </div>
                 <div className="eighty center">
                   <ImageZoom
