@@ -18,9 +18,17 @@
 .piece  {
     margin: 0;
     padding: 1em 0;
+    background: none;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 .hover-wrapper {
     margin: 0 1em;
+}
+.hover {
+
 }
 .image-wrapper {
     padding: 2.5em 0 0 0;
@@ -36,19 +44,14 @@
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     opacity: 1;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-
 }
 .piece-img .hover {
-    display: none;
     opacity: 0;
+    display: none;
 }
 .piece:hover .original{
-    display: none;
     opacity: 0;
+    display: none;
 }
 .piece:hover {/*
     filter: grayscale(90%);
@@ -57,10 +60,15 @@
 }
 .piece:hover .hover-wrapper {
     background-color: white;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+
 }
 .piece:hover .hover {
-    display: block;
     opacity: 1;
+    display: block;
 }
 
 
