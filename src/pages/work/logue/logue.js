@@ -513,11 +513,11 @@ class Logue extends Component {
             <ImageZoom
               image={{
                 src: gretel,
-                alt: "team A story map"
+                alt: "Gretel timeline"
               }}
               zoomImage={{
                 src: gretel,
-                alt: "team A story map"
+                alt: "Gretel timeline"
               }}
             />
           </div>
@@ -527,12 +527,12 @@ class Logue extends Component {
             <ImageZoom
               image={{
                 src: time,
-                alt: "team A story map",
+                alt: "shifting timeline",
                 className: "shadow"
               }}
               zoomImage={{
                 src: time,
-                alt: "team A story map"
+                alt: "shifting timeline"
               }}
             />
           </div>
@@ -544,12 +544,12 @@ class Logue extends Component {
             <ImageZoom
               image={{
                 src: discussion,
-                alt: "team A story map",
+                alt: "discussion",
                 className: "shadow"
               }}
               zoomImage={{
                 src: discussion,
-                alt: "team A story map"
+                alt: "discussion"
               }}
             />
           </div>

@@ -211,11 +211,11 @@ class Bslide extends Component {
               <ImageZoom
                 image={{
                   src: coding,
-                  alt: "interview coding table"
+                  alt: "interview transcript coding example"
                 }}
                 zoomImage={{
                   src: coding,
-                  alt: "interview coding table"
+                  alt: "interview transcript coding example"
                 }}
               />
               <p className="caption">A snippet from interview transcript coding</p>
@@ -380,11 +380,11 @@ class Bslide extends Component {
                 <ImageZoom
                   image={{
                     src: sketch1,
-                    alt: "ui scenario 2"
+                    alt: "usketch 1"
                   }}
                   zoomImage={{
                     src: sketch1,
-                    alt: "ui scenario 2"
+                    alt: "sketch 1"
                   }}
                 />
               </div>
@@ -392,11 +392,11 @@ class Bslide extends Component {
                 <ImageZoom
                   image={{
                     src: sketch2,
-                    alt: "ui scenario 2"
+                    alt: "sketch 2"
                   }}
                   zoomImage={{
                     src: sketch2,
-                    alt: "ui scenario 2"
+                    alt: "sketch 2"
                   }}
                 />
               </div>
@@ -404,11 +404,11 @@ class Bslide extends Component {
                 <ImageZoom
                   image={{
                     src: sketch3,
-                    alt: "ui scenario 2"
+                    alt: "sketch 3"
                   }}
                   zoomImage={{
                     src: sketch3,
-                    alt: "ui scenario 2"
+                    alt: "sketch 3"
                   }}
                 />
               </div>
@@ -423,11 +423,11 @@ class Bslide extends Component {
                   <ImageZoom
                     image={{
                       src: LockView,
-                      alt: "ui scenario 2"
+                      alt: "Lockscreen view"
                     }}
                     zoomImage={{
                       src: LockView,
-                      alt: "ui scenario 2"
+                      alt: "Lockscreen view"
                     }}
                   />
                 </div>
@@ -435,11 +435,11 @@ class Bslide extends Component {
                   <ImageZoom
                     image={{
                       src: List,
-                      alt: "ui scenario 1"
+                      alt: "List view"
                     }}
                     zoomImage={{
                       src: List,
-                      alt: "ui scenario 1"
+                      alt: "List view"
                     }}
                   />
                 </div>
@@ -447,11 +447,11 @@ class Bslide extends Component {
                   <ImageZoom
                     image={{
                       src: Discover,
-                      alt: "ui scenario 2"
+                      alt: "Discover tab"
                     }}
                     zoomImage={{
                       src: Discover,
-                      alt: "ui scenario 2"
+                      alt: "Discover tab"
                     }}
                   />
                 </div>
@@ -459,11 +459,11 @@ class Bslide extends Component {
                   <ImageZoom
                     image={{
                       src: Activity,
-                      alt: "ui scenario 2"
+                      alt: "Activity tab"
                     }}
                     zoomImage={{
                       src: Activity,
-                      alt: "ui scenario 2"
+                      alt: "uActivity tab"
                     }}
                   />
                 </div>
@@ -480,11 +480,11 @@ class Bslide extends Component {
                     <ImageZoom
                       image={{
                         src: LockViewShort,
-                        alt: "ui scenario 1"
+                        alt: "Lockscreen slider "
                       }}
                       zoomImage={{
                         src: LockViewShort,
-                        alt: "ui scenario 1"
+                        alt: "Lockscreen slider "
                       }}
                     />
                   </div>
@@ -492,11 +492,11 @@ class Bslide extends Component {
                     <ImageZoom
                       image={{
                         src: LockViewExpand,
-                        alt: "ui scenario 1"
+                        alt: "Lockscreen slider expanded"
                       }}
                       zoomImage={{
                         src: LockViewExpand,
-                        alt: "ui scenario 1"
+                        alt: "Lockscreen slider expanded"
                       }}
                     />
                   </div>
@@ -515,11 +515,11 @@ class Bslide extends Component {
                     <ImageZoom
                       image={{
                         src: LockViewOpen,
-                        alt: "ui scenario 1"
+                        alt: "Lockscreen with contents slider"
                       }}
                       zoomImage={{
                         src: LockViewOpen,
-                        alt: "ui scenario 1"
+                        alt: "Lockscreen with contents slider"
                       }}
                     />
                   </div>
@@ -527,11 +527,11 @@ class Bslide extends Component {
                     <ImageZoom
                       image={{
                         src: RecommendationsOpen,
-                        alt: "ui scenario 1"
+                        alt: "Recommendations on lockscreen"
                       }}
                       zoomImage={{
                         src: RecommendationsOpen,
-                        alt: "ui scenario 1"
+                        alt: "Recommendations on lockscreen"
                       }}
                     />
                   </div>
@@ -547,11 +547,11 @@ class Bslide extends Component {
                   <ImageZoom
                     image={{
                       src: List,
-                      alt: "ui scenario 1"
+                      alt: "List view"
                     }}
                     zoomImage={{
                       src: List,
-                      alt: "ui scenario 1"
+                      alt: "List view"
                     }}
                   />
                 </div>
@@ -568,11 +568,11 @@ class Bslide extends Component {
                     <ImageZoom
                       image={{
                         src: Discover,
-                        alt: "ui scenario 1"
+                        alt: "Discover"
                       }}
                       zoomImage={{
                         src: Discover,
-                        alt: "ui scenario 1"
+                        alt: "Discover"
                       }}
                     />
                   </div>
@@ -580,11 +580,11 @@ class Bslide extends Component {
                     <ImageZoom
                       image={{
                         src: DiscoverFilter,
-                        alt: "ui scenario 1"
+                        alt: "Discover Filter"
                       }}
                       zoomImage={{
                         src: DiscoverFilter,
-                        alt: "ui scenario 1"
+                        alt: "Discover Filter"
                       }}
                     />
                   </div>
@@ -600,11 +600,11 @@ class Bslide extends Component {
                   <ImageZoom
                     image={{
                       src: Activity,
-                      alt: "ui scenario 1"
+                      alt: "Activity"
                     }}
                     zoomImage={{
                       src: Activity,
-                      alt: "ui scenario 1"
+                      alt: "Activity"
                     }}
                   />
                 </div>

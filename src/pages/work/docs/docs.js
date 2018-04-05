@@ -300,12 +300,12 @@ class Docs extends Component {
               <ImageZoom
                 image={{
                   src: stickies,
-                  alt: "stickies",
+                  alt: "sticky notes on the wall",
                   className: "space-up"
                 }}
                 zoomImage={{
                   src: stickies,
-                  alt: "stickies"
+                  alt: "sticky notes on the wall"
                 }}
               />
             </div>

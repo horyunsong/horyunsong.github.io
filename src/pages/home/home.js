@@ -79,11 +79,11 @@ class Home extends Component {
                 <ImageZoom
                   image={{
                     src: people,
-                    alt: "Self portrait"
+                    alt: "Self portrait. Horyun is standing behind a group of people moving."
                   }}
                   zoomImage={{
                     src: people,
-                    alt: "Self portrait"
+                    alt: "Self portrait. Horyun is standing behind a group of people moving."
                   }}
                 />
                 </div>
@@ -125,11 +125,11 @@ class Home extends Component {
                   <ImageZoom
                     image={{
                       src: im,
-                      alt: "self-portrait"
+                      alt: "Self-portrait. Horyun is looking at an affinity diagram."
                     }}
                     zoomImage={{
                       src: im,
-                      alt: "self-portrait"
+                      alt: "Self-portrait. Horyun is looking at an affinity diagram."
                     }}
                   />
                 </div>
